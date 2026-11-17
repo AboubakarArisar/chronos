@@ -1,0 +1,142 @@
+{
+  "id": "golden-age",
+  "title": "The Islamic Golden Age",
+  "subtitle": "Baghdad and the House of Wisdom, 762 to 1258",
+  "skin": "islamic",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Round_city_of_Baghdad",
+    "https://en.wikipedia.org/wiki/History_of_paper",
+    "https://en.wikipedia.org/wiki/House_of_Wisdom",
+    "https://en.wikipedia.org/wiki/Al-Khwarizmi",
+    "https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin",
+    "https://en.wikipedia.org/wiki/Abu_Bakr_al-Razi",
+    "https://en.wikipedia.org/wiki/Al-Zahrawi",
+    "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+    "https://en.wikipedia.org/wiki/The_Canon_of_Medicine",
+    "https://en.wikipedia.org/wiki/Tabula_Rogeriana",
+    "https://en.wikipedia.org/wiki/Ismail_al-Jazari",
+    "https://en.wikipedia.org/wiki/Siege_of_Baghdad"
+  ],
+  "steps": [
+    {
+      "year": 762,
+      "lat": 33.35, "lon": 44.37, "dist": 1.3,
+      "realm": null,
+      "route": null,
+      "title": "The round city",
+      "text": "On 2 August 762 the Abbasid caliph al-Mansur began building a new capital, about 30 kilometres from the old Persian capital of Ctesiphon. It was a circle roughly two kilometres across, with four gates and a palace and mosque at its centre. Arab chroniclers say 100,000 workers built it. Its official name was the City of Peace. We call it Baghdad.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 794,
+      "lat": 36.0, "lon": 38.0, "dist": 2.7,
+      "realm": null,
+      "route": [[66.97, 39.65], [44.4, 33.33], [31.24, 30.04], [-0.52, 38.99]],
+      "title": "Paper",
+      "text": "Paper was being made in Samarkand by 751. A later story credits Chinese prisoners taken at the Battle of Talas, but historians doubt it. By 794 paper mills were at work in Baghdad, and the government had begun to write on paper instead of parchment. The craft moved west, to Egypt by 900 and to a mill at Xativa in Spain by 1056.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 813,
+      "lat": 33.3, "lon": 44.4, "dist": 1.6,
+      "realm": "Abbasid Caliphate",
+      "route": null,
+      "title": "The House of Wisdom",
+      "text": "Under the caliph al-Mamun, who reigned from 813 to 833, a royal library in Baghdad became known as the House of Wisdom. Historians dispute how formal an institution it was. The translation movement around it is not in doubt. Over some two centuries, scholars such as the Christian physician Hunayn ibn Ishaq turned Greek, Syriac, Persian and Sanskrit works into Arabic.",
+      "art": "assets/wisdom.jpg",
+      "artCaption": "Library scene, Maqamat of al-Hariri"
+    },
+    {
+      "year": 820,
+      "lat": 36.0, "lon": 50.0, "dist": 2.1,
+      "realm": "Abbasid Caliphate",
+      "route": null,
+      "title": "Algebra",
+      "text": "Around 820 Muhammad ibn Musa al-Khwarizmi, a scholar from Khwarazm working in Baghdad, wrote a treatise giving the first systematic solutions of linear and quadratic equations. A word in its title, al-jabr, became algebra. The Latin form of his own name became algorithm, and his book on Hindu numerals helped spread that system of numbers across the Middle East and Europe.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 859,
+      "lat": 34.06, "lon": -4.97, "dist": 1.35,
+      "realm": "Idrisid Caliphate",
+      "route": null,
+      "title": "A mosque in Fez",
+      "text": "In Fez, under the Idrisid dynasty, the Qarawiyyin mosque was founded around 857 to 859. Tradition names a merchant's daughter, Fatima al-Fihri, as the founder, though some historians doubt the story. UNESCO and Guinness World Records cite the school that grew up there as the oldest continually operating institution of higher learning in the world.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 900,
+      "lat": 34.5, "lon": 48.0, "dist": 1.6,
+      "realm": "Abbasid Caliphate",
+      "route": [[51.44, 35.59], [44.4, 33.33]],
+      "title": "Al-Razi and the hospitals",
+      "text": "Abu Bakr al-Razi, born at Rayy in Iran around 865, headed a hospital there and was then called to Baghdad to direct another. His book on smallpox and measles is among the earliest surviving texts to describe them as two distinct diseases. His medical textbook, the Comprehensive Book, ran to 23 volumes. Latin Europe knew him as Rhazes.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1000,
+      "lat": 37.88, "lon": -4.87, "dist": 1.3,
+      "realm": "Caliphate of Córdoba",
+      "route": null,
+      "title": "The surgeon of Córdoba",
+      "text": "At Madinat al-Zahra, near Córdoba in al-Andalus, the physician al-Zahrawi completed a medical encyclopedia in thirty volumes in the year 1000. He introduced more than 200 surgical instruments and used catgut for internal stitches. Translated into Latin in the twelfth century, his volume on surgery was the standard European text for about 500 years.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1021,
+      "lat": 29.0, "lon": 38.0, "dist": 1.9,
+      "realm": "Fatimid Caliphate",
+      "route": [[47.78, 30.5], [31.24, 30.04], [32.9, 24.09]],
+      "title": "The Book of Optics",
+      "text": "Ibn al-Haytham, born in Basra around 965, is reported to have been called to Egypt by the Fatimid caliph al-Hakim to regulate the flooding of the Nile. He planned a dam near Aswan and concluded it could not be built. Between 1011 and 1021 he wrote the Book of Optics, which argued from experiment that we see because light from objects enters the eye.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1025,
+      "lat": 38.0, "lon": 54.0, "dist": 1.7,
+      "realm": "Buyid Emirate",
+      "route": [[59.15, 42.33], [51.44, 35.59], [48.52, 34.8]],
+      "title": "The Canon of Medicine",
+      "text": "In 1025 Ibn Sina, known in Latin as Avicenna, completed the Canon of Medicine at Hamadan in Persia. He had begun it in Gurganj and continued it in Rayy. Its five books became, in Latin translation, a standard textbook in European universities, and it was still being taught at Padua as late as 1715.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1154,
+      "lat": 38.12, "lon": 13.36, "dist": 1.5,
+      "realm": null,
+      "route": null,
+      "title": "A map for a Norman king",
+      "text": "The geographer Muhammad al-Idrisi worked at Palermo for Roger II, the Norman king of Sicily, who commissioned a description of the world around 1138. After some fifteen years of research the atlas was finished in 1154, a few weeks before the king died. Its seventy sectional maps are drawn with south at the top.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1206,
+      "lat": 37.6, "lon": 40.5, "dist": 1.3,
+      "realm": null,
+      "route": null,
+      "title": "Ingenious devices",
+      "text": "In 1206 Ismail al-Jazari, chief engineer to the Artuqid rulers of Upper Mesopotamia, completed the Book of Knowledge of Ingenious Mechanical Devices. It gives instructions for building fifty machines, among them water clocks, pumps and automata, and he described only devices he had made himself. In his elephant clock a mechanical figure moved at set intervals.",
+      "art": "assets/art/islamic/ismail-al-jazari.jpg",
+      "artCaption": "Al-Jazari elephant clock"
+    },
+    {
+      "year": 1258,
+      "lat": 33.3, "lon": 44.4, "dist": 1.45,
+      "realm": "Mongol Empire",
+      "route": null,
+      "title": "The Mongols at Baghdad",
+      "text": "In January 1258 a Mongol army under Hulagu closed around Baghdad. The city surrendered on 10 February and was plundered for a week. The caliph was executed, ending five centuries of Abbasid rule there. A later chronicle says so many books were thrown into the Tigris that the water turned black, but libraries reopened within two years. The fall is the traditional end of the golden age.",
+      "art": "assets/art/mongol/siege-of-baghdad-1258.jpg",
+      "artCaption": "Baghdad 1258"
+    }
+  ]
+}

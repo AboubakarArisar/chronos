@@ -1,0 +1,146 @@
+{
+  "id": "end-of-empires",
+  "title": "The End of Empires",
+  "subtitle": "Dynasties fall and colonies become nations, 1912 to 1997",
+  "skin": "worldwars",
+  "sources": [
+    "https://en.wikipedia.org/wiki/1911_Revolution",
+    "https://en.wikipedia.org/wiki/February_Revolution",
+    "https://en.wikipedia.org/wiki/House_of_Romanov",
+    "https://en.wikipedia.org/wiki/Dissolution_of_Austria-Hungary",
+    "https://en.wikipedia.org/wiki/Abdication_of_Wilhelm_II",
+    "https://en.wikipedia.org/wiki/Abolition_of_the_Ottoman_sultanate",
+    "https://en.wikipedia.org/wiki/Partition_of_India",
+    "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
+    "https://en.wikipedia.org/wiki/Ghana",
+    "https://en.wikipedia.org/wiki/Decolonization",
+    "https://en.wikipedia.org/wiki/Year_of_Africa",
+    "https://en.wikipedia.org/wiki/Algerian_War",
+    "https://en.wikipedia.org/wiki/Portuguese_Colonial_War",
+    "https://en.wikipedia.org/wiki/Carnation_Revolution",
+    "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+    "https://en.wikipedia.org/wiki/Handover_of_Hong_Kong"
+  ],
+  "steps": [
+    {
+      "year": 1912,
+      "lat": 36.0, "lon": 112.0, "dist": 2.4,
+      "realm": "Manchu Empire",
+      "route": null,
+      "title": "The last emperor of China",
+      "text": "The Wuchang Uprising of 10 October 1911 set off a revolution across China. On 1 January 1912 the Republic of China was declared, with Sun Yat-sen as its president. On 12 February the abdication of the six-year-old Xuantong Emperor was proclaimed. The Qing dynasty had reigned for 267 years, and with it ended more than two thousand years of imperial rule.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1917,
+      "lat": 59.0, "lon": 32.0, "dist": 2.6,
+      "realm": "Russian Empire",
+      "route": null,
+      "title": "The tsar abdicates",
+      "text": "In March 1917 unrest in Petrograd grew into revolution within about eight days, and most of the capital's garrison went over to it. Tsar Nicholas II, stranded on his train at Pskov, abdicated on 15 March. The Romanovs had held the throne since 1613, and a Provisional Government now took power. In July 1918 the former tsar and his family were executed at Yekaterinburg.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1918,
+      "lat": 49.0, "lon": 15.5, "dist": 1.8,
+      "realm": "Austro-Hungarian Empire",
+      "route": null,
+      "title": "Two crowns in two days",
+      "text": "In the autumn of 1918 the Habsburg monarchy came apart. Czech leaders took command in Prague on 28 October, and the South Slavs proclaimed their own state the next day. On 9 November the German emperor's abdication was announced in Berlin and a republic was proclaimed from the Reichstag. On 11 November Emperor Karl I gave up any share in affairs of state.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1922,
+      "lat": 40.0, "lon": 31.0, "dist": 1.8,
+      "realm": "Ottoman Sultanate",
+      "route": null,
+      "title": "The sultan leaves Constantinople",
+      "text": "On 1 November 1922 the Grand National Assembly of Turkey abolished the Ottoman sultanate. Mehmed VI, the last sultan, left Constantinople on 17 November aboard the British warship HMS Malaya. His family had ruled in an unbroken line since about 1299. The Republic of Turkey was declared on 29 October 1923, and the caliphate was abolished in March 1924.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1947,
+      "lat": 27.0, "lon": 79.0, "dist": 2.0,
+      "realm": "India",
+      "route": null,
+      "title": "Independence and partition",
+      "text": "At midnight on 14 to 15 August 1947 British India became two independent states, India and Pakistan. The provinces of Punjab and Bengal were divided by the Radcliffe Line. Between 12 and 20 million people were displaced along religious lines, and estimates of the dead range from two hundred thousand to two million. Louis Mountbatten was the last viceroy.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1954,
+      "lat": 19.0, "lon": 105.0, "dist": 1.6,
+      "realm": "Tonkin",
+      "route": null,
+      "title": "Dien Bien Phu",
+      "text": "From 13 March to 7 May 1954 the Viet Minh under Vo Nguyen Giap besieged the French base at Dien Bien Phu in northern Vietnam. The garrison was overrun and its survivors surrendered. About ten weeks later the Geneva Accords divided Vietnam at the 17th parallel. The last French forces left the country in 1956.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1957,
+      "lat": 7.5, "lon": -1.0, "dist": 1.5,
+      "realm": "Gold Coast",
+      "route": null,
+      "title": "The Gold Coast becomes Ghana",
+      "text": "On 6 March 1957 the British colony of the Gold Coast, joined with Ashanti, the Northern Territories and British Togoland, became independent as Ghana, with Kwame Nkrumah as its first prime minister. It was the first colony in sub-Saharan Africa to achieve sovereignty. In 1945 the whole continent had counted only four independent countries: Egypt, Ethiopia, Liberia and South Africa.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1960,
+      "lat": 3.0, "lon": 18.0, "dist": 2.7,
+      "realm": null,
+      "route": null,
+      "title": "The Year of Africa",
+      "text": "In 1960 seventeen African colonies became independent: fourteen from France, two from Britain and one from Belgium. On 3 February the British prime minister Harold Macmillan had spoken in Cape Town of a wind of change. The Congo became independent on 30 June and Nigeria on 1 October. On 14 December the United Nations adopted a declaration on granting independence to colonial countries and peoples.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1962,
+      "lat": 39.0, "lon": 4.0, "dist": 1.7,
+      "realm": "Algeria",
+      "route": [[3.06, 36.78], [4.3, 40.0], [5.37, 43.3]],
+      "title": "Algeria leaves France",
+      "text": "France had held Algiers since 1830. The war for Algerian independence began on 1 November 1954 and ended with the Évian Accords of March 1962. On 1 July Algerians voted 99.72 percent for independence, after a war in which estimates of the Algerian dead range from 400,000 to 1.5 million. Within a few months about 900,000 European settlers had fled across the sea to France.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1975,
+      "lat": 5.0, "lon": 5.0, "dist": 2.9,
+      "realm": "Angola",
+      "route": [[13.23, -8.84], [5.0, -5.0], [-8.0, 0.0], [-19.0, 12.0], [-19.0, 25.0], [-9.3, 38.6]],
+      "title": "Portugal lets go",
+      "text": "Portugal fought to keep its African colonies from 1961 to 1974. On 25 April 1974 army officers overthrew the Estado Novo regime in the Carnation Revolution, and the wars ended. Guinea-Bissau was independent by the end of that year, and Mozambique, Cape Verde, São Tomé and Príncipe and Angola followed in 1975. Hundreds of thousands of Portuguese settlers went back to Europe.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1991,
+      "lat": 56.0, "lon": 55.0, "dist": 3.1,
+      "realm": "USSR",
+      "route": null,
+      "title": "The Soviet Union dissolves",
+      "text": "On 8 December 1991 the leaders of Russia, Ukraine and Belarus declared that the Soviet Union no longer existed. Mikhail Gorbachev resigned on 25 December, and that evening the Soviet flag was lowered from the Kremlin for the last time. The next day the union was formally dissolved. Fifteen independent states stood where it had been.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1997,
+      "lat": 22.3, "lon": 114.17, "dist": 1.3,
+      "realm": "Hong Kong",
+      "route": null,
+      "title": "Midnight in Hong Kong",
+      "text": "At midnight on 1 July 1997 Britain handed Hong Kong to the People's Republic of China, after 156 years of British rule and at the end of a 99-year lease on the New Territories. Prince Charles read a farewell speech on behalf of Queen Elizabeth II. The handover is often considered the definitive end of the British Empire.",
+      "art": null,
+      "artCaption": null
+    }
+  ]
+}

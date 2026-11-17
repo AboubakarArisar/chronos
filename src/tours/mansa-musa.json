@@ -1,0 +1,106 @@
+{
+  "id": "mansa-musa",
+  "title": "Mali under Mansa Musa",
+  "subtitle": "Gold, salt and a pilgrimage across the Sahara, 1235 to 1468",
+  "skin": "africa",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mansa_Musa",
+    "https://en.wikipedia.org/wiki/Mali_Empire",
+    "https://en.wikipedia.org/wiki/Timbuktu",
+    "https://en.wikipedia.org/wiki/Ibn_Battuta",
+    "https://en.wikipedia.org/wiki/Catalan_Atlas",
+    "https://www.britannica.com/biography/Musa-I-of-Mali"
+  ],
+  "steps": [
+    {
+      "year": 1235,
+      "lat": 13.0, "lon": -8.0, "dist": 1.8,
+      "realm": "Mali",
+      "route": null,
+      "title": "Sundiata founds an empire",
+      "text": "Around 1235 Sundiata Keita defeated the Sosso at the Battle of Kirina, and Mali emerged as a major power in West Africa. Its rulers bore the title mansa. Their wealth came from gold traded out of the regions of Bambuk and Bure, and from the taxes they charged on gold, copper and salt crossing their borders.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1312,
+      "lat": 20.0, "lon": -6.0, "dist": 2.0,
+      "realm": "Mali",
+      "route": [[-5.0, 23.6], [-7.03, 17.3]],
+      "title": "Musa takes the throne",
+      "text": "Musa became mansa around 1312. His empire stood at the southern end of the caravan roads across the Sahara. Salt from Taghaza, deep in the desert, was carried south to Walata, and it could be worth as much as gold. By one estimate Mali supplied almost half of the Old World's gold exports in the early 14th century.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1324,
+      "lat": 24.0, "lon": 12.0, "dist": 2.8,
+      "realm": "Mamluke Sultanate",
+      "route": [[-8.38, 11.38], [-7.03, 17.3], [0.29, 27.87], [31.24, 30.04]],
+      "title": "The pilgrim king in Cairo",
+      "text": "In 1324 Musa set out on the pilgrimage to Mecca, by the usual account from Niani through Walata and the oases of Tuat. He crossed the Nile into Cairo on 19 July and met the Mamluk sultan al-Nasir Muhammad. Later Arabic writers speak of upwards of 12,000 slaves and 80 camels loaded with gold dust. Historians read those figures as rhetoric, not a count.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1324,
+      "lat": 26.0, "lon": 36.0, "dist": 1.8,
+      "realm": null,
+      "route": [[31.24, 30.04], [32.55, 29.97], [35.0, 29.5], [39.61, 24.47], [39.83, 21.42]],
+      "title": "On to Mecca",
+      "text": "Musa left Cairo on 18 October 1324 with the official pilgrim caravan and went on to Medina and Mecca. According to the writer al-Umari, the price of gold in Cairo fell after his visit from 25 dirhams the mithqal to under 22. At least one modern historian considers that drop no more than a normal fluctuation.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1325,
+      "lat": 16.5, "lon": -1.5, "dist": 1.5,
+      "realm": "Mali",
+      "route": [[0.04, 16.27], [-3.01, 16.78]],
+      "title": "Home by the Niger bend",
+      "text": "The chronicle Tarikh al-Sudan says the cities of Gao and Timbuktu submitted to Musa on his way home. Historians doubt that a party of pilgrims conquered them, and another source credits the taking of Gao to one of his generals. On the journey Musa met the Andalusian poet Abu Ishaq al-Sahili and persuaded him to come to Mali.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1327,
+      "lat": 16.78, "lon": -3.01, "dist": 1.25,
+      "realm": "Mali",
+      "route": null,
+      "title": "A mosque at Timbuktu",
+      "text": "In 1327 Musa commissioned the Djinguereber Mosque in Timbuktu. Tradition names al-Sahili as its designer, but that is disputed, and building in earth had deep roots in West Africa long before him. Timbuktu, on the trade routes for salt, gold and ivory, became a centre of Islamic learning that drew scholars and students for centuries. Musa died around 1337.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1352,
+      "lat": 23.0, "lon": -5.0, "dist": 2.1,
+      "realm": "Mali",
+      "route": [[-4.28, 31.28], [-5.0, 23.6], [-7.03, 17.3]],
+      "title": "Ibn Battuta crosses the desert",
+      "text": "In February 1352 the traveller Ibn Battuta left Sijilmasa with a caravan. He reached the salt works of Taghaza in 25 days, and the whole crossing to Walata took two months and about 1,600 kilometres. He went on to the court of Mansa Sulayman, king since 1341, and later visited Timbuktu and Gao before the sultan of Morocco called him home.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1375,
+      "lat": 30.0, "lon": 0.0, "dist": 2.6,
+      "realm": "Aragón",
+      "route": null,
+      "title": "Mali on the map of Europe",
+      "text": "Word of Mali's gold reached Europe's mapmakers. The Catalan Atlas, conventionally dated 1375 and attributed to Abraham Cresques of the Majorcan school, shows Musa holding a gold object. Its caption calls him the richest and noblest lord of all those lands, because of the abundance of gold taken from his country. The atlas is kept in the Bibliothèque nationale de France.",
+      "art": "assets/art/africa/catalan-atlas.jpg",
+      "artCaption": "Compass rose from the Catalan Atlas (1375)"
+    },
+    {
+      "year": 1468,
+      "lat": 16.5, "lon": -2.0, "dist": 1.9,
+      "realm": null,
+      "route": null,
+      "title": "Songhai takes Timbuktu",
+      "text": "After Mansa Sulayman died in 1360, Mali passed through a series of short reigns. The region of Gao broke away in the 1370s. Tuareg took Timbuktu in 1433 to 1434, and in 1468 the city fell to the rising Songhai Empire under Sunni Ali. A smaller Mali endured until about 1600.",
+      "art": null,
+      "artCaption": null
+    }
+  ]
+}

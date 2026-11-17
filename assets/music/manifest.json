@@ -1,0 +1,293 @@
+{
+  "egypt": [],
+  "mesopotamia": [],
+  "indus": [
+    {
+      "file": "assets/music/indus/bansuri-sample.ogg",
+      "title": "Bansuri sample (E bass)",
+      "performer_or_author": "own work",
+      "license": "Public domain",
+      "license_url": "",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bansuri_sample_E_bass.ogg",
+      "duration_sec": 99,
+      "authenticity": "traditional instrument recording",
+      "notes": "Bansuri flute; modern instrument as stand-in for early Indian music."
+    }
+  ],
+  "china": [
+    {
+      "file": "assets/music/china/guqin-zuiyu-changwan.ogg",
+      "title": "Zuiyu Changwan (guqin)",
+      "performer_or_author": "CharlieHuang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guqin-Zuiyu_Changwan.ogg",
+      "duration_sec": 287,
+      "authenticity": "traditional instrument recording",
+      "notes": "Solo guqin, a classical Chinese zither."
+    },
+    {
+      "file": "assets/music/china/chinese-recording-1903.mp3",
+      "title": "[Chinese recording]",
+      "performer_or_author": "performer(s) (unidentified ; victor records)",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-312589-chinese-recording",
+      "duration_sec": 174,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1903-08-07; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act). Recorded in China for Victor (US label); item rights statement asserts US public domain."
+    }
+  ],
+  "persia": [
+    {
+      "file": "assets/music/persia/segah-setar.ogg",
+      "title": "Segah on setar",
+      "performer_or_author": "Leyth at fawiki",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Segah-Setar.ogg",
+      "duration_sec": 45,
+      "authenticity": "traditional instrument recording",
+      "notes": "Short (45 s) setar improvisation in dastgah Segah; loop it."
+    }
+  ],
+  "greece": [
+    {
+      "file": "assets/music/greece/seikilos-epitaph.ogg",
+      "title": "Epitaph of Seikilos",
+      "performer_or_author": "Marcus Harvey, User:Byz",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%CE%9F_%CE%95%CF%80%CE%B9%CF%84%CE%AC%CF%86%CE%B9%CE%BF%CF%82_%CF%84%CE%BF%CF%85_%CE%A3%CE%B5%E1%BF%96%CE%BA%CE%B9%CE%BB%CE%BF%CF%85_-_Epitaph_of_Seikilos.ogg",
+      "duration_sec": 50,
+      "authenticity": "historical reconstruction",
+      "notes": "Short (50 s); loop it."
+    }
+  ],
+  "rome": [],
+  "india_classical": [],
+  "byzantine": [
+    {
+      "file": "assets/music/byzantine/cretan-dance-lyra-pappadakis-1919.mp3",
+      "title": "Cretean dance",
+      "performer_or_author": "pappadakis, harilaos ; gomvákēs, g.",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-32015-cretean-dance",
+      "duration_sec": 187,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1919-04-17; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    }
+  ],
+  "islamic": [
+    {
+      "file": "assets/music/islamic/oud-sample.ogg",
+      "title": "Oud",
+      "performer_or_author": "Houssem bettaibi",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:OUD.ogg",
+      "duration_sec": 50,
+      "authenticity": "traditional instrument recording",
+      "notes": "Short (50 s) oud playing; loop it."
+    },
+    {
+      "file": "assets/music/islamic/tahayyart-nahem-simon-1916.mp3",
+      "title": "Taḥayyart wa-al-raḥmān (تحيرت والرحمن)",
+      "performer_or_author": "simon, nahem",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-19774-tah-ayyart-wa-al-rah-ma-n",
+      "duration_sec": 200,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1916-10-05; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    }
+  ],
+  "norse": [
+    {
+      "file": "assets/music/norse/kantele-sample.ogg",
+      "title": "DIY kantele sample",
+      "performer_or_author": "Olli Niemitalo",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page": "https://commons.wikimedia.org/wiki/File:DIY_kantele_sample_raw.ogg",
+      "duration_sec": 93,
+      "authenticity": "modern ambient stand-in",
+      "notes": "Homemade kantele (Finnic plucked zither) played freely; folk-instrument stand-in."
+    },
+    {
+      "file": "assets/music/norse/dala-trallen-1918.mp3",
+      "title": "Dala trallen",
+      "performer_or_author": "sundquist, ragnar ; berg, eric",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-28387-dala-trallen",
+      "duration_sec": 161,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1918-07-18; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    }
+  ],
+  "medieval_europe": [],
+  "mongol": [],
+  "africa": [],
+  "mesoamerica": [],
+  "andes": [
+    {
+      "file": "assets/music/andes/funerales-de-atahualpa-1913.mp3",
+      "title": "Funerales de Atahualpa",
+      "performer_or_author": "banda del regimiento de gendarmes de lima",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-8814-funerales-de-atahualpa",
+      "duration_sec": 148,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1913-09-17; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act). Recorded in Lima, Peru for Victor (US label); item rights statement asserts US public domain."
+    },
+    {
+      "file": "assets/music/andes/serranito-1913.mp3",
+      "title": "Serranito",
+      "performer_or_author": "escobedo, mariano ; núñez, domingo ; sirvas, emilio",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-8851-serranito",
+      "duration_sec": 187,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1913-09-22; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act). Recorded in Lima, Peru for Victor (US label); item rights statement asserts US public domain."
+    }
+  ],
+  "japan": [
+    {
+      "file": "assets/music/japan/shika-no-tone-shakuhachi.ogg",
+      "title": "Shika no Tōne (shakuhachi)",
+      "performer_or_author": "Araki Kodō III (1879–1935)",
+      "license": "Public domain",
+      "license_url": "",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shikanotoone.ogg",
+      "duration_sec": 375,
+      "authenticity": "traditional instrument recording",
+      "notes": "Historic shakuhachi recording by Araki Kodō III (1879–1935)."
+    },
+    {
+      "file": "assets/music/japan/tokiwazu-modoribashi-1902.mp3",
+      "title": "Tokiwazu Modoribashi",
+      "performer_or_author": "kin'nosuke",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-326857-tokiwazu-modoribashi",
+      "duration_sec": 162,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1902-12-31; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act). Recorded in Japan for Victor (US label); item rights statement asserts US public domain."
+    },
+    {
+      "file": "assets/music/japan/joruri-tsubozakadera-1906.mp3",
+      "title": "Jōruri Tsubozakadera : Sawa shinai (浄瑠璃 壷坂寺 : 澤市内)",
+      "performer_or_author": "toyotake, roshō ; gaisberg, william conrad",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-326858-jo-ruri-tsubozakadera-sawa-shinai",
+      "duration_sec": 159,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1906-11-30; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act). Recorded in Japan for Victor (US label); item rights statement asserts US public domain."
+    }
+  ],
+  "ottoman": [
+    {
+      "file": "assets/music/ottoman/husseiny-uzery-saba-jemal-bey-1919.mp3",
+      "title": "Husseiny uzery saba",
+      "performer_or_author": "bey, jemal (oody)",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-191460-husseiny-uzery-saba",
+      "duration_sec": 173,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1919-10-08; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    },
+    {
+      "file": "assets/music/ottoman/rast-gazel-jemal-bey-1919.mp3",
+      "title": "Rast gazel",
+      "performer_or_author": "bey, jemal (oody)",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-34204-rast-gazel",
+      "duration_sec": 182,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1919-11-18; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    }
+  ],
+  "mughal": [],
+  "exploration": [
+    {
+      "file": "assets/music/exploration/bach-goldberg-aria-ishizaka.ogg",
+      "title": "Goldberg Variations, BWV 988: Aria",
+      "performer_or_author": "Composer: Johann Sebastian Bach; Performer: Kimiko Ishizaka",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Goldberg_Variations_01_Aria.ogg",
+      "duration_sec": 300,
+      "authenticity": "period composition",
+      "notes": "J.S. Bach, Goldberg Variations BWV 988 (1741), Aria; Open Goldberg Variations recording by Kimiko Ishizaka, released to public domain. File is Wikimedia's ~96 kbps Ogg transcode of this Commons original (size/duration match)."
+    }
+  ],
+  "revolution": [
+    {
+      "file": "assets/music/revolution/chopin-fantaisie-impromptu-op66.ogg",
+      "title": "Fantaisie-Impromptu, Op. 66",
+      "performer_or_author": "Frédéric Chopin",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_-_Fantasy_Impromptu_Opus_66.ogg",
+      "duration_sec": 311,
+      "authenticity": "period composition",
+      "notes": "Chopin, Fantaisie-Impromptu op. 66 (1834); modern piano performance. File is Wikimedia's ~96 kbps Ogg transcode of this Commons original (size/duration match)."
+    },
+    {
+      "file": "assets/music/revolution/chopin-grande-valse-brillante-op18.ogg",
+      "title": "Grande valse brillante, Op. 18",
+      "performer_or_author": "Frédéric Chopin",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chopin_-_Grande_valse_brillante_in_E_flat_major%2C_Op._18.ogg",
+      "duration_sec": 319,
+      "authenticity": "period composition",
+      "notes": "Chopin, Grande valse brillante op. 18 (1833); modern piano performance. File is Wikimedia's ~96 kbps Ogg transcode of this Commons original (size/duration match)."
+    }
+  ],
+  "worldwars": [
+    {
+      "file": "assets/music/worldwars/over-there-victor-military-band-1917.mp3",
+      "title": "Over there",
+      "performer_or_author": "victor military band ; cohan, george m. ; pasternack, josef ; watson, frederic",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-25444-over-there",
+      "duration_sec": 150,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1917-08-09; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    },
+    {
+      "file": "assets/music/worldwars/at-the-jazz-band-ball-odjb-1918.mp3",
+      "title": "At the Jazz Band Ball",
+      "performer_or_author": "original dixieland jazz band ; larocca, nick ; sbarbaro, tony ; shields, larry ; edwards, eddie ; ragas, henry",
+      "license": "Public domain (US, pre-1923 recording)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://archive.org/details/loc-jukebox-28219-at-the-jazz-band-ball",
+      "duration_sec": 161,
+      "authenticity": "historic recording",
+      "notes": "Victor Talking Machine Co. 78rpm disc, recorded 1918-03-19; Library of Congress National Jukebox via archive.org; 17 U.S.C. 1401 (Music Modernization Act)."
+    }
+  ],
+  "modern": [],
+  "prehistory": [
+    {
+      "file": "assets/music/prehistory/frame-drum-bodhran-improvisation.ogg",
+      "title": "Bodhrán improvisation",
+      "performer_or_author": "Hinnerk R Hinnerk Rümenapf",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bodhran-improvisation_hinnerk-ruemenapf.ogg",
+      "duration_sec": 112,
+      "authenticity": "modern ambient stand-in",
+      "notes": "Frame drum improvisation; stands in for prehistoric frame drum."
+    }
+  ]
+}

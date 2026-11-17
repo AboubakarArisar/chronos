@@ -1,0 +1,7 @@
+node_modules/
+dist/
+public/
+.cache/
+tools/__pycache__/
+tests/screens/tmp/
+*.log

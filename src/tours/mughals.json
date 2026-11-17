@@ -1,0 +1,119 @@
+{
+  "id": "mughals",
+  "title": "The Mughal Empire",
+  "subtitle": "From Panipat to the last emperor, 1526 to 1857",
+  "skin": "mughal",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mughal_Empire",
+    "https://en.wikipedia.org/wiki/First_Battle_of_Panipat",
+    "https://en.wikipedia.org/wiki/Humayun",
+    "https://en.wikipedia.org/wiki/Akbar",
+    "https://en.wikipedia.org/wiki/Taj_Mahal",
+    "https://en.wikipedia.org/wiki/Aurangzeb",
+    "https://en.wikipedia.org/wiki/Nader_Shah%27s_invasion_of_India",
+    "https://en.wikipedia.org/wiki/Battle_of_Plassey",
+    "https://en.wikipedia.org/wiki/Bahadur_Shah_Zafar"
+  ],
+  "steps": [
+    {
+      "year": 1526,
+      "lat": 33.5, "lon": 73.0, "dist": 1.8,
+      "realm": "Sultanate of Delhi",
+      "route": [[71.78, 40.38], [69.17, 34.53], [71.1, 34.1], [76.97, 29.39]],
+      "title": "Panipat",
+      "text": "Babur, a prince from the Fergana Valley, was descended from Timur on his father's side and Genghis Khan on his mother's. From his base at Kabul he came down through the Khyber Pass, and on 21 April 1526 he met Sultan Ibrahim Lodi of Delhi at Panipat. Babur had about 12,000 men, with matchlocks and cannon. The far larger Delhi army broke, and Ibrahim was killed.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1540,
+      "lat": 30.0, "lon": 70.0, "dist": 1.9,
+      "realm": "Mughal Empire",
+      "route": [[79.92, 27.05], [78.01, 27.18], [77.21, 28.61], [74.34, 31.55], [69.73, 25.36], [65.71, 31.61], [62.2, 34.35], [69.17, 34.53], [77.21, 28.61]],
+      "title": "Humayun loses the throne",
+      "text": "Babur's son Humayun succeeded him in 1530. Sher Shah Suri defeated him at Chausa in 1539 and at Kannauj on 17 May 1540, and Humayun fled west. His son Akbar was born at Amarkot in 1542, during the flight. Humayun found refuge with Shah Tahmasp of Persia, took Kabul in 1545, and sat on the throne of Delhi again in July 1555.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1556,
+      "lat": 27.0, "lon": 78.0, "dist": 2.0,
+      "realm": "Mughal Empire",
+      "route": null,
+      "title": "Akbar",
+      "text": "Humayun died in January 1556 after a fall on the stairs of his library. Akbar was enthroned at fourteen, with Bairam Khan as regent, and on 5 November the Mughal army defeated Hemu at the Second Battle of Panipat. In a reign of nearly fifty years Akbar took Gujarat and Bengal and extended the empire over almost all of India north of the Godavari River.",
+      "art": "assets/art/mughal/akbarnama.jpg",
+      "artCaption": "Akbarnama (CBL In 03)"
+    },
+    {
+      "year": 1569,
+      "lat": 27.09, "lon": 77.66, "dist": 1.25,
+      "realm": "Mughal Empire",
+      "route": null,
+      "title": "Fatehpur Sikri",
+      "text": "West of Agra, Akbar founded a new city in 1569 and named it Fatehpur, the Town of Victory, after his conquest of Gujarat. At his court he allowed freedom of religion, gave high rank to Rajput nobles, and promoted a creed of his own that drew on several faiths. The city was soon abandoned. In 1585 the capital moved to Lahore.",
+      "art": "assets/art/mughal/fatehpur-sikri.jpg",
+      "artCaption": "Buland Darwaza gate, Fatehpur Sikri"
+    },
+    {
+      "year": 1632,
+      "lat": 27.175, "lon": 78.04, "dist": 1.2,
+      "realm": "Mughal Empire",
+      "route": null,
+      "title": "The Taj Mahal",
+      "text": "Mumtaz Mahal, wife of the emperor Shah Jahan, died on 17 June 1631 giving birth to their fourteenth child. The next year work began on her tomb beside the Yamuna River at Agra, led by the court architect Ustad Ahmad Lahori. More than 20,000 workers and artisans were employed. The mausoleum was finished in 1648 and the whole complex about 1653.",
+      "art": "assets/art/mughal/taj-mahal.jpg",
+      "artCaption": "Taj Mahal"
+    },
+    {
+      "year": 1658,
+      "lat": 27.5, "lon": 78.0, "dist": 1.5,
+      "realm": "Mughal Empire",
+      "route": null,
+      "title": "Aurangzeb takes the throne",
+      "text": "When Shah Jahan named his eldest son Dara Shikoh as heir, his other sons went to war. Aurangzeb won the Battle of Samugarh in May 1658 and confined his father in Agra Fort, within sight of the Taj Mahal. Dara was executed in 1659. Shah Jahan died in confinement in 1666 and was buried beside his wife.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1690,
+      "lat": 21.0, "lon": 78.0, "dist": 2.2,
+      "realm": "Mughal Empire",
+      "route": [[77.21, 28.61], [75.71, 16.83], [78.4, 17.38]],
+      "title": "The greatest extent",
+      "text": "Aurangzeb ruled for almost half a century. In 1679 he reimposed the jizya, a tax on subjects who were not Muslim, which had been set aside for about a century. His armies pushed south against Bijapur and besieged Golconda in 1687. Around 1690 the empire reached its greatest extent, about four million square kilometres, nearly the whole of the subcontinent.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1739,
+      "lat": 31.5, "lon": 72.0, "dist": 1.8,
+      "realm": "Mughal Empire",
+      "route": [[65.71, 31.61], [69.17, 34.53], [71.58, 34.01], [76.99, 29.69], [77.21, 28.61]],
+      "title": "Nader Shah in Delhi",
+      "text": "Aurangzeb died in 1707 and the dynasty fell into feuds. In 1719 alone four emperors took the throne. The Persian ruler Nader Shah came through Kabul and the Khyber Pass, defeated the Mughal army at Karnal on 24 February 1739 and entered Delhi. On 22 March he ordered a massacre in which an estimated 20,000 to 30,000 people died. He left with the Peacock Throne and the Koh-i-Noor diamond.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1757,
+      "lat": 23.8, "lon": 88.25, "dist": 1.4,
+      "realm": "Mughal Empire",
+      "route": null,
+      "title": "Plassey",
+      "text": "On 23 June 1757 Robert Clive, with about 3,000 troops of the British East India Company, faced the much larger army of the Nawab of Bengal at Plassey. The Nawab's commander Mir Jafar had secretly agreed to help the British and held his division back. The Company made him Nawab, and Bengal became its puppet state.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1857,
+      "lat": 23.0, "lon": 86.0, "dist": 2.4,
+      "realm": "British East India Company",
+      "route": [[77.21, 28.61], [96.16, 16.8]],
+      "title": "The last emperor",
+      "text": "By the nineteenth century the emperor's authority reached no further than the walled city of Delhi. In May 1857 rebel sepoy regiments came to the court of Bahadur Shah Zafar, a noted Urdu poet, and he gave the rebellion his support. In September he was captured at Humayun's Tomb. He was tried and exiled to Rangoon, where he died on 7 November 1862.",
+      "art": null,
+      "artCaption": null
+    }
+  ]
+}

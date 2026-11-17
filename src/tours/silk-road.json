@@ -1,0 +1,120 @@
+{
+  "id": "silk-road",
+  "title": "The Silk Road",
+  "subtitle": "Caravans between China and the Mediterranean, 138 BC to 1453",
+  "skin": "china",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Silk_Road",
+    "https://en.wikipedia.org/wiki/Zhang_Qian",
+    "https://en.wikipedia.org/wiki/Protectorate_of_the_Western_Regions",
+    "https://en.wikipedia.org/wiki/Gan_Ying",
+    "https://en.wikipedia.org/wiki/Smuggling_of_silkworm_eggs_into_the_Byzantine_Empire",
+    "https://en.wikipedia.org/wiki/Xuanzang",
+    "https://en.wikipedia.org/wiki/Battle_of_Talas",
+    "https://en.wikipedia.org/wiki/Marco_Polo",
+    "https://en.wikipedia.org/wiki/Black_Death",
+    "https://en.wikipedia.org/wiki/Vasco_da_Gama"
+  ],
+  "steps": [
+    {
+      "year": -138,
+      "lat": 38.0, "lon": 88.0, "dist": 2.6,
+      "realm": "Han Empire",
+      "route": [[108.94, 34.27], [100.45, 38.93], [94.66, 40.14], [75.99, 39.47], [71.8, 40.4], [66.9, 36.76]],
+      "title": "Zhang Qian rides west",
+      "text": "In 138 BC the Han emperor Wu sent the officer Zhang Qian west with about a hundred men to seek an alliance with the Yuezhi against the Xiongnu. The Xiongnu captured him and held him for years. He escaped, reached Ferghana and Bactria, and came home in 125 BC with a single companion and reports of rich states that prized Han goods.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -60,
+      "lat": 41.0, "lon": 84.0, "dist": 1.6,
+      "realm": "Han Empire",
+      "route": null,
+      "title": "The Han hold the Tarim Basin",
+      "text": "Han embassies to Central Asia began around 130 BC, and armies followed. Around 60 BC the Han court created the post of Protector General of the Western Regions, with headquarters at Wulei in the Tarim Basin. From there Han officials oversaw the oasis states west of the Yumen Pass, the towns through which silk moved toward Central Asia.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 97,
+      "lat": 31.0, "lon": 49.0, "dist": 1.9,
+      "realm": "Parthian Empire",
+      "route": null,
+      "title": "An envoy turns back",
+      "text": "In 97 the Han Protector General Ban Chao sent the envoy Gan Ying to find Daqin, the Chinese name for the Roman Empire. Gan Ying crossed Parthian lands and reached the shore of a great sea, possibly the Persian Gulf. Parthian sailors warned him the crossing could take as long as two years, and he turned back without seeing Rome.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 166,
+      "lat": 24.0, "lon": 108.0, "dist": 2.2,
+      "realm": "Han",
+      "route": null,
+      "title": "Romans at the Han court",
+      "text": "Silk reached Rome long before any Roman reached China. The Senate issued several edicts against wearing it, in vain. Then, beginning in 166, during the reigns of Marcus Aurelius and Emperor Huan of Han, Roman embassies arrived in China. They came by way of the Jiaozhou region in the far south.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 552,
+      "lat": 41.01, "lon": 28.98, "dist": 1.5,
+      "realm": "Eastern Roman Empire",
+      "route": null,
+      "title": "The secret leaves the east",
+      "text": "Around 552 two monks, probably of the Nestorian church, came before the emperor Justinian I and offered to bring him the means of making silk. They are said to have carried silkworm eggs out of the east hidden inside canes. Silk workshops followed in Constantinople, Beirut, Antioch, Tyre and Thebes, and the Chinese and Persian monopolies were broken.",
+      "art": "assets/art/byzantine/byzantine-silk-textile-figured-woven-silk-t.jpg",
+      "artCaption": "Figured woven silk textile fragment with birds"
+    },
+    {
+      "year": 629,
+      "lat": 36.0, "lon": 82.0, "dist": 2.5,
+      "realm": null,
+      "route": [[108.94, 34.27], [89.19, 42.95], [82.96, 41.72], [75.3, 42.83], [69.24, 41.3], [66.97, 39.65], [66.9, 36.76], [67.83, 34.82], [85.44, 25.14]],
+      "title": "Xuanzang's road to India",
+      "text": "In 629, by most accounts, the Buddhist monk Xuanzang left Tang China for India. He passed Turpan and Kucha, met the khagan of the Göktürks at Tokmak, and went on through Tashkent, Samarkand, Balkh and Bamiyan. He studied at Nalanda, and by 645 he was home with at least 657 Indian texts and a record of the lands he had crossed.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 751,
+      "lat": 42.9, "lon": 71.37, "dist": 1.6,
+      "realm": null,
+      "route": null,
+      "title": "The battle on the Talas",
+      "text": "In July 751 a Tang army under Gao Xianzhi met an Abbasid army under Ziyad ibn Salih at the Talas River, near the present border of Kazakhstan and Kyrgyzstan. The Tang were defeated, with Karluk fighters on the Abbasid side by the end. Chinese prisoners are often said to have carried papermaking west, but that story is disputed.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1275,
+      "lat": 42.0, "lon": 70.0, "dist": 3.1,
+      "realm": "Mongol Empire",
+      "route": [[12.34, 45.44], [19.0, 40.0], [25.0, 34.3], [35.07, 32.92], [56.28, 27.15], [75.99, 39.47], [94.66, 40.14], [116.18, 42.36]],
+      "title": "Marco Polo reaches Kublai Khan",
+      "text": "Marco Polo left Venice in 1271, aged seventeen, with his father Niccolò and his uncle Maffeo. They sailed to Acre, rode to Hormuz, and went on overland, and about three and a half years later they reached Kublai Khan's palace at Shangdu. Marco stayed in the khan's lands for 17 years. His account was written down by Rustichello da Pisa while both were prisoners of Genoa.",
+      "art": "assets/kublai.jpg",
+      "artCaption": "Kublai Khan, Yuan imperial portrait album"
+    },
+    {
+      "year": 1347,
+      "lat": 41.0, "lon": 26.0, "dist": 2.0,
+      "realm": "Khanate of the Golden Horde",
+      "route": [[35.38, 45.03], [32.0, 43.0], [28.98, 41.01], [26.2, 40.0], [24.8, 37.2], [22.5, 36.0], [15.65, 38.0]],
+      "title": "Plague on the trade routes",
+      "text": "Disease moved along the same roads as goods. In 1345 and 1346 a Golden Horde army under Jani Beg besieged the Genoese port of Caffa in Crimea while plague ran through its ranks. Genoese traders fleeing across the Black Sea carried it to Constantinople in the summer of 1347 and to Sicily that October. An estimated 30 to 60 percent of Europe's people died.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": 1453,
+      "lat": 41.01, "lon": 28.98, "dist": 1.8,
+      "realm": "Ottoman Empire",
+      "route": null,
+      "title": "The sea takes over",
+      "text": "In 1453 the Ottomans took Constantinople, and from then on they competed with other powers for the overland routes. Within fifty years Portuguese ships had reached India by sea. The caravans did not stop, but the oceans now carried a growing share of the trade. The name Silk Road came only in 1877, popularized by Ferdinand von Richthofen.",
+      "art": "assets/art/ottoman/fall-of-constantinople.jpg",
+      "artCaption": "The siege of Constantinople (1453), by Jean Le Tavernier"
+    }
+  ]
+}

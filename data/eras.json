@@ -1,0 +1,40 @@
+{
+ "note": "Culture skins for Chronos. A skin is chosen from the selected polity (match: regex against the GeoJSON NAME or SUBJECTO). If nothing matches, the era skin for the current year is used (eraFallback). Years are negative for BC.",
+ "eraFallback": [
+  {"from": -3000, "to": -800, "skin": "mesopotamia"},
+  {"from": -800, "to": -30, "skin": "greece"},
+  {"from": -30, "to": 476, "skin": "rome"},
+  {"from": 476, "to": 1000, "skin": "byzantine"},
+  {"from": 1000, "to": 1450, "skin": "medieval_europe"},
+  {"from": 1450, "to": 1750, "skin": "exploration"},
+  {"from": 1750, "to": 1914, "skin": "revolution"},
+  {"from": 1914, "to": 1946, "skin": "worldwars"},
+  {"from": 1946, "to": 2100, "skin": "modern"}
+ ],
+ "skins": [
+  {"id": "egypt", "name": "Ancient Egypt", "years": [-3100, -30], "match": "Egypt|Kush|Nubia|Ptolem", "music_hint": "reconstructed ancient Egyptian, harp, sistrum, or Nubian/Coptic traditional"},
+  {"id": "mesopotamia", "name": "Mesopotamia", "years": [-3000, -539], "match": "Sumer|Akkad|Babylon|Assyr|Elam|Ur |Uruk|Hittite|Mitanni|Hurri|Urartu|Phoenic|Canaan", "music_hint": "Hurrian Hymn No. 6 reconstruction, lyre"},
+  {"id": "indus", "name": "Indus and Vedic India", "years": [-3000, -320], "match": "Harappa|Indus|Vedic|Mahajanapada|Magadha|Kuru", "music_hint": "Vedic chanting, bansuri, early Indian drone"},
+  {"id": "china", "name": "Chinese dynasties", "years": [-1600, 1912], "match": "Shang|Zhou|Qin|Han$|^Han |Jin|Sui|Tang|Song|Yuan|Ming|Qing|Chin|Liao|Xia|Wei|Shu|Wu|Zhao|Yan|Chu|Qi ", "music_hint": "guqin, pipa, erhu traditional"},
+  {"id": "persia", "name": "Persian empires", "years": [-550, 651], "match": "Achaemen|Persia|Parthia|Sasan|Median|Media|Safavid|Iran", "music_hint": "Persian classical, setar, tar, santur"},
+  {"id": "greece", "name": "Greece and the Hellenistic world", "years": [-800, -30], "match": "Greek|Athens|Sparta|Macedon|Seleucid|Hellen|Bactria|Epirus|Thrac", "music_hint": "Seikilos epitaph, Delphic hymn, aulos, kithara reconstructions"},
+  {"id": "rome", "name": "Rome", "years": [-509, 476], "match": "Roman|Rome|Latin", "music_hint": "reconstructed Roman music, cornu, hydraulis, lyre"},
+  {"id": "india_classical", "name": "Classical India", "years": [-320, 1200], "match": "Maurya|Gupta|Chola|Pallava|Chalukya|Satavahana|Kushan|Pala|Rashtrakuta|Vijayanagar|Hindu|Rajput|Pandya", "music_hint": "Carnatic or Hindustani classical, veena, sitar"},
+  {"id": "byzantine", "name": "Byzantium", "years": [330, 1453], "match": "Byzant|Eastern Roman|Nicaea|Trebizond", "music_hint": "Byzantine chant"},
+  {"id": "islamic", "name": "Islamic caliphates and sultanates", "years": [632, 1500], "match": "Caliph|Umayyad|Abbasid|Fatimid|Ayyubid|Mamluk|Mameluk|Seljuk|Ghaznavid|Almohad|Almoravid|Emirate|Sultanate|Khwarazm|Samanid|Buyid|Idrisid|Aghlabid|Granada|Cordoba|Córdoba", "music_hint": "oud taqsim, ney, Arabic maqam"},
+  {"id": "norse", "name": "Norse and Vikings", "years": [793, 1100], "match": "Norse|Viking|Danes|Norw|Swed|Rus'|Kievan|Iceland|Danish", "music_hint": "Nordic folk, lyre, hurdy-gurdy, kulning"},
+  {"id": "medieval_europe", "name": "Medieval Europe", "years": [476, 1450], "match": "Frank|Carolingian|Holy Roman|England|France|Castile|Aragon|Leon|Navarre|Poland|Hungary|Bohemia|Scotland|Papal|Venice|Genoa|Burgund|Teuton|Lithuan|Serb|Bulgar|Croat|Kingdom of", "music_hint": "Gregorian chant, Hildegard of Bingen, medieval estampie"},
+  {"id": "mongol", "name": "Steppe empires", "years": [-200, 1500], "match": "Mongol|Khanate|Golden Horde|Ilkhan|Chagatai|Great Khan|Timurid|Xiongnu|Hun|Gokturk|Göktürk|Turk|Uyghur|Khazar|Avar|Kipchak|Cuman|Scyth|Sarmat", "music_hint": "morin khuur, khoomei throat singing, Mongolian long song"},
+  {"id": "africa", "name": "African kingdoms", "years": [-300, 1900], "match": "Mali|Songhai|Ghana|Aksum|Axum|Ethiopia|Kanem|Bornu|Benin|Zimbabwe|Kongo|Zulu|Ashanti|Oyo|Hausa|Swahili|Kilwa|Mutapa|Dahomey|Sokoto|Wolof|Abyssinia", "music_hint": "kora, balafon, djembe, Ethiopian traditional"},
+  {"id": "mesoamerica", "name": "Mesoamerica", "years": [-1200, 1521], "match": "Maya|Aztec|Mexica|Olmec|Toltec|Zapotec|Mixtec|Teotihuac|Tarascan|Purépecha", "music_hint": "pre-Columbian reconstruction, clay flutes, teponaztli, ocarina"},
+  {"id": "andes", "name": "Andean civilizations", "years": [-900, 1572], "match": "Inca|Tawantinsuyu|Chimu|Chimú|Moche|Wari|Tiwanaku|Nazca|Chavín|Chavin", "music_hint": "Andean quena, siku panpipes, charango"},
+  {"id": "japan", "name": "Japan", "years": [538, 1868], "match": "Japan|Yamato|Kamakura|Ashikaga|Tokugawa|Shogun|Ryukyu", "music_hint": "gagaku, shakuhachi, koto"},
+  {"id": "ottoman", "name": "Ottoman Empire", "years": [1299, 1922], "match": "Ottoman", "music_hint": "Ottoman classical, ney, mehter march"},
+  {"id": "mughal", "name": "Mughal Empire", "years": [1526, 1857], "match": "Mughal|Delhi|Bengal Sultanate|Bahmani|Deccan|Maratha|Sikh", "music_hint": "Hindustani classical, sitar, sarangi, shehnai"},
+  {"id": "exploration", "name": "Age of Exploration", "years": [1450, 1750], "match": "Spain|Spanish|Portug|Dutch|Netherlands|Habsburg|New Spain|Brazil|Swedish Empire", "music_hint": "Renaissance and Baroque: Josquin, Dowland, Monteverdi, Bach"},
+  {"id": "revolution", "name": "Revolutions and empires", "years": [1750, 1914], "match": "British|United States|French Empire|Napole|Prussia|German Empire|Russian Empire|Austria|Italy|Belgian|Empire of Japan|Qing", "music_hint": "Classical and Romantic: Mozart, Beethoven, Chopin"},
+  {"id": "worldwars", "name": "The World Wars", "years": [1914, 1946], "match": "Soviet|USSR|Third Reich|Nazi|Weimar|Manchukuo|Allied", "music_hint": "public-domain recordings from the 1910s to 1920s, military bands, early jazz"},
+  {"id": "modern", "name": "The modern world", "years": [1946, 2100], "match": "Republic|People's|Federation|United Nations", "music_hint": "CC0 or CC-BY ambient or orchestral, calm and neutral"},
+  {"id": "prehistory", "name": "Before history", "years": [-10000, -3000], "match": "hunter|gatherer|farmers|herders|peoples|culture$|tribes", "music_hint": "ambient, bone flute, frame drum"}
+ ]
+}

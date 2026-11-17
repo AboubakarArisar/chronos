@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chronos: the history globe</title>
+<meta name="description" content="Explore 5,000 years of real historical borders on a 3D globe. Click any region, hear the music of the age, follow story tours and record map clips.">
+<meta name="theme-color" content="#020306">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/src/app.css">
+</head>
+<body data-skin="default" data-stud="diamond" class="booting">
+<a class="skip" href="#timeline">Skip to the timeline</a>
+<canvas id="c" aria-label="3D globe showing historical borders. Use the arrow keys to rotate, plus and minus to zoom."></canvas>
+<canvas id="overlay" aria-hidden="true"></canvas>
+<div id="vignette"></div><div id="grain"></div>
+<div id="tooltip" role="status" aria-live="off"></div>
+
+<div id="ui">
+<div class="col" id="left">
+  <section id="banner" class="frame swap" aria-live="polite" aria-label="Selected region">
+    <div class="strip"></div>
+    <div class="row"><div class="emblem" id="emblem"></div>
+      <div class="grow"><h1 class="engraved" id="bname"></h1><div class="sub" id="bsub"></div><div class="stats" id="bstats"></div></div>
+      <button class="x" id="bclose" aria-label="Close region panel">&times;</button></div>
+    <div id="bwiki"></div>
+    <div class="btns" id="bbtns"><button class="btn ghost" id="bthrough">Through time</button><a class="btn ghost" id="bread" target="_blank" rel="noopener">Read on Wikipedia</a></div>
+    <div id="spark" hidden></div>
+    <div class="deco" id="bdeco"></div>
+    <i class="stud tl"></i><i class="stud tr"></i><i class="stud bl"></i><i class="stud br"></i>
+  </section>
+  <section id="realms" class="frame swap" aria-label="Powers of the age">
+    <div class="strip"></div><h2 class="h">Powers of the age</h2><div id="rlist" role="list"></div>
+    <i class="stud bl"></i><i class="stud br"></i>
+  </section>
+</div>
+
+<div class="col" id="center">
+  <section id="year" class="frame swap" aria-label="Current year">
+    <div class="strip"></div>
+    <input id="yval" class="y engraved" aria-label="Year. Type a year such as 1279 or 500 BC and press Enter" autocomplete="off" spellcheck="false">
+    <div class="e" id="yera"></div><div class="m" id="ymap" aria-live="polite"></div>
+    <i class="stud bl"></i><i class="stud br"></i>
+  </section>
+  <nav id="tools" class="frame" aria-label="Tools">
+    <button data-act="search" title="Search (/)"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg><span>Search</span></button>
+    <button data-act="tours" title="Story tours"><svg viewBox="0 0 24 24"><path d="M4 5c3-1.5 5-1.5 8 0v14c-3-1.5-5-1.5-8 0zM12 5c3-1.5 5-1.5 8 0v14c-3-1.5-5-1.5-8 0z"/></svg><span>Stories</span></button>
+    <button data-act="record" title="Record a clip (R)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.2" class="fillc"/></svg><span>Record</span></button>
+    <button data-act="link" title="Copy a link to this view"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1"/></svg><span>Link</span></button>
+    <button data-act="sound" id="soundbtn" title="Music on or off (M)" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6L8 10z"/><path class="waves" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><span>Sound</span></button>
+    <button data-act="settings" title="Settings"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 12h2M10 12h10M4 17h8M16 17h4"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="14" cy="17" r="2"/></svg><span>Settings</span></button>
+    <button data-act="help" title="Keyboard shortcuts (?)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7M12 17v.01"/></svg><span>Help</span></button>
+  </nav>
+  <div id="nowplaying" aria-live="polite"></div>
+</div>
+
+<div class="col" id="right">
+  <section id="tour" class="frame swap" hidden aria-live="polite" aria-label="Story tour">
+    <div class="strip"></div>
+    <div class="in"><div class="tag" id="ttag"></div><h2 class="engraved" id="ttitle"></h2><div class="when" id="twhen"></div>
+      <div class="art" id="tart" hidden></div><div class="cap" id="tcap"></div><p id="ttext"></p>
+      <div class="tprog"><i id="tbar"></i></div>
+      <div class="btns"><button class="btn ghost" id="tback">Back</button><button class="btn ghost" id="tpause">Pause</button><button class="btn" id="tnext">Next</button></div>
+      <button class="linkbtn" id="texit">End the story</button></div>
+    <i class="stud tl"></i><i class="stud tr"></i><i class="stud bl"></i><i class="stud br"></i>
+  </section>
+  <section id="event" class="frame swap" hidden aria-live="polite" aria-label="Selected event">
+    <div class="strip"></div>
+    <div class="in"><button class="x" id="eclose" aria-label="Close event card">&times;</button>
+      <div class="tag" id="etag"></div><h2 class="engraved" id="etitle"></h2><div class="when" id="ewhen"></div>
+      <div class="art" id="eart" hidden></div><div class="cap" id="ecap"></div><div id="etext"></div>
+      <div class="btns"><button class="btn" id="efly">Fly here</button><a class="btn ghost" id="eread" target="_blank" rel="noopener">Read on Wikipedia</a></div></div>
+    <i class="stud tl"></i><i class="stud tr"></i><i class="stud bl"></i><i class="stud br"></i>
+  </section>
+</div>
+
+<section id="timeline" class="frame" aria-label="Timeline">
+  <div class="strip"></div>
+  <div class="row">
+    <button class="play" id="play" aria-label="Play"></button>
+    <button class="stepb" id="prevmap" aria-label="Previous map year" title="Previous map ([)">&#9664;</button>
+    <div class="track" id="track" role="slider" tabindex="0" aria-label="Year" aria-valuemin="-3000" aria-valuemax="2025">
+      <div class="rail"></div><div class="fill" id="fill"></div><div id="ticks"></div><div class="knob" id="knob"></div>
+    </div>
+    <button class="stepb" id="nextmap" aria-label="Next map year" title="Next map (])">&#9654;</button>
+    <button class="speed" id="speed" aria-label="Playback speed" title="Speed, years per second"></button>
+  </div>
+  <i class="stud tl"></i><i class="stud tr"></i><i class="stud bl"></i><i class="stud br"></i>
+</section>
+</div>
+
+<div id="modal" hidden><div class="frame" id="modalbox" role="dialog" aria-modal="true"><div class="strip"></div><button class="x" id="mclose" aria-label="Close">&times;</button><div id="mbody"></div>
+  <i class="stud tl"></i><i class="stud tr"></i><i class="stud bl"></i><i class="stud br"></i></div></div>
+<div id="searchbox" class="frame" hidden><div class="strip"></div><input id="q" type="search" placeholder="Search a year, realm, event, city or story" aria-label="Search" autocomplete="off"><div id="results" role="listbox"></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="coach" hidden></div>
+<div id="recbar" hidden><span class="dot"></span><span id="rectime">0:00</span><button id="recstop">Stop</button></div>
+<div id="loading"><div class="frame"><div class="strip"></div><div class="lin"><div class="logo engraved">CHRONOS</div><div class="ltag">5,000 years of history on one globe</div>
+  <div class="skel"><i></i><i></i><i></i></div><div class="lbar"><i id="lfill"></i></div><div id="lmsg">Loading the Earth</div></div>
+  <i class="stud tl"></i><i class="stud tr"></i><i class="stud bl"></i><i class="stud br"></i></div></div>
+<script type="module" src="/src/app.js"></script>
+</body>
+</html>

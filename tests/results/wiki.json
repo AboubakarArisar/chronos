@@ -1,0 +1,294 @@
+{
+ "date": "2026-11-17",
+ "must": [
+  {
+   "name": "Han",
+   "year": 100,
+   "title": "Han dynasty",
+   "match": "search",
+   "ok": true
+  },
+  {
+   "name": "Roman Empire",
+   "year": 100,
+   "title": "Roman Empire",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Great Khanate",
+   "year": 1279,
+   "title": "Yuan dynasty",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Khanate of the Golden Horde",
+   "year": 1279,
+   "title": "Golden Horde",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Egypt",
+   "year": -3000,
+   "title": "Ancient Egypt",
+   "match": "search",
+   "ok": true
+  },
+  {
+   "name": "Mali",
+   "year": 1300,
+   "title": "Mali Empire",
+   "match": "search",
+   "ok": true
+  },
+  {
+   "name": "Tang Empire",
+   "year": 800,
+   "title": "Tang dynasty",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Sultanate of Delhi",
+   "year": 1279,
+   "title": "Delhi Sultanate",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Inca Empire",
+   "year": 1500,
+   "title": "Inca Empire",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Kievan Rus'",
+   "year": 1000,
+   "title": "Kievan Rus'",
+   "match": "exact",
+   "ok": true
+  },
+  {
+   "name": "Bantu peoples",
+   "year": 800,
+   "title": "Bantu peoples",
+   "match": "exact",
+   "ok": true
+  }
+ ],
+ "random": [
+  {
+   "name": "'Amuwu",
+   "years": "1492..1492",
+   "title": "Chumash people",
+   "match": "weak",
+   "desc": "Native American tribe of California"
+  },
+  {
+   "name": "Mill Creek Culture",
+   "years": "-100..500",
+   "title": "Leon-Jefferson culture",
+   "match": "search",
+   "desc": "Protohistoric Native American archaeological culture"
+  },
+  {
+   "name": "Samish",
+   "years": "1492..1492",
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
+  },
+  {
+   "name": "Gitanyow Lax’yip",
+   "years": "1492..1492",
+   "title": null,
+   "match": "none",
+   "desc": ""
+  },
+  {
+   "name": "Kapanawa",
+   "years": "1492..1492",
+   "title": "Uncontacted peoples",
+   "match": "weak",
+   "desc": "Peoples living without sustained contact to the world community"
+  },
+  {
+   "name": "Deg Xit'an Ngan' (Deg Xit'an)",
+   "years": "1492..1492",
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
+  },
+  {
+   "name": "Yugoslavia",
+   "years": "1920..1960",
+   "title": "Yugoslavia",
+   "match": "exact",
+   "desc": "1918–1992 country in Southeast Europe"
+  },
+  {
+   "name": "Me-Wuk (Northern Sierra Miwok)",
+   "years": "1492..1492",
+   "title": "Miwok",
+   "match": "weak",
+   "desc": "Indigenous peoples of California"
+  },
+  {
+   "name": "Mithaka",
+   "years": "1600..1800",
+   "title": "Mitaka people",
+   "match": "weak",
+   "desc": "Aboriginal Australian people"
+  },
+  {
+   "name": "Genoa",
+   "years": "1530..1715",
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
+  },
+  {
+   "name": "Brunka",
+   "years": "1492..1492",
+   "title": null,
+   "match": "none",
+   "desc": ""
+  },
+  {
+   "name": "Tancalba",
+   "years": "1530..1600",
+   "title": null,
+   "match": "none",
+   "desc": ""
+  },
+  {
+   "name": "Walbis Bay",
+   "years": "1938..1938",
+   "title": null,
+   "match": "none",
+   "desc": ""
+  },
+  {
+   "name": "Laurel complex",
+   "years": "-100..500",
+   "title": "Laurel complex",
+   "match": "exact",
+   "desc": ""
+  },
+  {
+   "name": "French Cameroons",
+   "years": "1920..1938",
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
+  },
+  {
+   "name": "French West Africa",
+   "years": "1914..1938",
+   "title": "French West Africa",
+   "match": "exact",
+   "desc": "Colonial federation from 1895 to 1958"
+  },
+  {
+   "name": "Czech Republic",
+   "years": "1994..2010",
+   "title": "Czech Republic",
+   "match": "exact",
+   "desc": "Country in Central Europe"
+  },
+  {
+   "name": "Hunters-gatherers",
+   "years": "-3000..-2000",
+   "title": "Pitted Ware culture",
+   "match": "search",
+   "desc": "Archaeological culture"
+  },
+  {
+   "name": "Britany",
+   "years": "800..1530",
+   "title": "Britany Anderson",
+   "match": "weak",
+   "desc": "Jamaican hurdler (born 2001)"
+  },
+  {
+   "name": "S’atsoyaha (Yuchi)",
+   "years": "1492..1492",
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
+  },
+  {
+   "name": "Modoc",
+   "years": "1492..1715",
+   "title": "Modoc people",
+   "match": "search",
+   "desc": "Native American people originally from northern California and Oregon"
+  },
+  {
+   "name": "Tonkawa",
+   "years": "1492..1715",
+   "title": "Tonkawa",
+   "match": "exact",
+   "desc": "Native American tribe in Oklahoma"
+  },
+  {
+   "name": "San Marino",
+   "years": "1815..1815",
+   "title": "San Marino",
+   "match": "exact",
+   "desc": "Microstate in Southern Europe"
+  },
+  {
+   "name": "Baré",
+   "years": "1492..1492",
+   "title": "Baré people",
+   "match": "search",
+   "desc": "Ethnic group"
+  },
+  {
+   "name": "Moneton",
+   "years": "1492..1492",
+   "title": "Moneton",
+   "match": "exact",
+   "desc": "Historical Native American tribe from West Virginia"
+  },
+  {
+   "name": "Caxcane",
+   "years": "1530..1600",
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
+  },
+  {
+   "name": "Turks and Caicos Islands",
+   "years": "1783..2010",
+   "title": "Turks and Caicos Islands",
+   "match": "exact",
+   "desc": "British Overseas Territory in the North Atlantic Ocean"
+  },
+  {
+   "name": "Lule",
+   "years": "1492..1492",
+   "title": "Lule Sámi people",
+   "match": "weak",
+   "desc": "Sámi ethno-linguistic group"
+  },
+  {
+   "name": "Magadha",
+   "years": "-500..200",
+   "title": "Magadha",
+   "match": "exact",
+   "desc": "Region and Mahajanapada in ancient eastern India"
+  },
+  {
+   "name": "Laotian states",
+   "years": "1650..1715",
+   "title": "Kingdom of Vientiane",
+   "match": "weak",
+   "desc": "Former country in Southeast Asia"
+  }
+ ]
+}

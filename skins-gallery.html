@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chronos skins</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link id="gf" rel="stylesheet">
+<style>
+body{margin:0;background:#07080b;color:#ddd;font-family:Manrope,system-ui,sans-serif;padding:24px}
+h1{font-weight:600;font-size:24px;margin:0 0 4px}
+p.lead{margin:0 0 24px;color:#999;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.card{position:relative;border:3px solid transparent;border-radius:3px;padding:0 0 14px;
+  box-shadow:0 0 0 1px #000,0 12px 30px #000a,inset 0 0 24px #0006}
+.strip{height:12px;margin-bottom:10px;border-bottom:1px solid #0009}
+.row{display:flex;gap:12px;padding:0 14px;align-items:center}
+.emb{width:46px;height:62px;flex:none;clip-path:polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 3px #0006}
+.emb img{width:34px}
+h2{margin:0;font-size:20px;font-weight:700;line-height:1.15}
+.id{font-size:12px;opacity:.7}
+.motto{margin:10px 14px 0;font-size:20px;text-align:center;min-height:28px}
+.mottoen{margin:0 14px;font-size:13px;text-align:center;font-style:italic;opacity:.8}
+.body{margin:10px 14px;font-size:15px;line-height:1.4}
+.btn{margin:0 14px;text-align:center;font-weight:700;font-size:13px;letter-spacing:.1em;padding:9px;border:1px solid #000;box-shadow:inset 0 1px 0 #fff6}
+.stud{position:absolute;width:12px;height:12px;border:1px solid #000;transform:rotate(45deg)}
+.mat{margin:8px 14px 0;font-size:12px;opacity:.75}
+</style>
+</head>
+<body>
+<h1>Chronos culture skins</h1>
+<p class="lead">24 skins from data/skins.json. Each panel uses its skin's metal, panel colour, pattern, border strip, emblem, fonts and native-script motto.</p>
+<div class="grid" id="grid"></div>
+<script>
+fetch('data/skins.json').then(r=>r.json()).then(({skins})=>{
+  const fams=new Set();Object.values(skins).forEach(s=>Object.values(s.fonts).forEach(f=>fams.add(f)));
+  document.getElementById('gf').href='https://fonts.googleapis.com/css2?'+[...fams].map(f=>'family='+f.replace(/ /g,'+')).join('&')+'&display=swap';
+  const g=document.getElementById('grid');
+  for(const [id,s] of Object.entries(skins)){
+    const m=s.metal,metal=`linear-gradient(135deg,${m[0]} 0%,${m[1]} 25%,${m[2]} 50%,${m[3]} 70%,${m[0]} 100%)`;
+    const el=document.createElement('div');el.className='card';
+    el.style.cssText=`color:${s.ink};background:url(${s.assets.pattern}) padding-box,linear-gradient(${s.panel},${s.panel}) padding-box,${metal} border-box`;
+    el.innerHTML=`<div class="strip" style="background:url(${s.assets.strip})"></div>
+      <div class="row"><div class="emb" style="background:${s.accent}"><img src="${s.assets.emblem}" alt=""></div>
+      <div><h2 style="font-family:'${s.fonts.head}';color:${s.hi}">${s.name}</h2><div class="id" style="color:${s.ink2}">${id} · ${s.timbre}</div></div></div>
+      <div class="motto" style="font-family:'${s.fonts.deco}';color:${s.ink2}">${s.motto}</div>
+      <div class="mottoen" style="font-family:'${s.fonts.body}';color:${s.ink2}">${s.motto_en}</div>
+      <div class="body" style="font-family:'${s.fonts.body}'">The empire reaches its greatest extent as new roads and trade routes join distant cities.</div>
+      <div class="btn" style="font-family:'${s.fonts.head}';background:${metal};color:#1a1206">Follow the story</div>
+      <div class="mat" style="color:${s.ink2}">${s.materials}</div>
+      <i class="stud" style="top:-8px;left:-8px;background:${metal}"></i><i class="stud" style="top:-8px;right:-8px;background:${metal}"></i>`;
+    g.appendChild(el);
+  }
+});
+</script>
+</body>
+</html>

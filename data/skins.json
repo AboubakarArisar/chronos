@@ -1,0 +1,900 @@
+{
+ "note": "Culture skin specs. Fonts are Google Fonts family names. 'metal' = 4 gradient stops for frames and studs. 'scale' = semitones for the procedural music fallback, 'timbre' = suggested synth voice. Assets in assets/skins/<id>/.",
+ "skins": {
+  "egypt": {
+   "name": "Ancient Egypt",
+   "panel": "#1b2433",
+   "panel_is_light": false,
+   "ink": "#f1e6c8",
+   "ink2": "#c9b98e",
+   "hi": "#f2c75c",
+   "accent": "#2f7fb8",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Marcellus SC",
+    "body": "Cormorant Garamond",
+    "deco": "Noto Sans Egyptian Hieroglyphs"
+   },
+   "motto": "𓋹𓍑𓋴",
+   "motto_en": "ankh, wedja, seneb: life, prosperity, health",
+   "materials": "papyrus and lapis, gold leaf, blue-gold-red collar bands",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8
+   ],
+   "timbre": "harp",
+   "assets": {
+    "pattern": "assets/skins/egypt/pattern.svg",
+    "strip": "assets/skins/egypt/strip.svg",
+    "emblem": "assets/skins/egypt/emblem.svg"
+   }
+  },
+  "mesopotamia": {
+   "name": "Mesopotamia",
+   "panel": "#141c33",
+   "panel_is_light": false,
+   "ink": "#efe4c6",
+   "ink2": "#bfb08a",
+   "hi": "#f0c860",
+   "accent": "#2f62c4",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Cinzel",
+    "body": "EB Garamond",
+    "deco": "Noto Sans Cuneiform"
+   },
+   "motto": "𒀭𒈗",
+   "motto_en": "dingir lugal: divine king",
+   "materials": "glazed lapis brick like the Ishtar Gate, gold rosettes, clay tablets",
+   "scale": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "lyre",
+   "assets": {
+    "pattern": "assets/skins/mesopotamia/pattern.svg",
+    "strip": "assets/skins/mesopotamia/strip.svg",
+    "emblem": "assets/skins/mesopotamia/emblem.svg"
+   }
+  },
+  "indus": {
+   "name": "Indus and Vedic India",
+   "panel": "#2a1a10",
+   "panel_is_light": false,
+   "ink": "#f2e3c6",
+   "ink2": "#c8ad86",
+   "hi": "#e9b35a",
+   "accent": "#b8562a",
+   "metal": [
+    "#6e4018",
+    "#e8c38a",
+    "#8c5a26",
+    "#f6dcae"
+   ],
+   "fonts": {
+    "head": "Cormorant SC",
+    "body": "Spectral",
+    "deco": "Tiro Devanagari Sanskrit"
+   },
+   "motto": "ऋग्वेद",
+   "motto_en": "Rigveda",
+   "materials": "terracotta, carved steatite seals, burnt-brick red",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    11
+   ],
+   "timbre": "drone",
+   "assets": {
+    "pattern": "assets/skins/indus/pattern.svg",
+    "strip": "assets/skins/indus/strip.svg",
+    "emblem": "assets/skins/indus/emblem.svg"
+   }
+  },
+  "china": {
+   "name": "Chinese dynasties",
+   "panel": "#1a0c0c",
+   "panel_is_light": false,
+   "ink": "#f6e9cf",
+   "ink2": "#d1b48c",
+   "hi": "#f2c75c",
+   "accent": "#c8281e",
+   "metal": [
+    "#6e3a10",
+    "#f6d084",
+    "#9c5a1a",
+    "#fbe2a0"
+   ],
+   "fonts": {
+    "head": "Cormorant SC",
+    "body": "Noto Serif SC",
+    "deco": "Ma Shan Zheng"
+   },
+   "motto": "天命",
+   "motto_en": "Tianming, the Mandate of Heaven",
+   "materials": "red lacquer and black, gold fret borders, ink-brush titles, red seal stamps",
+   "scale": [
+    0,
+    2,
+    4,
+    7,
+    9
+   ],
+   "timbre": "pluck",
+   "assets": {
+    "pattern": "assets/skins/china/pattern.svg",
+    "strip": "assets/skins/china/strip.svg",
+    "emblem": "assets/skins/china/emblem.svg"
+   }
+  },
+  "persia": {
+   "name": "Persian empires",
+   "panel": "#132630",
+   "panel_is_light": false,
+   "ink": "#f1e6cc",
+   "ink2": "#b9c2b0",
+   "hi": "#e9c46a",
+   "accent": "#2a8a8a",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Cinzel",
+    "body": "Cormorant Garamond",
+    "deco": "Noto Sans Old Persian"
+   },
+   "motto": "𐎧𐏁𐎠𐎹𐎰𐎡𐎹",
+   "motto_en": "xšāyaθiya: king",
+   "materials": "Persepolis limestone reliefs, turquoise, gold rosettes, stepped merlons",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "pluck",
+   "assets": {
+    "pattern": "assets/skins/persia/pattern.svg",
+    "strip": "assets/skins/persia/strip.svg",
+    "emblem": "assets/skins/persia/emblem.svg"
+   }
+  },
+  "greece": {
+   "name": "Greece and the Hellenistic world",
+   "panel": "#1c1612",
+   "panel_is_light": false,
+   "ink": "#f3e8d4",
+   "ink2": "#c9b394",
+   "hi": "#e0884a",
+   "accent": "#c8693a",
+   "metal": [
+    "#5a3a14",
+    "#e8b07a",
+    "#7b5220",
+    "#f6d0a0"
+   ],
+   "fonts": {
+    "head": "Cinzel",
+    "body": "GFS Didot",
+    "deco": "GFS Didot"
+   },
+   "motto": "ΕΛΛΑΣ",
+   "motto_en": "Hellas",
+   "materials": "black-figure pottery: terracotta on black, meander borders, white marble",
+   "scale": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    9,
+    10
+   ],
+   "timbre": "lyre",
+   "assets": {
+    "pattern": "assets/skins/greece/pattern.svg",
+    "strip": "assets/skins/greece/strip.svg",
+    "emblem": "assets/skins/greece/emblem.svg"
+   }
+  },
+  "rome": {
+   "name": "Rome",
+   "panel": "#e9e2d4",
+   "panel_is_light": true,
+   "ink": "#2b241d",
+   "ink2": "#6b5a44",
+   "hi": "#7c1717",
+   "accent": "#8e1b1b",
+   "metal": [
+    "#5a3a14",
+    "#d9a75a",
+    "#7b5220",
+    "#f0c98a"
+   ],
+   "fonts": {
+    "head": "Cinzel",
+    "body": "Cormorant Garamond",
+    "deco": "Cinzel"
+   },
+   "motto": "SENATVS POPVLVSQVE ROMANVS",
+   "motto_en": "the Senate and People of Rome",
+   "materials": "veined white marble, imperial red, bronze, carved capitals, egg-and-dart",
+   "scale": [
+    0,
+    2,
+    4,
+    5,
+    7,
+    9,
+    11
+   ],
+   "timbre": "brass",
+   "assets": {
+    "pattern": "assets/skins/rome/pattern.svg",
+    "strip": "assets/skins/rome/strip.svg",
+    "emblem": "assets/skins/rome/emblem.svg"
+   }
+  },
+  "india_classical": {
+   "name": "Classical India",
+   "panel": "#2a0f1e",
+   "panel_is_light": false,
+   "ink": "#f6e6d0",
+   "ink2": "#d0b090",
+   "hi": "#f2c060",
+   "accent": "#d4507a",
+   "metal": [
+    "#6e4018",
+    "#f6d08a",
+    "#9c6426",
+    "#fbe2ae"
+   ],
+   "fonts": {
+    "head": "Cormorant SC",
+    "body": "Spectral",
+    "deco": "Tiro Devanagari Hindi"
+   },
+   "motto": "सत्यमेव जयते",
+   "motto_en": "truth alone triumphs (Mundaka Upanishad)",
+   "materials": "sandstone temple carving, saffron and maroon, gold lotus, Ajanta fresco colours",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    11
+   ],
+   "timbre": "drone",
+   "assets": {
+    "pattern": "assets/skins/india_classical/pattern.svg",
+    "strip": "assets/skins/india_classical/strip.svg",
+    "emblem": "assets/skins/india_classical/emblem.svg"
+   }
+  },
+  "byzantine": {
+   "name": "Byzantium",
+   "panel": "#1f0f2a",
+   "panel_is_light": false,
+   "ink": "#f3e6c6",
+   "ink2": "#c9b28a",
+   "hi": "#f2cf6a",
+   "accent": "#7a3a9a",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Cinzel Decorative",
+    "body": "EB Garamond",
+    "deco": "GFS Didot"
+   },
+   "motto": "ΒΑΣΙΛΕΙΑ ΤΩΝ ΡΩΜΑΙΩΝ",
+   "motto_en": "Empire of the Romans",
+   "materials": "gold mosaic tesserae, imperial purple, icons, enamel",
+   "scale": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "choir",
+   "assets": {
+    "pattern": "assets/skins/byzantine/pattern.svg",
+    "strip": "assets/skins/byzantine/strip.svg",
+    "emblem": "assets/skins/byzantine/emblem.svg"
+   }
+  },
+  "islamic": {
+   "name": "Islamic caliphates and sultanates",
+   "panel": "#0c2a35",
+   "panel_is_light": false,
+   "ink": "#f3ead2",
+   "ink2": "#b9cfc6",
+   "hi": "#f2d27e",
+   "accent": "#3fb8af",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Marcellus SC",
+    "body": "Amiri",
+    "deco": "Amiri"
+   },
+   "motto": "بيت الحكمة",
+   "motto_en": "Bayt al-Hikma, the House of Wisdom",
+   "materials": "geometric star tilework, lapis and turquoise, gold calligraphy, pointed arches",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "oud",
+   "assets": {
+    "pattern": "assets/skins/islamic/pattern.svg",
+    "strip": "assets/skins/islamic/strip.svg",
+    "emblem": "assets/skins/islamic/emblem.svg"
+   }
+  },
+  "norse": {
+   "name": "Norse and Vikings",
+   "panel": "#1d1812",
+   "panel_is_light": false,
+   "ink": "#ece2cc",
+   "ink2": "#b8a888",
+   "hi": "#d9b26a",
+   "accent": "#7a8a6a",
+   "metal": [
+    "#4a4a4a",
+    "#d8d8d8",
+    "#6a6a6a",
+    "#f2f2f2"
+   ],
+   "fonts": {
+    "head": "Metamorphous",
+    "body": "Alegreya",
+    "deco": "Noto Sans Runic"
+   },
+   "motto": "ᚠᚢᚦᚨᚱᚲ",
+   "motto_en": "the futhark",
+   "materials": "carved oak, iron fittings, knotwork, runestones",
+   "scale": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "drone",
+   "assets": {
+    "pattern": "assets/skins/norse/pattern.svg",
+    "strip": "assets/skins/norse/strip.svg",
+    "emblem": "assets/skins/norse/emblem.svg"
+   }
+  },
+  "medieval_europe": {
+   "name": "Medieval Europe",
+   "panel": "#181a2a",
+   "panel_is_light": false,
+   "ink": "#f2e8d0",
+   "ink2": "#c4b48e",
+   "hi": "#e9c35a",
+   "accent": "#3a5ab8",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "UnifrakturCook",
+    "body": "IM Fell English",
+    "deco": "IM Fell English SC"
+   },
+   "motto": "Anno Domini",
+   "motto_en": "in the year of the Lord",
+   "materials": "illuminated manuscript: gold leaf, ultramarine, vermilion, vellum, heraldry",
+   "scale": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    9,
+    10
+   ],
+   "timbre": "choir",
+   "assets": {
+    "pattern": "assets/skins/medieval_europe/pattern.svg",
+    "strip": "assets/skins/medieval_europe/strip.svg",
+    "emblem": "assets/skins/medieval_europe/emblem.svg"
+   }
+  },
+  "mongol": {
+   "name": "Steppe empires",
+   "panel": "#1b120b",
+   "panel_is_light": false,
+   "ink": "#f1e4c6",
+   "ink2": "#cdb48a",
+   "hi": "#f6dc94",
+   "accent": "#4d8fd6",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Alegreya SC",
+    "body": "Alegreya",
+    "deco": "Noto Sans Mongolian"
+   },
+   "motto": "ᠶᠡᠬᠡ ᠮᠣᠩᠭᠣᠯ ᠤᠯᠤᠰ",
+   "motto_en": "Yeke Mongγol Ulus, the Great Mongol State",
+   "materials": "felt and leather, eternal-sky blue, gold, key-pattern borders",
+   "scale": [
+    0,
+    2,
+    5,
+    7,
+    9
+   ],
+   "timbre": "bowed",
+   "assets": {
+    "pattern": "assets/skins/mongol/pattern.svg",
+    "strip": "assets/skins/mongol/strip.svg",
+    "emblem": "assets/skins/mongol/emblem.svg"
+   }
+  },
+  "africa": {
+   "name": "African kingdoms",
+   "panel": "#1e140a",
+   "panel_is_light": false,
+   "ink": "#f4e6c8",
+   "ink2": "#cdb08a",
+   "hi": "#f2c040",
+   "accent": "#1f8a4a",
+   "metal": [
+    "#6e4a10",
+    "#f6d070",
+    "#9c6a1a",
+    "#fbe6a0"
+   ],
+   "fonts": {
+    "head": "Josefin Sans",
+    "body": "Alegreya",
+    "deco": "Noto Sans Ethiopic"
+   },
+   "motto": "ኢትዮጵያ",
+   "motto_en": "Ityop'iya",
+   "materials": "gold of Mali, kente stripes, mud-cloth triangles, bronze",
+   "scale": [
+    0,
+    2,
+    4,
+    7,
+    9
+   ],
+   "timbre": "kora",
+   "assets": {
+    "pattern": "assets/skins/africa/pattern.svg",
+    "strip": "assets/skins/africa/strip.svg",
+    "emblem": "assets/skins/africa/emblem.svg"
+   }
+  },
+  "mesoamerica": {
+   "name": "Mesoamerica",
+   "panel": "#0f2622",
+   "panel_is_light": false,
+   "ink": "#f0e6cc",
+   "ink2": "#b8c4a8",
+   "hi": "#e9c35a",
+   "accent": "#2fa08a",
+   "metal": [
+    "#3a5a3a",
+    "#d8e0a8",
+    "#5a7a4a",
+    "#f0f0c0"
+   ],
+   "fonts": {
+    "head": "Metamorphous",
+    "body": "Spectral",
+    "deco": "Metamorphous"
+   },
+   "motto": "Huēyi Tlahtōlōyān",
+   "motto_en": "the great speaker's realm",
+   "materials": "carved limestone, jade green, turquoise mosaic, stepped frets",
+   "scale": [
+    0,
+    2,
+    4,
+    7,
+    9
+   ],
+   "timbre": "flute",
+   "assets": {
+    "pattern": "assets/skins/mesoamerica/pattern.svg",
+    "strip": "assets/skins/mesoamerica/strip.svg",
+    "emblem": "assets/skins/mesoamerica/emblem.svg"
+   }
+  },
+  "andes": {
+   "name": "Andean civilizations",
+   "panel": "#2a1210",
+   "panel_is_light": false,
+   "ink": "#f4e4c8",
+   "ink2": "#d2a888",
+   "hi": "#f2b84a",
+   "accent": "#c84a2e",
+   "metal": [
+    "#6e4018",
+    "#f6c870",
+    "#9c5a1a",
+    "#fbe0a0"
+   ],
+   "fonts": {
+    "head": "Josefin Slab",
+    "body": "Spectral",
+    "deco": "Josefin Slab"
+   },
+   "motto": "Tawantinsuyu",
+   "motto_en": "the four parts together",
+   "materials": "tocapu textile squares, Inca gold, terracotta and red wool",
+   "scale": [
+    0,
+    3,
+    5,
+    7,
+    10
+   ],
+   "timbre": "flute",
+   "assets": {
+    "pattern": "assets/skins/andes/pattern.svg",
+    "strip": "assets/skins/andes/strip.svg",
+    "emblem": "assets/skins/andes/emblem.svg"
+   }
+  },
+  "japan": {
+   "name": "Japan",
+   "panel": "#141a22",
+   "panel_is_light": false,
+   "ink": "#f2ebe0",
+   "ink2": "#c4bcae",
+   "hi": "#e9c35a",
+   "accent": "#c8281e",
+   "metal": [
+    "#4a4a4a",
+    "#e8d8a8",
+    "#6a6a6a",
+    "#f6ecc8"
+   ],
+   "fonts": {
+    "head": "Shippori Mincho",
+    "body": "Shippori Mincho",
+    "deco": "Yuji Syuku"
+   },
+   "motto": "天下泰平",
+   "motto_en": "peace under heaven",
+   "materials": "gold-leaf folding screens, washi paper, lacquer, seigaiha waves",
+   "scale": [
+    0,
+    1,
+    5,
+    7,
+    8
+   ],
+   "timbre": "koto",
+   "assets": {
+    "pattern": "assets/skins/japan/pattern.svg",
+    "strip": "assets/skins/japan/strip.svg",
+    "emblem": "assets/skins/japan/emblem.svg"
+   }
+  },
+  "ottoman": {
+   "name": "Ottoman Empire",
+   "panel": "#10233a",
+   "panel_is_light": false,
+   "ink": "#f3ead6",
+   "ink2": "#b9c6d0",
+   "hi": "#f2cf6a",
+   "accent": "#c8281e",
+   "metal": [
+    "#6e5018",
+    "#f6dc94",
+    "#9c7426",
+    "#fbe7a8"
+   ],
+   "fonts": {
+    "head": "Marcellus SC",
+    "body": "Amiri",
+    "deco": "Amiri"
+   },
+   "motto": "دولت عليه عثمانیه",
+   "motto_en": "the Sublime Ottoman State",
+   "materials": "Iznik tiles: cobalt, turquoise, tomato red, tulips, çintamani",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "oud",
+   "assets": {
+    "pattern": "assets/skins/ottoman/pattern.svg",
+    "strip": "assets/skins/ottoman/strip.svg",
+    "emblem": "assets/skins/ottoman/emblem.svg"
+   }
+  },
+  "mughal": {
+   "name": "Mughal Empire",
+   "panel": "#f1ece0",
+   "panel_is_light": true,
+   "ink": "#2a2018",
+   "ink2": "#6a5a44",
+   "hi": "#8a5a14",
+   "accent": "#2f6b3a",
+   "metal": [
+    "#6e5018",
+    "#e8c070",
+    "#8c6420",
+    "#f6dca0"
+   ],
+   "fonts": {
+    "head": "Cormorant SC",
+    "body": "Cormorant Garamond",
+    "deco": "Noto Nastaliq Urdu"
+   },
+   "motto": "سلطنتِ مغلیہ",
+   "motto_en": "the Mughal Sultanate",
+   "materials": "white marble with pietra dura inlay, jali screens, miniature-painting colours",
+   "scale": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    11
+   ],
+   "timbre": "sitar",
+   "assets": {
+    "pattern": "assets/skins/mughal/pattern.svg",
+    "strip": "assets/skins/mughal/strip.svg",
+    "emblem": "assets/skins/mughal/emblem.svg"
+   }
+  },
+  "exploration": {
+   "name": "Age of Exploration",
+   "panel": "#efe4cc",
+   "panel_is_light": true,
+   "ink": "#2a2216",
+   "ink2": "#6a5a40",
+   "hi": "#8a3a14",
+   "accent": "#1f4e7a",
+   "metal": [
+    "#5a3a14",
+    "#c8a060",
+    "#7b5220",
+    "#e8c890"
+   ],
+   "fonts": {
+    "head": "IM Fell English SC",
+    "body": "IM Fell English",
+    "deco": "IM Fell English SC"
+   },
+   "motto": "Plus Ultra",
+   "motto_en": "further beyond",
+   "materials": "portolan charts: aged vellum, rhumb lines, compass roses, sealing wax",
+   "scale": [
+    0,
+    2,
+    4,
+    5,
+    7,
+    9,
+    11
+   ],
+   "timbre": "lute",
+   "assets": {
+    "pattern": "assets/skins/exploration/pattern.svg",
+    "strip": "assets/skins/exploration/strip.svg",
+    "emblem": "assets/skins/exploration/emblem.svg"
+   }
+  },
+  "revolution": {
+   "name": "Revolutions and empires",
+   "panel": "#1a1f2e",
+   "panel_is_light": false,
+   "ink": "#efe8d8",
+   "ink2": "#b8b2a0",
+   "hi": "#d9b45a",
+   "accent": "#9a2a2a",
+   "metal": [
+    "#5a5a5a",
+    "#e8e0c8",
+    "#7a7a6a",
+    "#fbf4dc"
+   ],
+   "fonts": {
+    "head": "Playfair Display SC",
+    "body": "Libre Baskerville",
+    "deco": "Playfair Display"
+   },
+   "motto": "Liberté, égalité, fraternité",
+   "motto_en": "liberty, equality, fraternity",
+   "materials": "engraved banknotes, oil painting gilt frames, brass and mahogany",
+   "scale": [
+    0,
+    2,
+    4,
+    5,
+    7,
+    9,
+    11
+   ],
+   "timbre": "piano",
+   "assets": {
+    "pattern": "assets/skins/revolution/pattern.svg",
+    "strip": "assets/skins/revolution/strip.svg",
+    "emblem": "assets/skins/revolution/emblem.svg"
+   }
+  },
+  "worldwars": {
+   "name": "The World Wars",
+   "panel": "#22241f",
+   "panel_is_light": false,
+   "ink": "#ece6d4",
+   "ink2": "#b4ae98",
+   "hi": "#d9c27a",
+   "accent": "#8a2a1e",
+   "metal": [
+    "#3a3a32",
+    "#c8c0a0",
+    "#5a5a4a",
+    "#e8e0c0"
+   ],
+   "fonts": {
+    "head": "Limelight",
+    "body": "Special Elite",
+    "deco": "Special Elite"
+   },
+   "motto": "",
+   "motto_en": "",
+   "materials": "Art Deco posters, field maps, typewritten dispatches, khaki and brass",
+   "scale": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    8,
+    10
+   ],
+   "timbre": "piano",
+   "assets": {
+    "pattern": "assets/skins/worldwars/pattern.svg",
+    "strip": "assets/skins/worldwars/strip.svg",
+    "emblem": "assets/skins/worldwars/emblem.svg"
+   }
+  },
+  "modern": {
+   "name": "The modern world",
+   "panel": "#181818",
+   "panel_is_light": false,
+   "ink": "#ededed",
+   "ink2": "#a8a8a8",
+   "hi": "#f2f2f2",
+   "accent": "#4a8ad8",
+   "metal": [
+    "#5a5a5a",
+    "#e8e8e8",
+    "#7a7a7a",
+    "#ffffff"
+   ],
+   "fonts": {
+    "head": "Manrope",
+    "body": "Manrope",
+    "deco": "Manrope"
+   },
+   "motto": "",
+   "motto_en": "",
+   "materials": "clean glass panels, thin lines, satellite imagery",
+   "scale": [
+    0,
+    2,
+    4,
+    7,
+    9
+   ],
+   "timbre": "pad",
+   "assets": {
+    "pattern": "assets/skins/modern/pattern.svg",
+    "strip": "assets/skins/modern/strip.svg",
+    "emblem": "assets/skins/modern/emblem.svg"
+   }
+  },
+  "prehistory": {
+   "name": "Before history",
+   "panel": "#20140c",
+   "panel_is_light": false,
+   "ink": "#efe0c8",
+   "ink2": "#c0a480",
+   "hi": "#e0904a",
+   "accent": "#b85a2a",
+   "metal": [
+    "#5a3a1a",
+    "#d8a870",
+    "#7a4a20",
+    "#f0c890"
+   ],
+   "fonts": {
+    "head": "Metamorphous",
+    "body": "Spectral",
+    "deco": "Metamorphous"
+   },
+   "motto": "",
+   "motto_en": "",
+   "materials": "cave walls, ochre handprints, charcoal, bone and stone",
+   "scale": [
+    0,
+    3,
+    5,
+    7,
+    10
+   ],
+   "timbre": "flute",
+   "assets": {
+    "pattern": "assets/skins/prehistory/pattern.svg",
+    "strip": "assets/skins/prehistory/strip.svg",
+    "emblem": "assets/skins/prehistory/emblem.svg"
+   }
+  }
+ }
+}

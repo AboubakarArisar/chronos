@@ -1,0 +1,844 @@
+{
+ "about": "Prepared assets for the Chronos history globe. Everything here is local; the app must load from these paths, not from the web.",
+ "earth_textures": {
+  "folder": "assets/earth/",
+  "files": {
+   "earth-blue-marble.jpg": "4096x2048 daytime colour (NASA Blue Marble, via three-globe example, MIT package)",
+   "earth-night.jpg": "4096x2048 city lights at night (NASA Black Marble, via three-globe)",
+   "earth-topology.png": "2048x1024 elevation, white=high (bump/relief)",
+   "earth-water.png": "1600x800 water mask, white=water",
+   "earth_normal_2048.jpg": "2048x1024 tangent-space normal map (three.js examples, MIT)",
+   "earth_specular_2048.jpg": "2048x1024 ocean shine mask, white=water",
+   "earth_clouds_1024.png": "1024x512 cloud layer with alpha",
+   "earth_day_4096.jpg": "4096x2048 alternative day texture (three.js)",
+   "earth_night_4096.jpg": "4096x2048 alternative night texture (three.js)",
+   "earth_bump_roughness_clouds_4096.jpg": "4096x2048 packed: R=bump, G=roughness, B=clouds (three.js)",
+   "earth_atmos_2048.jpg": "2048x1024 older day texture (three.js)",
+   "earth_lights_2048.png": "2048x1024 older night lights (three.js)"
+  },
+  "uv_convention": "Equirectangular. u=(lon+180)/360, v=(90-lat)/180 from the top, matching THREE.SphereGeometry. lat/lon to vector: phi=(lon+180)/360*2pi, theta=(90-lat)/180*pi, x=-cos(phi)sin(theta), y=cos(theta), z=sin(phi)sin(theta)."
+ },
+ "borders": {
+  "source": "aourednik/historical-basemaps (GitHub), downloaded 2026-11-17",
+  "license": "GPL-3.0 (data/borders/LICENSE). Shipping this data means the app should also be released under GPL-3.0 and credit the project.",
+  "format": "GeoJSON, WGS84 lon/lat. One file per snapshot year. Polygon and MultiPolygon features.",
+  "properties": {
+   "NAME": "name of the country or region, use for labels",
+   "SUBJECTO": "the power that rules it; group and colour by this (e.g. the four Mongol khanates in 1279 all have SUBJECTO \"Mongol Empire\")",
+   "PARTOF": "larger cultural area",
+   "BORDERPRECISION": "1 approximate, 2 moderate, 3 legally fixed; draw 1 as soft/blurred borders"
+  },
+  "quirks": [
+   "Snapshots are irregular (54 total, 49 kept from 3000 BC). Between two snapshots, show the nearest earlier one or crossfade; always tell the user which map year is shown.",
+   "Many features are cultural regions or peoples, not states (e.g. \"Siberian hunter-gatherers\", \"Bantu peoples\"). Draw them faint and do not give them big labels.",
+   "Some rings cross the antimeridian (Russia, Pacific). Unwrap longitudes before drawing, and draw at x-W, x and x+W.",
+   "Content reflects the dataset, which the author calls work in progress. Example: in 1279 the Song are already gone (conquered by Kublai that year).",
+   "places.geojson from the repo was not available; city points must come from our own list."
+  ],
+  "snapshots": [
+   {
+    "year": -3000,
+    "file": "data/borders/world_bc3000.geojson",
+    "features": 138,
+    "kb": 770,
+    "top_powers": [
+     "Dakapeng culture",
+     "Austronesians",
+     "Aboriginal Tasmanians",
+     "Jōmon",
+     "Norte Chico",
+     "city-states",
+     "Ur",
+     "Elam"
+    ]
+   },
+   {
+    "year": -2000,
+    "file": "data/borders/world_bc2000.geojson",
+    "features": 145,
+    "kb": 838,
+    "top_powers": [
+     "Dakapeng culture",
+     "Austronesians",
+     "Jōmon",
+     "Norte Chico",
+     "city-states",
+     "Ur",
+     "Elam",
+     "Canaan"
+    ]
+   },
+   {
+    "year": -1500,
+    "file": "data/borders/world_bc1500.geojson",
+    "features": 163,
+    "kb": 854,
+    "top_powers": [
+     "state societies and Aramaean kingdoms",
+     "Tasmanian hunter-gatherers",
+     "Papuan neolithic farmers",
+     "Austronesians",
+     "Saba",
+     "Egypt",
+     "Elam",
+     "Zhoa"
+    ]
+   },
+   {
+    "year": -1000,
+    "file": "data/borders/world_bc1000.geojson",
+    "features": 163,
+    "kb": 854,
+    "top_powers": [
+     "state societies and Aramaean kingdoms",
+     "Tasmanian hunter-gatherers",
+     "Papuan neolithic farmers",
+     "Austronesians",
+     "Saba",
+     "Egypt",
+     "Elam",
+     "Zhoa"
+    ]
+   },
+   {
+    "year": -700,
+    "file": "data/borders/world_bc700.geojson",
+    "features": 174,
+    "kb": 861,
+    "top_powers": [
+     "Cimerians",
+     "N. European Bronze Age cultures",
+     "state societies and Aramaean kingdoms",
+     "Urnfield cultures",
+     "Tasmanian hunter-gatherers",
+     "Papuan neolithic farmers",
+     "Austronesians",
+     "Saba"
+    ]
+   },
+   {
+    "year": -500,
+    "file": "data/borders/world_bc500.geojson",
+    "features": 189,
+    "kb": 894,
+    "top_powers": [
+     "Greek city-states",
+     "Eastern North American hunter-gatherers",
+     "Simhala",
+     "Paleo-Inuit",
+     "Saharan pastoral nomads",
+     "Carthaginian Empire",
+     "Saba",
+     "Zhou states"
+    ]
+   },
+   {
+    "year": -400,
+    "file": "data/borders/world_bc400.geojson",
+    "features": 190,
+    "kb": 878,
+    "top_powers": [
+     "Greek city-states",
+     "Magadha",
+     "Maize farmers",
+     "Simhala",
+     "Paleo-Inuit",
+     "Celts",
+     "Saharan pastoral nomads",
+     "Carthaginian Empire"
+    ]
+   },
+   {
+    "year": -323,
+    "file": "data/borders/world_bc323.geojson",
+    "features": 149,
+    "kb": 868,
+    "top_powers": [
+     "Saharan pastoral nomads",
+     "Greek city-states",
+     "Hindu kingdoms and republics",
+     "Simhala",
+     "Teotihuacan",
+     "Monte Albán",
+     "Maya chiefdoms and states",
+     "Meroe"
+    ]
+   },
+   {
+    "year": -300,
+    "file": "data/borders/world_bc300.geojson",
+    "features": 158,
+    "kb": 920,
+    "top_powers": [
+     "Saharan pastoral nomads",
+     "Carthaginian Empire",
+     "Greek city-states",
+     "Australian aboriginal hunter-gatherers",
+     "Simhala",
+     "Teotihuacan",
+     "Monte Albán",
+     "Maya chiefdoms and states"
+    ]
+   },
+   {
+    "year": -200,
+    "file": "data/borders/world_bc200.geojson",
+    "features": 183,
+    "kb": 926,
+    "top_powers": [
+     "Scythians",
+     "Papuan",
+     "Simhala",
+     "Teotihuacan",
+     "Monte Albán",
+     "Maya chiefdoms and states",
+     "Meroe",
+     "Kingdom of Syphax"
+    ]
+   },
+   {
+    "year": -100,
+    "file": "data/borders/world_bc100.geojson",
+    "features": 233,
+    "kb": 936,
+    "top_powers": [
+     "Roman Republic",
+     "Simhala",
+     "Teotihuacan",
+     "Monte Albán",
+     "Maya chiefdoms and states",
+     "Meroe",
+     "Numidia",
+     "minor states"
+    ]
+   },
+   {
+    "year": -1,
+    "file": "data/borders/world_bc1.geojson",
+    "features": 442,
+    "kb": 1157,
+    "top_powers": [
+     "Roman Empire",
+     "Hindu kingdoms",
+     "Meroe",
+     "Saka Kingdom",
+     "Satavahanihara",
+     "Hadramaut",
+     "Himyarite Kingdom",
+     "Armenia"
+    ]
+   },
+   {
+    "year": 100,
+    "file": "data/borders/world_100.geojson",
+    "features": 440,
+    "kb": 1154,
+    "top_powers": [
+     "Hindu kingdoms",
+     "Kushan Empire",
+     "Roman Empire",
+     "Koguryo",
+     "Meroe",
+     "Saka Kingdom",
+     "Satavahanihara",
+     "Hadramaut"
+    ]
+   },
+   {
+    "year": 200,
+    "file": "data/borders/world_200.geojson",
+    "features": 354,
+    "kb": 1137,
+    "top_powers": [
+     "Paekche",
+     "Roman Empire",
+     "Meroe",
+     "Saka Kingdom",
+     "Satavahanihara",
+     "Hadramaut",
+     "Himyarite Kingdom",
+     "Han"
+    ]
+   },
+   {
+    "year": 300,
+    "file": "data/borders/world_300.geojson",
+    "features": 466,
+    "kb": 1156,
+    "top_powers": [
+     "Meroe",
+     "Saka Kingdom",
+     "Satavahanihara",
+     "Hadramaut",
+     "Himyarite Kingdom",
+     "Armenia",
+     "Jin",
+     "Gupta Empire"
+    ]
+   },
+   {
+    "year": 400,
+    "file": "data/borders/world_400.geojson",
+    "features": 367,
+    "kb": 1096,
+    "top_powers": [
+     "Hunnic Empire",
+     "Paekche",
+     "Meroe",
+     "Satavahanihara",
+     "Hadramaut",
+     "Himyarite Kingdom",
+     "Jin",
+     "Hainan"
+    ]
+   },
+   {
+    "year": 500,
+    "file": "data/borders/world_500.geojson",
+    "features": 205,
+    "kb": 945,
+    "top_powers": [
+     "Swift Creek Culture",
+     "Franks",
+     "Western Roman Empire",
+     "Simhala",
+     "Teotihuacan",
+     "Monte Albán",
+     "Maya states",
+     "Dorset"
+    ]
+   },
+   {
+    "year": 600,
+    "file": "data/borders/world_600.geojson",
+    "features": 204,
+    "kb": 1001,
+    "top_powers": [
+     "Ostrogoths",
+     "Frankish Kingdom",
+     "Hindu kingdoms",
+     "minor states under Indian influence",
+     "Eastern Roman Empire",
+     "Champa",
+     "Tiahuanaco Empire",
+     "Simhala"
+    ]
+   },
+   {
+    "year": 700,
+    "file": "data/borders/world_700.geojson",
+    "features": 253,
+    "kb": 944,
+    "top_powers": [
+     "Umayyad Caliphate",
+     "Frankish Kingdom",
+     "Lombard principalities",
+     "minor states under Indian influence",
+     "Eastern Roman Empire",
+     "Bega",
+     "Tufan Empire",
+     "Bulgars"
+    ]
+   },
+   {
+    "year": 800,
+    "file": "data/borders/world_800.geojson",
+    "features": 225,
+    "kb": 954,
+    "top_powers": [
+     "Hindu states",
+     "Khazars",
+     "Guanches",
+     "Danes",
+     "Northmen",
+     "Carolingian Empire",
+     "Cyprus",
+     "Ciboney"
+    ]
+   },
+   {
+    "year": 900,
+    "file": "data/borders/world_900.geojson",
+    "features": 244,
+    "kb": 1031,
+    "top_powers": [
+     "Guanches",
+     "Danes",
+     "Carolingian Empire",
+     "Cyprus",
+     "Ciboney",
+     "Hainan",
+     "Champa",
+     "Mon States"
+    ]
+   },
+   {
+    "year": 1000,
+    "file": "data/borders/world_1000.geojson",
+    "features": 264,
+    "kb": 1016,
+    "top_powers": [
+     "minor Hindu and Buddhist states",
+     "Sweden",
+     "Holy Roman Empire",
+     "Peshemegs",
+     "Cyprus",
+     "Imperial Japan (Fujiwara)",
+     "Madagascar",
+     "Merina Kingdom"
+    ]
+   },
+   {
+    "year": 1100,
+    "file": "data/borders/world_1100.geojson",
+    "features": 235,
+    "kb": 1040,
+    "top_powers": [
+     "Palas",
+     "minor Hindu and Buddhist states",
+     "Byzantine Empire",
+     "Sweden",
+     "Alans",
+     "Finno-Ugric taiga hunter-gatherers",
+     "Kievan Rus",
+     "Cyprus"
+    ]
+   },
+   {
+    "year": 1200,
+    "file": "data/borders/world_1200.geojson",
+    "features": 286,
+    "kb": 1026,
+    "top_powers": [
+     "Finno-Ugric taiga hunter-gatherers",
+     "France",
+     "minor Hindu and Buddhist states",
+     "Sweden",
+     "Polynesians",
+     "Tuareg Nomadic Tribes",
+     "Cyprus",
+     "Imperial Japan (Fujiwara)"
+    ]
+   },
+   {
+    "year": 1279,
+    "file": "data/borders/world_1279.geojson",
+    "features": 247,
+    "kb": 1004,
+    "top_powers": [
+     "Mongol Empire",
+     "Thule",
+     "Polynesians",
+     "Holy Roman Empire",
+     "Beothuk",
+     "Cyprus",
+     "Ainus",
+     "Madagascar"
+    ]
+   },
+   {
+    "year": 1300,
+    "file": "data/borders/world_1300.geojson",
+    "features": 237,
+    "kb": 997,
+    "top_powers": [
+     "Mongol Empire",
+     "Thule",
+     "Polynesians",
+     "Beothuk",
+     "Cyprus",
+     "Ainus",
+     "Madagascar",
+     "Maori"
+    ]
+   },
+   {
+    "year": 1400,
+    "file": "data/borders/world_1400.geojson",
+    "features": 233,
+    "kb": 1029,
+    "top_powers": [
+     "Mongol Empire",
+     "Sukhothai",
+     "Ottoman Empire",
+     "Thule",
+     "Polynesians",
+     "Sicily",
+     "Caribbean hunter-gatherers",
+     "Beothuk"
+    ]
+   },
+   {
+    "year": 1492,
+    "file": "data/borders/world_1492.geojson",
+    "features": 1946,
+    "kb": 3387,
+    "top_powers": [
+     "Ayutthaya",
+     "Polynesians",
+     "Ainus",
+     "Ottoman Empire",
+     "Tsnungwe",
+     "Kaw (Oklahoma)",
+     "Nahua",
+     "Karankawa"
+    ]
+   },
+   {
+    "year": 1500,
+    "file": "data/borders/world_1500.geojson",
+    "features": 291,
+    "kb": 1142,
+    "top_powers": [
+     "Islamic states",
+     "Polynesians",
+     "Khoisan",
+     "Ottoman Empire",
+     "Cyprus",
+     "Japan",
+     "Taiwan",
+     "Philippines"
+    ]
+   },
+   {
+    "year": 1530,
+    "file": "data/borders/world_1530.geojson",
+    "features": 494,
+    "kb": 1368,
+    "top_powers": [
+     "Ottoman Empire",
+     "Nogai Horde",
+     "Islamic and Hindu states",
+     "England and Ireland",
+     "Holy Roman Empire",
+     "Cusabo",
+     "Apache",
+     "Catawba"
+    ]
+   },
+   {
+    "year": 1600,
+    "file": "data/borders/world_1600.geojson",
+    "features": 866,
+    "kb": 1640,
+    "top_powers": [
+     "Sweden",
+     "Ottoman Empire",
+     "Ayutthaya",
+     "England and Ireland",
+     "Holy Roman Empire",
+     "Mi'kma'ki",
+     "Cusabo",
+     "Apache"
+    ]
+   },
+   {
+    "year": 1650,
+    "file": "data/borders/world_1650.geojson",
+    "features": 778,
+    "kb": 1612,
+    "top_powers": [
+     "Spanish Habsburg",
+     "Netherlands",
+     "Ottoman Empire",
+     "Portugal",
+     "England",
+     "France",
+     "Polynesians",
+     "Manchu Empire"
+    ]
+   },
+   {
+    "year": 1700,
+    "file": "data/borders/world_1700.geojson",
+    "features": 782,
+    "kb": 1587,
+    "top_powers": [
+     "Spanish Habsburg",
+     "Netherlands",
+     "Austrian Empire",
+     "Ottoman Empire",
+     "Portugal",
+     "France",
+     "England",
+     "Polynesians"
+    ]
+   },
+   {
+    "year": 1715,
+    "file": "data/borders/world_1715.geojson",
+    "features": 758,
+    "kb": 1655,
+    "top_powers": [
+     "United Kingdom",
+     "Spain",
+     "Austrian Empire",
+     "Netherlands",
+     "Ceylon",
+     "Portugal",
+     "Kandy",
+     "Ethiopia"
+    ]
+   },
+   {
+    "year": 1783,
+    "file": "data/borders/world_1783.geojson",
+    "features": 641,
+    "kb": 1628,
+    "top_powers": [
+     "Spain",
+     "Netherlands",
+     "central Asian khanates",
+     "UK",
+     "British East India Company",
+     "Thuringia",
+     "France",
+     "Austria"
+    ]
+   },
+   {
+    "year": 1800,
+    "file": "data/borders/world_1800.geojson",
+    "features": 627,
+    "kb": 1600,
+    "top_powers": [
+     "UK",
+     "Ottoman Empire",
+     "Spain",
+     "Netherlands",
+     "France",
+     "Thuringia",
+     "Portugal",
+     "Denmark-Norway"
+    ]
+   },
+   {
+    "year": 1815,
+    "file": "data/borders/world_1815.geojson",
+    "features": 436,
+    "kb": 2356,
+    "top_powers": [
+     "Spain",
+     "Prussia",
+     "Austrian Empire",
+     "United Kingdom of Great Britain and Ireland",
+     "Portugal",
+     "Grand Duchy of Hesse",
+     "Brunswick",
+     "Anhalt"
+    ]
+   },
+   {
+    "year": 1878,
+    "file": "data/borders/world_1878.geojson",
+    "features": 239,
+    "kb": 1308,
+    "top_powers": [
+     "France",
+     "Denmark",
+     "Portugal",
+     "Spain",
+     "Netherlands",
+     "United Kingdom",
+     "Ottoman Empire",
+     "Germany"
+    ]
+   },
+   {
+    "year": 1880,
+    "file": "data/borders/world_1880.geojson",
+    "features": 236,
+    "kb": 1272,
+    "top_powers": [
+     "France",
+     "Denmark",
+     "Portugal",
+     "Spain",
+     "Netherlands",
+     "United Kingdom",
+     "Ottoman Empire",
+     "Germany"
+    ]
+   },
+   {
+    "year": 1900,
+    "file": "data/borders/world_1900.geojson",
+    "features": 270,
+    "kb": 1266,
+    "top_powers": [
+     "Fiji",
+     "Tonga",
+     "United Kingdom of Great Britain and Ireland",
+     "American Samoa",
+     "France",
+     "Spain",
+     "Portugal",
+     "Netherlands"
+    ]
+   },
+   {
+    "year": 1914,
+    "file": "data/borders/world_1914.geojson",
+    "features": 177,
+    "kb": 1293,
+    "top_powers": [
+     "United Kingdom of Great Britain and Ireland",
+     "France",
+     "Italy",
+     "Russia",
+     "Portugal",
+     "Belgium",
+     "Chile",
+     "Spain"
+    ]
+   },
+   {
+    "year": 1920,
+    "file": "data/borders/world_1920.geojson",
+    "features": 207,
+    "kb": 1565,
+    "top_powers": [
+     "United Kingdom of Great Britain and Ireland",
+     "France",
+     "USSR",
+     "Italy",
+     "Belgium",
+     "Chile",
+     "United States",
+     "United Kingdom"
+    ]
+   },
+   {
+    "year": 1930,
+    "file": "data/borders/world_1930.geojson",
+    "features": 209,
+    "kb": 1373,
+    "top_powers": [
+     "White Russia",
+     "United Kingdom of Great Britain and Ireland",
+     "Greece",
+     "France",
+     "Italy",
+     "USSR",
+     "Belgium",
+     "United Kingdom"
+    ]
+   },
+   {
+    "year": 1938,
+    "file": "data/borders/world_1938.geojson",
+    "features": 254,
+    "kb": 1598,
+    "top_powers": [
+     "United Kingdom",
+     "France",
+     "Italy",
+     "United Kingdom of Great Britain and Ireland",
+     "Spain",
+     "Empire of Japan",
+     "United States",
+     "Belgium"
+    ]
+   },
+   {
+    "year": 1945,
+    "file": "data/borders/world_1945.geojson",
+    "features": 227,
+    "kb": 1527,
+    "top_powers": [
+     "United Kingdom",
+     "France",
+     "USA",
+     "Portugal",
+     "USSR",
+     "Netherlands",
+     "Chile",
+     "Indonesia"
+    ]
+   },
+   {
+    "year": 1960,
+    "file": "data/borders/world_1960.geojson",
+    "features": 197,
+    "kb": 1466,
+    "top_powers": [
+     "United States",
+     "Chile",
+     "United Kingdom",
+     "Italy",
+     "Luxembourg",
+     "Switzerland",
+     "Spain",
+     "Cyprus"
+    ]
+   },
+   {
+    "year": 1994,
+    "file": "data/borders/world_1994.geojson",
+    "features": 240,
+    "kb": 1906,
+    "top_powers": [
+     "United States",
+     "Italy",
+     "Chile",
+     "United Kingdom",
+     "Luxembourg",
+     "Cyprus",
+     "Japan",
+     "Bhutan"
+    ]
+   },
+   {
+    "year": 2000,
+    "file": "data/borders/world_2000.geojson",
+    "features": 240,
+    "kb": 1849,
+    "top_powers": [
+     "United States",
+     "Italy",
+     "Chile",
+     "United Kingdom",
+     "Russia",
+     "Luxembourg",
+     "Cyprus",
+     "Japan"
+    ]
+   },
+   {
+    "year": 2010,
+    "file": "data/borders/world_2010.geojson",
+    "features": 240,
+    "kb": 1849,
+    "top_powers": [
+     "United States",
+     "Italy",
+     "China",
+     "Chile",
+     "Russia",
+     "Luxembourg",
+     "Cyprus",
+     "Japan"
+    ]
+   }
+  ]
+ },
+ "artwork": {
+  "folder": "assets/",
+  "note": "All public domain, downloaded from Wikimedia Commons. Credit in the app.",
+  "files": {
+   "indus.jpg": "Jalal ad-Din crossing the Indus, escaping Genghis Khan. Mughal painting, c. 1596 (1221 event)",
+   "kublai.jpg": "Kublai Khan, Yuan imperial portrait album (1279)",
+   "trajan.jpg": "Bust of Trajan, Glyptothek Munich (116)",
+   "wisdom.jpg": "Library scene, Maqamat of al-Hariri, 1237 (House of Wisdom, c. 830)"
+  }
+ },
+ "look_reference": {
+  "file": "look-test.html",
+  "screenshots": [
+   "skin-mongol.jpg",
+   "skin-rome.jpg",
+   "skin-abbasid.jpg"
+  ],
+  "note": "Approved look. Reuse its globe shader (day/night, relief, ocean shine, rim glow), atmosphere, star field, culture-skin CSS variables, metal frames and label projection."
+ }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "alexander",
+  "title": "Alexander the Great",
+  "subtitle": "The march east, 336 to 323 BC",
+  "skin": "greece",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_the_Great",
+    "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great",
+    "https://en.wikipedia.org/wiki/Indian_campaign_of_Alexander_the_Great"
+  ],
+  "steps": [
+    {
+      "year": -336,
+      "lat": 40.76, "lon": 22.52, "dist": 1.4,
+      "realm": null,
+      "route": null,
+      "title": "A king at twenty",
+      "text": "Alexander was born at Pella in Macedon in 356 BC and was tutored by Aristotle until he was sixteen. In 336 BC his father Philip II was assassinated at Aigai, and Alexander took the throne at twenty. When Thebes rebelled the following year he razed the city.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -334,
+      "lat": 39.5, "lon": 27.5, "dist": 1.5,
+      "realm": "Achaemenid Empire",
+      "route": [[22.52, 40.76], [26.4, 40.2], [27.28, 40.3], [27.42, 37.04], [31.99, 39.65]],
+      "title": "Across the Hellespont",
+      "text": "In 334 BC Alexander crossed the Hellespont into Asia with an army of roughly 48,000 soldiers and 6,000 cavalry. In May he won his first battle against the Persians at the Granicus River, near Troy. At Gordium, the story goes, he met a knot that only the future king of Asia could undo, and cut it with his sword.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -333,
+      "lat": 37.5, "lon": 35.0, "dist": 1.35,
+      "realm": "Achaemenid Empire",
+      "route": [[31.99, 39.65], [36.2, 36.84]],
+      "title": "Issus",
+      "text": "On 5 November 333 BC the Persian king Darius III met Alexander at Issus, in southern Anatolia. The Persian army collapsed and Darius fled, leaving his family and a great treasure behind. He offered peace and a ransom of 10,000 talents. Alexander refused.",
+      "art": "assets/art/greece/alexander-mosaic.jpg",
+      "artCaption": "Battle of Issus mosaic, Museo Archeologico Nazionale, Naples"
+    },
+    {
+      "year": -332,
+      "lat": 33.5, "lon": 35.3, "dist": 1.25,
+      "realm": "Achaemenid Empire",
+      "route": [[36.2, 36.84], [35.2, 33.27], [34.47, 31.5]],
+      "title": "The siege of Tyre",
+      "text": "The Phoenician city of Tyre refused him and held out from January to July 332 BC. When it fell, the men of military age were massacred and the women and children were sold into slavery. Gaza was besieged and taken in October. The road to Egypt lay open.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -331,
+      "lat": 30.0, "lon": 29.5, "dist": 1.5,
+      "realm": "Achaemenid Empire",
+      "route": [[34.47, 31.5], [31.25, 29.85], [29.92, 31.2], [25.52, 29.2]],
+      "title": "Egypt and the oracle",
+      "text": "Egypt received Alexander as a liberator late in 332 BC. He sacrificed at Memphis and travelled to the oracle of Amun at the Siwa Oasis, where he was pronounced the son of the god. On the coast he founded Alexandria in 331 BC, the most prominent of more than twenty cities he established.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -331,
+      "lat": 34.5, "lon": 43.0, "dist": 1.6,
+      "realm": "Achaemenid Empire",
+      "route": [[35.2, 33.27], [43.25, 36.36], [44.42, 32.54], [48.25, 32.19]],
+      "title": "Gaugamela and Babylon",
+      "text": "On 1 October 331 BC the two kings met again at Gaugamela, in what is now northern Iraq. Darius was beaten a second time and fled to Ecbatana. Alexander took Babylon, where an astronomical diary records his message to the people that he would not enter their houses. At Susa he seized the royal treasury.",
+      "art": "assets/art/mesopotamia/ishtar-gate-glazed-brick-detail-processional-way-b.jpg",
+      "artCaption": "Processional Way, Babylon"
+    },
+    {
+      "year": -330,
+      "lat": 29.93, "lon": 52.89, "dist": 1.3,
+      "realm": "Achaemenid Empire",
+      "route": null,
+      "title": "Persepolis burns",
+      "text": "In January 330 BC Alexander forced the pass called the Persian Gates and hurried to Persepolis. He stayed five months and let his troops loot the city. A fire spread from the palace of Xerxes. Ancient writers disagree on whether it was a drunken accident or revenge for the burning of Athens. As Alexander closed in, Darius was stabbed by his own satrap Bessus.",
+      "art": "assets/art/persia/apadana.jpg",
+      "artCaption": "Persepolis"
+    },
+    {
+      "year": -329,
+      "lat": 37.0, "lon": 62.0, "dist": 1.8,
+      "realm": "Achaemenid Empire",
+      "route": [[52.89, 29.93], [48.52, 34.8], [66.9, 36.76], [66.97, 39.65], [69.62, 40.28]],
+      "title": "Bactria and Sogdiana",
+      "text": "Bessus claimed the Persian throne and was executed in 329 BC. Alexander fought on for two more years in Bactria and Sogdiana. He founded Alexandria Eschate, the Furthest, in modern Tajikistan. At Maracanda, modern Samarkand, he killed his friend Cleitus in a drunken quarrel. He married Roxana, the daughter of a Bactrian nobleman.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -326,
+      "lat": 33.0, "lon": 72.0, "dist": 1.5,
+      "realm": null,
+      "route": [[66.9, 36.76], [72.83, 33.75], [72.91, 32.48], [75.3, 31.6]],
+      "title": "The Hydaspes",
+      "text": "In 327 BC Alexander marched into India. On the Hydaspes, the modern Jhelum, he defeated King Porus and his war elephants in 326 BC, then made him an ally. His horse Bucephalus died, and he named a city after it. At the Hyphasis River the army refused to go further east. He raised twelve altars there and turned back.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -325,
+      "lat": 28.0, "lon": 62.0, "dist": 1.9,
+      "realm": null,
+      "route": [[75.3, 31.6], [68.3, 25.3], [63.0, 26.2], [48.25, 32.19]],
+      "title": "The desert road home",
+      "text": "The army turned south down the Indus, fighting as it went. Storming a Mallian town, Alexander took an arrow in the lung and nearly died. He led the main force west through the Gedrosian Desert, where many men were lost to hunger and thirst, while his admiral Nearchus took a fleet along the coast towards the Persian Gulf. Alexander reached Susa in 324 BC.",
+      "art": null,
+      "artCaption": null
+    },
+    {
+      "year": -323,
+      "lat": 33.0, "lon": 50.0, "dist": 2.7,
+      "realm": "Empire of Alexander",
+      "route": null,
+      "title": "Babylon",
+      "text": "At Susa he married his officers to Persian noblewomen. At Opis his Macedonian veterans mutinied over the place he gave to Persians. On 10 or 11 June 323 BC, after an illness of twelve days, Alexander died in the palace of Nebuchadnezzar II in Babylon, aged 32 and undefeated in battle. He left no clear heir, and his generals fought over the empire for forty years.",
+      "art": null,
+      "artCaption": null
+    }
+  ]
+}
