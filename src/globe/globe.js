@@ -88,11 +88,19 @@ export function createGlobe(canvas, { quality = 'medium', assets = 'assets/earth
     bloom = new UnrealBloomPass(new THREE.Vector2(W, H), .28, .6, .92); composer.addPass(bloom);
     composer.addPass(new OutputPass());
   }
+  // Low quality draws the 4K textures at half size
+  function applyTexScale(t) {
+    const img = t.userData.full || t.image; if (!img || !img.width) return; t.userData.full = img;
+    if (q.texScale >= 1 || img.width <= 2048) { t.image = img; return; }
+    if (!t.userData.half) { const c = document.createElement('canvas'); c.width = img.width * q.texScale; c.height = img.height * q.texScale; c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); t.userData.half = c; }
+    t.image = t.userData.half;
+  }
+  ready.then(() => { if (q.texScale < 1) for (const t of texList) { applyTexScale(t); t.needsUpdate = true; } });
   function setQuality(name) {
     qName = QUALITY[name] ? name : 'medium'; q = QUALITY[qName];
     earth.geometry.dispose(); earth.geometry = new THREE.SphereGeometry(1, q.seg[0], q.seg[1]);
     const an = Math.min(q.aniso, renderer.capabilities.getMaxAnisotropy());
-    for (const t of texList) { t.anisotropy = an; t.needsUpdate = !!t.image; }
+    for (const t of texList) { t.anisotropy = an; applyTexScale(t); t.needsUpdate = !!t.image; }
     makeStars(q.stars); resize(); api.onQuality?.(qName);
   }
   function resize(w, h, pr) {
@@ -176,7 +184,7 @@ export function createGlobe(canvas, { quality = 'medium', assets = 'assets/earth
       const now = new Date(), start = Date.UTC(now.getUTCFullYear(), 0, 0), doy = (now - start) / 864e5;
       const decl = -23.44 * Math.cos(2 * Math.PI / 365 * (doy + 10)), hrs = now.getUTCHours() + now.getUTCMinutes() / 60;
       sunTarget.set(...llToXYZ(decl, wrapLon((12 - hrs) * 15)));
-    } else sunTarget.set(...llToXYZ(Math.max(-50, Math.min(50, cam.lat * .6 + 20)), cam.lon - 36));
+    } else sunTarget.set(...llToXYZ(Math.max(-50, Math.min(50, cam.lat * .6 + 24)), cam.lon - 48));
     sun.lerp(sunTarget, Math.min(1, dt * 2.5)).normalize(); dl.position.copy(sun).multiplyScalar(10);
   }
 
@@ -198,7 +206,7 @@ export function createGlobe(canvas, { quality = 'medium', assets = 'assets/earth
     }
     time += dt; clouds.rotation.y = time * .0108;
     clouds.material.opacity = api.cloudOpacity * Math.min(1, .25 + (cam.dist - 1) * .5);
-    earthMat.uniforms.specK.value = Math.max(.1, Math.min(1, (cam.dist - 1.15) / 1.6));
+    earthMat.uniforms.specK.value = Math.max(.08, Math.min(.55, (cam.dist - 1.15) / 3));
     updateSun(dt); placeCamera();
   }
   function frame(now) {

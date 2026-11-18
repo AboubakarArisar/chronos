@@ -5,7 +5,7 @@ export default async function settings(app) {
   const seg = (name, opts, cur) => `<div class="seg" role="group" data-seg="${name}">${opts.map(([v, l]) => `<button aria-pressed="${v === cur}" data-v="${v}">${l}</button>`).join('')}</div>`;
   // apply stored settings
   globe.setRealSun(prefs.get('realSun', false)); skins.setEnabled(prefs.get('skins', true)); app.events.setEnabled(prefs.get('markers', true));
-  const lineW = () => borders.setLineWidth(globe.quality === 'low' ? .85 : 1); lineW(); globe.onQuality = lineW;
+  const lineW = () => { borders.setLineWidth(globe.quality === 'low' ? .85 : 1); labels.setDensity(globe.quality === 'low' ? 'low' : prefs.get('labels', 'medium')); }; lineW(); globe.onQuality = lineW;
 
   function openSettings() {
     const body = app.modal.open(`<h2>Settings</h2>

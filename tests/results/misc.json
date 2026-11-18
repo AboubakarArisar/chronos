@@ -1,0 +1,65 @@
+{
+ "high": {
+  "fps": 10,
+  "q": "high",
+  "errors": []
+ },
+ "low": {
+  "fps": 40,
+  "q": "low"
+ },
+ "tabOrder": [
+  "Skip to the timeline",
+  "USSR21.3M km² [no focus ring]",
+  "France12.0M km² [no focus ring]",
+  "United Kingdom10.9M km [no focus ring]",
+  "United States9.5M km² [no focus ring]",
+  "Canada9.1M km² [no focus ring]",
+  "Brazil8.4M km² [no focus ring]",
+  "Australia8.1M km² [no focus ring]",
+  "Chinese warlords5.5M k [no focus ring]",
+  "Year. Type a year such",
+  "Search (/)",
+  "Story tours",
+  "Record a clip (R)",
+  "Copy a link to this vi",
+  "Music on or off (M)",
+  "Settings",
+  "Keyboard shortcuts (?)",
+  "Play",
+  "Previous map year",
+  "Year",
+  "Jump to the Ancient er",
+  "Jump to the Classical ",
+  "Jump to the Medieval e",
+  "Jump to the Khans era,",
+  "Jump to the Exploratio",
+  "Jump to the Modern era"
+ ],
+ "helpOpen": "Keyboard shortcuts",
+ "spacePlays": false,
+ "intro": {
+  "cls": "intro fading",
+  "year": "870 BCThe First Cities",
+  "coach": "Travel through time",
+  "soundPrompt": true,
+  "audioBeforeClick": null,
+  "afterSoundOn": {
+   "playing": "mongol",
+   "now": "♪ Generated music in the scale of Steppe empires"
+  },
+  "secondVisitIntro": false,
+  "errors": []
+ },
+ "narrow": {
+  "overflowX": 0,
+  "banner": "Steppe empires",
+  "bannerRect": [
+   8,
+   403,
+   414,
+   361
+  ],
+  "errors": []
+ }
+}

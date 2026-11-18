@@ -1,1 +1,34 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Chronos</title></head><body><a href="app.html">Open the globe</a></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Credits and licenses · Chronos</title>
+<meta name="description" content="Every dataset, image, recording and library used by Chronos, with its license.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/src/landing.css">
+</head>
+<body>
+<a class="skip button-sm" href="#main">Skip to content</a>
+<header class="nav"><a class="brand title-3" href="index.html"><img src="favicon.svg" alt="" width="24" height="24">Chronos</a><nav class="nav-links" aria-label="Main" style="display:flex"><a class="title-4" href="index.html">Home</a><a class="title-4" href="credits.html" aria-current="page" style="color:#fff">Credits</a></nav><a class="btn btn-sm button-sm" href="app.html">Explore history</a></header>
+<main class="page" id="main">
+  <h1 class="heading-3">Credits and licenses</h1>
+  <p class="body-3">Chronos is free and open source under GPL 3.0. It stands on open data and public domain art. Borders are approximate and some are disputed. The app always shows which map year is on screen.</p>
+  <div id="credits"><p class="body-6 muted">Loading the list.</p></div>
+  <p class="body-6 muted"><a href="index.html">Back to the start</a> · <a href="app.html">Open the globe</a> · <a href="privacy.html">Privacy and terms</a></p>
+</main>
+<script type="module">
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const link = (u, t) => u ? `<a href="${esc(u)}" rel="noopener">${esc(t)}</a>` : esc(t);
+const box = document.getElementById('credits');
+try {
+  const [c, s] = await Promise.all([fetch('d/credits.json').then(r => r.json()), fetch('d/skins.json').then(r => r.json())]);
+  const name = id => s.skins[id]?.name || id;
+  box.innerHTML = `<h2 class="heading-4" id="data">Data and software</h2><ul>${c.datasets.map(d => `<li class="body-6"><strong>${esc(d.name)}</strong>: ${esc(d.what)}. ${link(d.url, d.by)}. ${esc(d.license)}.</li>`).join('')}</ul>
+    <h2 class="heading-4" id="music">Music</h2>${Object.entries(c.music).map(([id, l]) => `<h3 class="title-2">${esc(name(id))}</h3><ul>${l.length ? l.map(m => `<li class="body-6">${link(m.source_page, m.title)}, ${esc(m.performer_or_author)}. ${link(m.license_url, m.license)}.</li>`).join('') : '<li class="body-6">Generated in your browser in the scale of this culture. No recording used.</li>'}</ul>`).join('')}
+    <h2 class="heading-4" id="art">Artwork</h2>${Object.entries(c.art).filter(([, l]) => l.length).map(([id, l]) => `<h3 class="title-2">${esc(name(id))}</h3><ul>${l.map(a => `<li class="body-6">${link(a.source_page, a.title)}${a.credit ? ', ' + esc(a.credit) : ''}. ${esc(a.license)}.</li>`).join('')}</ul>`).join('')}`;
+  if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+} catch { box.innerHTML = '<p class="body-6">The list could not be loaded. Check your connection and reload the page. The same credits are in CREDITS.md in the source code.</p>'; }
+</script>
+</body>
+</html>

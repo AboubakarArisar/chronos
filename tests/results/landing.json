@@ -1,0 +1,63 @@
+{
+ "desktop": {
+  "overflowX": 0,
+  "ctaVisible": true,
+  "ctaText": "Explore history",
+  "proof": "49 historical maps · 19,326 dated events · 2,977 places to explore · free and open source",
+  "fps": 60,
+  "map": "Live globe. Borders: map of 1300 AD",
+  "fonts": [],
+  "sizes": [],
+  "italic": 0,
+  "heavy": 0,
+  "hyphen": [],
+  "h1": 1,
+  "imgsNoAlt": 0,
+  "revealed": [
+   25,
+   25,
+   15,
+   15
+  ],
+  "tabOrder": [
+   "Skip to content",
+   "Chronos",
+   "How it works",
+   "For creators",
+   "FAQ",
+   "Explore history",
+   "Explore history",
+   "Watch the 40 second tour"
+  ],
+  "errors": []
+ },
+ "mobile": {
+  "overflowX": 0,
+  "ctaVisible": true,
+  "ctaText": "Explore history",
+  "proof": "49 historical maps · 19,326 dated events · 2,977 places to explore · free and open source",
+  "fps": 59.999999999999986,
+  "map": "Live globe. Borders: map of 1300 AD",
+  "fonts": [],
+  "sizes": [],
+  "italic": 0,
+  "heavy": 0,
+  "hyphen": [],
+  "h1": 1,
+  "imgsNoAlt": 0,
+  "revealed": [
+   25,
+   25,
+   15,
+   15
+  ],
+  "menuOpen": "true",
+  "errors": []
+ },
+ "reduced": {
+  "wordsOn": 15,
+  "words": 15,
+  "year": "1279",
+  "yearLater": "1279"
+ }
+}

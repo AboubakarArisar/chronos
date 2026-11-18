@@ -1,1 +1,152 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Chronos</title></head><body><a href="app.html">Open the globe</a></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chronos: 5,000 years of history on a 3D globe</title>
+<meta name="description" content="Free interactive 3D globe with real historical borders from 3000 BC to today. Click any region, hear period music, and record map clips for videos.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chronos: 5,000 years of history on a 3D globe">
+<meta property="og:description" content="Watch real borders move across the Earth from 3000 BC to today. Free and open source.">
+<meta property="og:image" content="landing/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/src/landing.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is it really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no ads, no paywall. The code is open source under GPL 3.0."}},
+{"@type":"Question","name":"How accurate are the borders?","acceptedAnswer":{"@type":"Answer","text":"They come from the open historical basemaps project. Ancient borders are approximate and the app shows which map year you are looking at."}},
+{"@type":"Question","name":"Where does the information come from?","acceptedAnswer":{"@type":"Answer","text":"Region and event details are summaries from Wikipedia and Wikidata, with a link to the full article."}},
+{"@type":"Question","name":"Can I use recordings in my YouTube videos?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clips have no watermark. Please credit Chronos and the data sources in your description."}},
+{"@type":"Question","name":"Does it work on my laptop?","acceptedAnswer":{"@type":"Answer","text":"It runs in Chrome, Edge and Firefox on most laptops from the last five years. A quality setting helps older machines."}},
+{"@type":"Question","name":"Does it work on phones?","acceptedAnswer":{"@type":"Answer","text":"You can explore on a phone. Recording and the full interface work best on a laptop."}},
+{"@type":"Question","name":"Where is the music from?","acceptedAnswer":{"@type":"Answer","text":"Public domain and Creative Commons recordings of traditional instruments and period pieces, credited in the app. Where none exists, the app generates gentle music in that culture's scale."}},
+{"@type":"Question","name":"Can I help?","acceptedAnswer":{"@type":"Answer","text":"Yes. The project is open source, so you can fix a border, add an event or translate the app."}}]}</script>
+</head>
+<body>
+<a class="skip button-sm" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="brand title-3" href="index.html" aria-current="page" aria-label="Chronos home"><img src="favicon.svg" alt="" width="24" height="24">Chronos</a>
+  <nav class="nav-links" aria-label="Main">
+    <a class="title-4" href="#how">How it works</a>
+    <a class="title-4" href="#creators">For creators</a>
+    <a class="title-4" href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm button-sm nav-cta" href="app.html">Explore history</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile">
+    <a class="heading-4" href="#how">How it works</a>
+    <a class="heading-4" href="#creators">For creators</a>
+    <a class="heading-4" href="#skins">Cultures</a>
+    <a class="heading-4" href="#faq">FAQ</a>
+    <a class="btn button-md" href="app.html">Explore history</a>
+  </nav>
+</div>
+
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-globe" aria-hidden="true"><canvas id="globe"></canvas><canvas id="glabels"></canvas></div>
+  <div class="hero-year" id="heroYear" aria-hidden="true">1279</div>
+  <div class="hero-copy">
+    <h1 class="heading-1 grad" id="h1">Watch 5,000 years<br>of history move<br>across the Earth</h1>
+    <p class="body-3 lead">A free 3D globe with real borders from 3000 BC to today. Pause any year, click any land, and hear the music of the age.</p>
+    <div class="hero-actions">
+      <a class="btn button-md" href="app.html">Explore history <span class="ic" data-ic="arrow-right"></span></a>
+      <a class="textlink body-5" href="app.html#demo">Watch the 40 second tour</a>
+    </div>
+    <p class="caption-2 proof">{{maps}} historical maps · {{events}} dated events · {{regions}} places to explore · free and open source</p>
+    <p class="caption-5 mapnote" id="heroMap" aria-hidden="true"></p>
+  </div>
+</section>
+
+<section class="tagline" aria-label="Tagline">
+  <p class="heading-2 reveal-words" id="tagline">Every empire you learned about in school.<br>Every border it drew.<br>Every song it sang.</p>
+</section>
+
+<section class="section" id="benefits" aria-labelledby="bh">
+  <h2 class="heading-3 rise" id="bh">Built to be watched, clicked and shared</h2>
+  <div class="cards">
+    <article class="card rise"><img src="landing/see-time.jpg" alt="The globe in 1279 with the Mongol Empire in gold across Asia" loading="lazy" width="960" height="540"><div class="card-body"><span class="ic" data-ic="clock-counter-clockwise"></span><h3 class="title-1">See time move</h3><p class="body-6">Press play and empires grow, split and fall on a real 3D Earth, using {{maps}} dated world maps.</p></div></article>
+    <article class="card rise"><img src="landing/click.jpg" alt="A selected region with its summary from Wikipedia" loading="lazy" width="960" height="540"><div class="card-body"><span class="ic" data-ic="cursor-click"></span><h3 class="title-1">Click anything</h3><p class="body-6">Pause in any year, zoom into any region and read who ruled it, when, and what happened there.</p></div></article>
+    <article class="card rise"><img src="landing/culture.jpg" alt="The interface in Roman marble style around the Roman Empire" loading="lazy" width="960" height="540"><div class="card-body"><span class="ic" data-ic="palette"></span><h3 class="title-1">Feel each culture</h3><p class="body-6">The interface turns into Roman marble, Mughal inlay or Mongol felt, and the music changes with it.</p></div></article>
+    <article class="card rise"><img src="landing/record.jpg" alt="A clean recorded frame of the globe with only the year shown" loading="lazy" width="960" height="540"><div class="card-body"><span class="ic" data-ic="video-camera"></span><h3 class="title-1">Make videos in minutes</h3><p class="body-6">Record a clean cinematic map clip in 16:9 or 9:16 with no watermark.</p></div></article>
+  </div>
+</section>
+
+<section class="section" id="skins" aria-labelledby="sh">
+  <h2 class="heading-3 rise" id="sh">One globe, {{skins}} cultures</h2>
+  <p class="body-3 sub rise">Pick a culture. The globe above travels to its age, and the app takes on its materials, script and music.</p>
+  <div class="swatches rise" id="swatches" role="list"></div>
+  <p class="caption-2 skin-note" id="skinNote" aria-live="polite">Hover or tap a culture to send the globe there.</p>
+</section>
+
+<section class="section" id="how" aria-labelledby="hh">
+  <h2 class="heading-3 rise" id="hh">How it works</h2>
+  <ol class="steps">
+    <li class="step rise"><span class="caption-3 num">1</span><h3 class="title-1">Pick a moment</h3><p class="body-6">Drag the timeline or choose an era, like the Age of the Khans.</p></li>
+    <li class="step rise"><span class="caption-3 num">2</span><h3 class="title-1">Explore the map</h3><p class="body-6">Zoom, click regions and events, or start a guided story.</p></li>
+    <li class="step rise"><span class="caption-3 num">3</span><h3 class="title-1">Share or record</h3><p class="body-6">Copy a link to that exact view, or export a clip for your video.</p></li>
+  </ol>
+</section>
+
+<section class="section split" id="creators" aria-labelledby="ch">
+  <div class="split-copy rise">
+    <h2 class="heading-3" id="ch">For creators: animated maps without After Effects</h2>
+    <p class="body-3 sub">Open Record, choose a shape and a camera move, and press start. The interface disappears, the music stays, and you get a file you can drop into your edit.</p>
+    <ul class="ticks">
+      <li class="body-5"><span class="ic" data-ic="check"></span>1920 × 1080 for YouTube, 1080 × 1920 for Shorts</li>
+      <li class="body-5"><span class="ic" data-ic="check"></span>Slow orbit, timeline playback or a full story tour</li>
+      <li class="body-5"><span class="ic" data-ic="check"></span>Optional year counter and title card in the culture's own lettering</li>
+      <li class="body-5"><span class="ic" data-ic="check"></span>No watermark, and PNG screenshots at the same sizes</li>
+    </ul>
+    <a class="btn button-md" href="app.html">Explore history <span class="ic" data-ic="arrow-right"></span></a>
+  </div>
+  <div class="frames rise" aria-label="Examples of exported frames">
+    <figure class="frame-wide"><img src="landing/clip-wide.jpg" alt="A 16:9 frame exported from Chronos" loading="lazy" width="960" height="540"><figcaption class="caption-4">16:9</figcaption></figure>
+    <figure class="frame-tall"><img src="landing/clip-tall.jpg" alt="A 9:16 frame exported from Chronos" loading="lazy" width="405" height="720"><figcaption class="caption-4">9:16</figcaption></figure>
+  </div>
+</section>
+
+<section class="section" id="proof" aria-labelledby="ph">
+  <h2 class="heading-3 rise" id="ph">Real data, with its sources shown</h2>
+  <div class="stats">
+    <div class="stat rise"><span class="heading-2">{{maps}}</span><span class="caption-1">dated world maps, 3000 BC to 2010</span></div>
+    <div class="stat rise"><span class="heading-2">{{events}}</span><span class="caption-1">battles, treaties, foundings and more</span></div>
+    <div class="stat rise"><span class="heading-2">{{regions}}</span><span class="caption-1">named regions you can click</span></div>
+    <div class="stat rise"><span class="heading-2">{{skins}}</span><span class="caption-1">culture styles with their own music</span></div>
+  </div>
+  <p class="body-6 sources rise">Borders from the open <a href="https://github.com/aourednik/historical-basemaps" rel="noopener">historical basemaps</a> project. Events from <a href="https://www.wikidata.org/" rel="noopener">Wikidata</a>. Summaries from <a href="https://en.wikipedia.org/" rel="noopener">Wikipedia</a>. Earth imagery from NASA. Every image and recording is listed on the <a href="credits.html">credits page</a>.</p>
+</section>
+
+<section class="section narrow" id="faq" aria-labelledby="fh">
+  <h2 class="heading-3 rise" id="fh">Questions</h2>
+  <div class="faq rise">
+    <details><summary class="title-2">Is it really free?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">Yes. No account, no ads, no paywall. The code is open source under GPL 3.0.</p></details>
+    <details><summary class="title-2">How accurate are the borders?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">They come from the open historical basemaps project. Ancient borders are approximate and the app shows which map year you are looking at. You can report errors to that project.</p></details>
+    <details><summary class="title-2">Where does the information come from?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">Region and event details are summaries from Wikipedia and Wikidata, with a link to the full article.</p></details>
+    <details><summary class="title-2">Can I use recordings in my YouTube videos?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">Yes. Clips have no watermark. Please credit Chronos and the data sources in your description.</p></details>
+    <details><summary class="title-2">Does it work on my laptop?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">It runs in Chrome, Edge and Firefox on most laptops from the last five years. A quality setting helps older machines.</p></details>
+    <details><summary class="title-2">Does it work on phones?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">You can explore on a phone. Recording and the full interface work best on a laptop.</p></details>
+    <details><summary class="title-2">Where is the music from?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">Public domain and Creative Commons recordings of traditional instruments and period pieces, credited in the app. Where none exists, the app generates gentle music in that culture's scale.</p></details>
+    <details><summary class="title-2">Can I help?<span class="ic" data-ic="caret-down"></span></summary><p class="body-6">Yes. The project is open source, so you can fix a border, add an event or translate the app.</p></details>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fc">
+  <h2 class="heading-2 grad rise" id="fc">Start anywhere in<br>5,000 years</h2>
+  <p class="body-3 sub rise">Free forever. No account. Works offline after the first visit.</p>
+  <a class="btn button-md rise" href="app.html">Explore history <span class="ic" data-ic="arrow-right"></span></a>
+</section>
+</main>
+
+<footer class="footer">
+  <a class="brand title-3" href="index.html"><img src="favicon.svg" alt="" width="24" height="24">Chronos</a>
+  <nav aria-label="Footer"><a class="caption-1" href="credits.html">Credits</a><a class="caption-1" href="privacy.html">Privacy</a><a class="caption-1" href="privacy.html#terms">Terms</a><a class="caption-1" href="LICENSE.txt">GPL 3.0 license</a><a class="caption-1" href="app.html">Open the globe</a></nav>
+  <p class="caption-5">Borders are approximate and some are disputed. The app always shows which map year is on screen.</p>
+</footer>
+<script type="module" src="/src/landing.js"></script>
+</body>
+</html>

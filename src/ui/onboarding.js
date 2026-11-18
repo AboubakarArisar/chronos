@@ -36,5 +36,7 @@ export default async function onboarding(app) {
     return true;
   }
   app.playIntro = playIntro;
-  (app.onReady ??= []).push(() => { const deep = location.hash.length > 1; if (deep || !playIntro()) { if (!deep) app.askSound?.(); else setTimeout(() => app.askSound?.(), 1500); } });
+  (app.onReady ??= []).push(() => {
+    if (app.demo) { prefs.set('seenIntro', true); timeline.setSpeed(20); timeline.play(); app.toast('Rome rises and falls: 300 BC to 500 AD in 40 seconds. Press Space to pause.', 6000); const stop = s => { if (s.year >= 500 && app.demo) { app.demo = false; timeline.pause(); timeline.setSpeed(5); app.toast('That was 800 years. Drag the timeline, click any land, or open Stories.', 6000); app.askSound?.(); } }; timeline.on(stop); return; }
+    const deep = location.hash.length > 1; if (deep || !playIntro()) { if (!deep) app.askSound?.(); else setTimeout(() => app.askSound?.(), 1500); } });
 }

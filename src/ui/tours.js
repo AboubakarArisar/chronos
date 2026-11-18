@@ -18,7 +18,7 @@ export default async function tours(app) {
     if (s.art) { $('tart').style.setProperty('--art', `url("${s.art}")`); const meta = Object.values(skins.data.art).flat().find(a => a.file === s.art); $('tart').style.backgroundPosition = (meta?.focus || '50% 35%') + ',0 0'; $('tcap').textContent = (s.artCaption || meta?.title || '') + (meta?.credit ? ', ' + meta.credit : ''); } else $('tcap').textContent = '';
     $('tbar').style.width = (i + 1) / t.steps.length * 100 + '%';
     $('tback').disabled = i === 0; $('tnext').textContent = i === t.steps.length - 1 ? 'Finish' : 'Next';
-    dwell = Math.max(10, s.text.split(/\s+/).length * .42 + 4);
+    dwell = Math.max(8, s.text.split(/\s+/).length * .33 + 3);
     // year: glide there so the borders change on the way
     timeline.pause(); const from = timeline.state.year; yearTween = Math.abs(from - s.year) < 1 || globe.reducedMotion ? null : { from, to: s.year, t: 0, dur: Math.min(2.4, .8 + Math.abs(from - s.year) / 400) };
     if (!yearTween) timeline.set(s.year, 'tour');
@@ -65,5 +65,5 @@ export default async function tours(app) {
     const body = app.modal.open(`<h2>Story tours</h2><p>Guided stories told step by step on the globe. You can explore at any moment and then resume.</p><div class="tourlist">${list.map(t => { const art = t.steps.find(s => s.art)?.art; return `<button data-id="${t.id}"><span class="th" style="${art ? `background-image:url('${art}')` : ''}"></span><span><b>${esc(t.title)}</b><span>${esc(t.subtitle)} · ${t.steps.length} steps</span></span></button>`; }).join('')}</div>`, 'Story tours');
     body.querySelectorAll('button[data-id]').forEach(b => b.onclick = () => start(b.dataset.id));
   }
-  app.tours = { list, start, exit, next, back, openList, get active() { return active; }, get auto() { return auto; }, setAuto(v) { auto = v; updatePause(); }, set dwellScale(v) { dwell *= v; } };
+  app.tours = { list, start, exit, next, back, openList, get active() { return active; }, get auto() { return auto; }, setAuto(v) { auto = v; updatePause(); } };
 }

@@ -15,7 +15,7 @@ export function createPanels(app) {
   let regions = null, areas = null, token = 0, shown = null, ghosts = [], through = false;
   const index = Promise.all([fetch('d/regions.json').then(r => r.json()), fetch('d/areas.json').then(r => r.json())]).then(([r, a]) => { regions = r; areas = a; app.regions = r; app.areas = a; }).catch(() => {});
   const artFor = (skinId, n = 0) => { const list = skins.art(skinId); return list.length ? list[Math.abs(n) % list.length] : null; };
-  const artHTML = a => a ? `<img class="wthumb" src="${esc(a.file)}" alt="${esc(a.title)}" title="${esc(a.title + (a.credit ? ', ' + a.credit : ''))}" style="object-position:${esc(a.focus || '50% 50%')}">` : '';
+  const artHTML = a => a ? `<img class="wthumb" decoding="async" src="${esc(a.file)}" alt="${esc(a.title)}" title="${esc(a.title + (a.credit ? ', ' + a.credit : ''))}" style="object-position:${esc(a.focus || '50% 50%')}">` : '';
   const hash = s => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return h; };
 
   function setEmblem(skinId) { const src = skins.emblem(skinId) || skins.emblem(skins.current); $('emblem').innerHTML = src ? `<img src="${src}" alt="">` : ''; }
@@ -29,19 +29,19 @@ export function createPanels(app) {
   }
   // nothing selected: the culture of the age, with a piece of its art
   function showNone() {
-    shown = { type: 'none' }; token++; clearGhosts();
+    shown = { type: 'none' }; token++; clearGhosts(); document.body.classList.add('nosel');
     const s = skins.spec, a = artFor(skins.current, Math.floor(timeline.state.year / 100));
     head(s.name === 'Chronos' ? 'The world' : s.name, 'Click any land to read about it', []);
     setEmblem(skins.current);
     $('bwiki').innerHTML = a ? `${artHTML(a)}<p class="weak">${esc(a.title)}${a.date ? ', ' + esc(a.date) : ''}</p>` : '';
     $('bbtns').hidden = true; $('bclose').hidden = true;
   }
-  function showPlace(title, sub) { shown = { type: 'place' }; token++; clearGhosts(); head(title, sub, []); $('bwiki').innerHTML = ''; $('bbtns').hidden = true; $('bclose').hidden = false; setEmblem(skins.current); }
+  function showPlace(title, sub) { document.body.classList.remove('nosel'); shown = { type: 'place' }; token++; clearGhosts(); head(title, sub, []); $('bwiki').innerHTML = ''; $('bbtns').hidden = true; $('bclose').hidden = false; setEmblem(skins.current); }
 
   async function showRealm(sel) {
     const snap = borders.primary; if (!snap?.data) return; await index;
     const d = snap.data, fs = borders.featuresFor(d, sel); if (!fs.length) { showNone(); return; }
-    const my = ++token; clearGhosts();
+    const my = ++token; clearGhosts(); document.body.classList.remove('nosel');
     const isGroup = sel.name == null, name = isGroup ? sel.group : sel.name, f = fs[0], group = f.group, year = timeline.state.year;
     const area = fs.reduce((s, x) => s + x.a, 0), stats = [];
     if (!isGroup && group !== name) stats.push(['Ruled by', group]);

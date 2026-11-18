@@ -21,7 +21,7 @@ void main(){
   else if(anySel)a*=.8;
   if(abs(vIds.x-uHovN)<.5||abs(vIds.y-uHovG)<.5){a=min(.8,a+.13);c=min(vec3(1.),c*1.16);}
   if(mod(vIds.z,2.)>.5){float s=sin((vP.x+vP.y*1.3+vP.z*.7)*uHatch);float w=fwidth(s)+1e-4;a*=mix(.42,1.,smoothstep(-w,w,s));}
-  gl_FragColor=vec4(toLin(c)*(.32+.9*lit),a*uOpacity);
+  gl_FragColor=vec4(min(vec3(1.),toLin(c)*(.32+.9*lit)),a*uOpacity);
   #include <tonemapping_fragment>
   #include <colorspace_fragment>
 }`;
@@ -75,7 +75,7 @@ void main(){
   // so joints and shared borders do not double-blend (the limb is handled by the horizon test above)
   gl_FragDepth=uLayer+.01*clamp(d*uPr*uWidth/vW,0.,1.);
   acc.a*=smoothstep(uLimit,uLimit+.03,vFace);
-  gl_FragColor=vec4(toLin(acc.rgb/acc.a)*light*1.25,acc.a*uOpacity);
+  gl_FragColor=vec4(min(vec3(1.),toLin(acc.rgb/acc.a)*light*1.25),acc.a*uOpacity);
   #include <tonemapping_fragment>
   #include <colorspace_fragment>
 }`;
@@ -95,14 +95,20 @@ export function createBorders(globe, { base = 'd/', maxMeshes = 5, maxData = 9 }
   function load(year, urgent = false) {
     let s = snaps.get(year); if (s) { s.used = performance.now(); return s.promise; }
     s = { year, data: null, fill: null, line: null, opacity: 0, used: performance.now(), inScene: false };
-    s.promise = new Promise((res, rej) => pending.set(year, { res, rej })).then(d => { s.data = d; indexSnap(s); evict(); return s; }, err => { snaps.delete(year); emit('loading', year, err); throw err; });
+    s.promise = new Promise((res, rej) => pending.set(year, { res, rej })).then(d => { s.data = d; indexSnap(s); evict(); return s; }, err => { if (snaps.get(year) === s) snaps.delete(year); if (err.message !== 'superseded') emit('loading', year, err); throw err; });
     s.promise.catch(() => {});
     snaps.set(year, s);
-    if (urgent) { queued = queued.filter(y => y === year); queued.unshift(year); } else queued.push(year);
+    if (urgent) { // newest request wins: drop waiting ones completely so they can be asked for again later
+      for (const y of queued) if (y !== year) { snaps.delete(y); const p = pending.get(y); pending.delete(y); p?.rej(new Error('superseded')); }
+      queued = [year];
+    } else queued.push(year);
     pump(); return s.promise;
   }
   function indexSnap(s) {
-    const d = s.data; d.nameIds = new Map(d.names.map((n, i) => [n, i])); d.groupIds = new Map(d.groups.map((g, i) => [g.key, i]));
+    const d = s.data;
+    const unpack = p => { const out = new Array(p.groupOff.length - 1); for (let g = 0; g < out.length; g++) { const rs = []; for (let r = p.groupOff[g]; r < p.groupOff[g + 1]; r++) rs.push(p.buf.subarray(p.ringOff[r], p.ringOff[r + 1])); out[g] = rs; } return out; };
+    d.pickRings = unpack(d.pick); d.unclaimed = unpack(d.unclaimedPack);
+    d.nameIds = new Map(d.names.map((n, i) => [n, i])); d.groupIds = new Map(d.groups.map((g, i) => [g.key, i]));
     d.byName = new Map(); for (let i = 0; i < d.features.length; i++) { const f = d.features[i]; f.i = i; (d.byName.get(f.n) || d.byName.set(f.n, []).get(f.n)).push(f); }
     d.powers = d.groups.map((g, i) => ({ ...g, gid: i })).filter(g => g.kind < 2).sort((a, b) => b.area - a.area);
   }

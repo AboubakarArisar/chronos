@@ -58,15 +58,17 @@ function build(snap) {
     features.push({ n: f.n, group, nid, gid, k: f.k, p: f.p, a: f.a, l: f.l, bb: f.bb, po: f.po || '', colony });
   }
   const unclaimed = snap.u.map(poly => poly.map(decodeRing));
+  // pack rings: one Float32Array + offsets (thousands of tiny transferables are slow to receive)
+  const pack = groups => { let n = 0, rings = 0; for (const g of groups) for (const r of g) { n += r.length; rings++; } const buf = new Float32Array(n), ringOff = new Uint32Array(rings + 1), groupOff = new Uint32Array(groups.length + 1); let o = 0, ri = 0; groups.forEach((g, gi) => { groupOff[gi] = ri; for (const r of g) { buf.set(r, o); ringOff[ri++] = o; o += r.length; } }); ringOff[ri] = o; groupOff[groups.length] = ri; return { buf, ringOff, groupOff }; };
+  const pk = pack(pickRings), uk = pack(unclaimed);
   const out = {
     year, features, names, groups: groups.map(g => ({ key: g.key, area: g.area, label: g.label, color: g.color, kind: g.kind, n: g.n })),
     fill: { pos: new Float32Array(pos), col: new Float32Array(col), ids: new Float32Array(ids), idx: new Uint32Array(idx) },
     line: packLineData(lines),
-    pickRings, unclaimed
+    pick: pk, unclaimedPack: uk
   };
   const transfer = [out.fill.pos.buffer, out.fill.col.buffer, out.fill.ids.buffer, out.fill.idx.buffer, out.line.a.buffer, out.line.b.buffer, out.line.style.buffer, out.line.col.buffer, out.line.dist.buffer];
-  for (const rs of pickRings) for (const r of rs) transfer.push(r.buffer);
-  for (const rs of unclaimed) for (const r of rs) transfer.push(r.buffer);
+  transfer.push(pk.buf.buffer, pk.ringOff.buffer, pk.groupOff.buffer, uk.buf.buffer, uk.ringOff.buffer, uk.groupOff.buffer);
   return [out, transfer];
 }
 

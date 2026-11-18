@@ -54,7 +54,7 @@ export function createLabels(globe, canvas, { getSnap, getSelection, getFonts, g
       const font = `700 ${size.toFixed(1)}px "${fonts.cap}",serif`;
       let w = textW(c.text, font, ls); const budget = Math.max(60, c.pxR * 3.2);
       if (w > budget) { const f = Math.max(.6, budget / w); size *= f; ls *= f; w *= f; if (size < 9 && !c.sel) ok = false; }
-      const rect = [P.x - w / 2 - 4, P.y - size * .65, P.x + w / 2 + 4, P.y + size * .65];
+      const rect = [P.x - w / 2 - 6, P.y - size * .8 - 2, P.x + w / 2 + 6, P.y + size * .8 + 2];
       if (ok && (overlaps(rect) || underUIRect(rect))) ok = false;
       if (ok) placed.push(rect);
       seen.add(c.key); st.t = ok ? 1 : 0; st.size = size; st.ls = ls; st.text = c.text; st.kind = c.kind; st.sel = c.sel; st.fade = Math.max(0, Math.min(1, (P.facing - .22) * 5)); st.x = P.x; st.y = P.y;

@@ -134,8 +134,10 @@ async function boot() {
   for (const f of features) { try { await f(app); } catch (e) { console.error('feature failed to start', e); } }
 
   // ---- first view
-  const restored = app.share?.restore();
-  if (!restored) { timeline.set(1279, 'jump'); globe.setView(38, 80, 4.2); }
+  const demo = location.hash === '#demo'; if (demo) history.replaceState(null, '', location.pathname);
+  const restored = demo ? null : app.share?.restore();
+  if (demo) { timeline.set(-300, 'jump'); globe.setView(40, 18, 2.7); app.demo = true; }
+  else if (!restored) { timeline.set(1279, 'jump'); globe.setView(38, 80, 4.2); }
   skins.apply(skins.decide({ year: timeline.state.year, selection: null, snap: null, cam: globe.cam, viewDeg: 50 }), true);
   borders.setTime(timeline.state.year, false);
   loadMsg('Loading the map of ' + fmtYear(borders.snapshotYearFor(timeline.state.year), true));
@@ -143,15 +145,17 @@ async function boot() {
   $('lfill').style.width = '100%';
   globe.start(); panels.showNone();
   // quality: default by measured performance, and drop to Low if fps stays under 40
-  let lowSince = 0, measured = prefs.get('qualityAuto', true);
+  let lowSince = 0, firstCheck = false, measured = prefs.get('qualityAuto', true);
   globe.onFps = f => {
     app.fps = f; if (!measured || document.hidden || app.recorder?.active) return;
-    if (f.frames < 90) return;
+    if (f.frames < 60) return;
+    if (!firstCheck) { firstCheck = true; if (f.avg < 34 && globe.quality !== 'low') { globe.setQuality('low'); return; } }
     if (f.avg < 40 && globe.quality !== 'low') { lowSince += .5; if (lowSince >= 4) { lowSince = 0; globe.setQuality(globe.quality === 'high' ? 'medium' : 'low'); toast('Quality lowered to keep the globe smooth. You can change it in Settings.'); } } else lowSince = 0;
   };
   await new Promise(r => setTimeout(r, 250));
   document.body.classList.remove('booting'); $('loading').classList.add('out'); setTimeout(() => $('loading').remove(), 800);
   app.ready = true; app.onReady?.forEach(f => f());
+  if (import.meta.env.PROD && 'serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').then(() => setTimeout(() => navigator.serviceWorker.controller?.postMessage('precache-maps'), 8000)).catch(() => {});
   restored?.after?.();
 }
 boot().catch(e => { console.error(e); if (!$('lmsg').classList.contains('err')) loadMsg('Something went wrong while starting. Reload the page to try again.', true); });
