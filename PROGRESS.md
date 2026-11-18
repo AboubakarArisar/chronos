@@ -103,10 +103,10 @@ Raw results: `tests/results/*.json`, logs `tests/results/verify-run*.log`, scree
 | Share link | `#y=117&c=41.20,14.50,2.350&g=Roman+Empire` reloads to the same year, camera, selection and skin |
 | Tours | all 10 tours, every step: right year, title, panel, realm selected when the step names one, tour ends cleanly. One tour (Alexander, 11 steps) played on autoplay to the end in 235 s |
 | Recording | 16:9: 1920x1080, 9.9 s, VP9 + Opus, 9.8 MB, audio 2 channels, RMS 0.02. 9:16: 1080x1920, 9.9 s, 11.7 MB, audio present. Interface hidden, no watermark. Files in `tests/results/clip-*.webm` |
-| Scrub, 100 years/s | see "Playback numbers" below |
-| Scrub, 5 years/s | see "Playback numbers" below |
+| Scrub, 100 years/s | 55.9 fps average on Medium, longest slow run 0.25 s, music changed 4 times for 13 skin changes |
+| Scrub, 5 years/s | 59.4 fps average on Medium, longest slow run 0.35 s, 19 music changes for 21 skin changes |
 | 10 minute soak (play at 20 years/s, camera flights) | 59.1 fps average, longest run of slow frames 0.5 s, JS heap 67 MB (first third) to 82 MB (last third), GPU geometries at most 14, textures 5: no growth |
-| Wikipedia resolver | all 11 required names resolve (Han to Han dynasty, Egypt 3000 BC to Ancient Egypt, Mali 1300 to Mali Empire, Great Khanate to Yuan dynasty, ...). 30 random names recorded in `tests/results/wiki.json`: obscure tribal names often find nothing or a "Possible match" |
+| Wikipedia resolver | all 11 required names resolve (Han to Han dynasty, Egypt 3000 BC to Ancient Egypt, Mali 1300 to Mali Empire, Great Khanate to Yuan dynasty, ...). 30 random names in `tests/results/wiki.json`: 10 exact, 4 by search, 8 "Possible match", 4 nothing found, 4 hit Wikipedia's rate limit in the test run |
 | Landing page | 60 fps hero. No horizontal overflow at 1440 and 390 px. CTA visible in the first screen on both. Manrope only, every font size on the Tailwind scale, no italics, no weight above 700, no hyphens in copy, all images have alt text, one h1. Tab order: skip link, brand, nav, CTA. Reduced motion: words lit at once, globe does not drift. Mobile menu opens |
 | Built `dist/` via `vite preview` | all five pages load, app ready in 1.5 s, 60 fps, service worker active, 49 maps cached, app reloads and switches maps offline, cards say the article needs a connection |
 | First visit | intro plays, three coach marks, then the "Sound on" prompt. No audio before the click. Second visit: no intro |
@@ -116,22 +116,22 @@ Raw results: `tests/results/*.json`, logs `tests/results/verify-run*.log`, scree
 
 ### Playback numbers
 
-First full run (before two fixes): 100 years/s averaged 30 fps with frames up to 1.4 s; the cause was skin
-switches repainting SVG filter textures, plus a loader deadlock that left stale maps on screen. After rasterising
-the textures once, keeping fades on the compositor, packing pick data into single buffers and fixing the loader:
+Final run, on Medium at 1920x1080, whole timeline from 3000 BC to today, music on (`tests/results/verify-run3.log`):
 
-- 100 years/s, whole timeline (53 s): 52 fps average, worst frame 479 ms, longest run of frames under 30 fps
-  0.56 s (limit 1 s). 12 skin changes, 4 music changes.
-- 5 years/s, whole timeline (1007 s): 59.5 fps average, worst frame 487 ms, longest slow run 0.57 s.
-  17 skin changes, 18 music changes (music changes at most once per stable skin, plus track ends).
-- In both of those runs the automatic quality control had dropped to Low because of the loader deadlock, which
-  was fixed afterwards. A profile on Medium after the fix (100 years/s) shows 30 frames over 50 ms in the whole
-  run, worst 226 ms. A final full scrub on Medium was started after the fix; see `tests/results/verify-run3.log`
-  and `verify.json` for its numbers.
+- **100 years/s** (52 s): 55.9 fps average, worst frame 149 ms, longest run of frames under 30 fps 0.25 s
+  (limit 1 s). 13 skin changes, 4 music changes. Quality stayed on Medium. JS heap 134 MB at the end.
+- **5 years/s** (1007 s): 59.4 fps average, worst frame 183 ms, longest slow run 0.35 s. 21 skin changes,
+  19 music changes (at most one per stable skin, plus track ends). Quality stayed on Medium. JS heap 96 MB.
+- No console errors in either run.
+
+History: the first full run averaged 30 fps at 100 years/s with frames up to 1.4 s. Two causes were found and
+fixed: skin switches repainted SVG filter textures (now rasterised once, fades kept on the compositor, pick data
+packed into single buffers), and a loader deadlock left stale maps on screen and evicted the wanted map as soon
+as it arrived (which also stalled three tours). The earlier logs are `verify-run.log` and `verify-run2.log`.
 
 ## Known limits
 
-- **Hitches of 0.1 to 0.5 s** still happen when the skin changes or a large map arrives during playback.
+- **Short hitches** (up to about 0.2 s) still happen when the skin changes or a large map arrives during playback.
 - **City labels use modern names** (the Wikidata label), so "Istanbul" appears in 500 AD. Some cities carry odd
   founding years from Wikidata.
 - **Weak Wikipedia matches** for obscure peoples (roughly a third of random names, mostly from the 1492 map of
