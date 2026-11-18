@@ -1,0 +1,71 @@
+{
+ "base": "http://localhost:4183",
+ "index.html": {
+  "status": 200,
+  "title": "Chronos: 5,000 years of history on a 3D globe",
+  "text": 3136
+ },
+ "credits.html": {
+  "status": 200,
+  "title": "Credits and licenses · Chronos",
+  "text": 18892
+ },
+ "privacy.html": {
+  "status": 200,
+  "title": "Privacy and terms · Chronos",
+  "text": 1606
+ },
+ "404.html": {
+  "status": 200,
+  "title": "Not on any map · Chronos",
+  "text": 145
+ },
+ "credits": 181,
+ "appReadyMs": 1775,
+ "app": {
+  "realm": "Great Khanate",
+  "wiki": 422,
+  "fps": 60,
+  "skin": "mongol"
+ },
+ "sw": true,
+ "cached": {
+  "cache": "chronos-f01455b7b5",
+  "files": 353,
+  "maps": 49
+ },
+ "offline": {
+  "year": 117,
+  "map": 100,
+  "realm": "Rome",
+  "note": "Statue-Augustus, 20 October 2007 (according to Exif data)",
+  "otherMap": 1650,
+  "landing": "Watch 5,000 yearsof "
+ },
+ "errors": [
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED",
+  "Failed to load resource: net::ERR_FAILED"
+ ]
+}

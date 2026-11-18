@@ -91,6 +91,7 @@ export function createBorders(globe, { base = 'd/', maxMeshes = 5, maxData = 9 }
   const worker = new Worker(new URL('./worker.js', import.meta.url), { type: 'module' });
   const snaps = new Map(), pending = new Map(); let busy = null, queued = [];
   worker.onmessage = e => { const { id, ok, data, error } = e.data, p = pending.get(id); pending.delete(id); busy = null; if (p) ok ? p.res(data) : p.rej(new Error(error)); pump(); };
+  worker.onerror = e => { console.error('border worker error', e.message || e); const y = busy, p = pending.get(y); pending.delete(y); busy = null; p?.rej(new Error(e.message || 'worker error')); pump(); };
   function pump() { if (busy !== null || !queued.length) return; const y = queued.shift(); busy = y; worker.postMessage({ id: y, url: new URL(base + 'b/' + y + '.json', location.href).href }); }
   function load(year, urgent = false) {
     let s = snaps.get(year); if (s) { s.used = performance.now(); return s.promise; }
@@ -136,7 +137,7 @@ export function createBorders(globe, { base = 'd/', maxMeshes = 5, maxData = 9 }
   const disposeMesh = m => { if (!m) return; scene.remove(m); m.geometry.dispose(); m.material.dispose(); };
   // keep GPU meshes for a few maps and parsed data for a few more; everything else is freed
   function evict() {
-    const idle = [...snaps.values()].filter(s => s.data && !s.inScene).sort((a, b) => a.used - b.used);
+    const idle = [...snaps.values()].filter(s => s.data && !s.inScene && s.year !== want.a && s.year !== want.b).sort((a, b) => a.used - b.used);
     let built = [...snaps.values()].filter(s => s.fill).length, total = snaps.size;
     for (const s of idle) {
       if (s.fill && built > maxMeshes) { disposeMesh(s.fill); disposeMesh(s.line); s.fill = s.line = null; built--; }
@@ -164,6 +165,7 @@ export function createBorders(globe, { base = 'd/', maxMeshes = 5, maxData = 9 }
       if (!s.data) continue;
       let target = s.opacity;
       if (aReady) target = s === A ? (bReady ? 1 - want.blend * .999 : 1) : s === B && bReady ? want.blend : 0;
+      else target = s === primary ? 1 : 0;
       if (target > 0 || s.opacity > 0) {
         s.opacity += (target - s.opacity) * rate; if (Math.abs(target - s.opacity) < .004) s.opacity = target;
         if (s.opacity > 0 && !s.inScene) { buildMeshes(s); scene.add(s.fill, s.line); s.inScene = true; }
@@ -233,6 +235,7 @@ export function createBorders(globe, { base = 'd/', maxMeshes = 5, maxData = 9 }
     snapshotYearFor: y => index.years[yearIndex(y)], yearIndex,
     get: y => snaps.get(y),
     on(n, f) { listeners[n].push(f); },
+    debug: () => ({ queued, busy, pending: [...pending.keys()], want, snaps: [...snaps.values()].map(s => [s.year, !!s.data, +s.opacity.toFixed(2), s.inScene]) }),
     stats: () => ({ cached: snaps.size, built: [...snaps.values()].filter(s => s.fill).length }),
     setLineWidth(w) { shared.uWidth.value = w; }
   };

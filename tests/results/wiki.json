@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "must": [
   {
    "name": "Han",
@@ -91,15 +91,15 @@
    "name": "Mill Creek Culture",
    "years": "-100..500",
    "title": "Leon-Jefferson culture",
-   "match": "search",
+   "match": "weak",
    "desc": "Protohistoric Native American archaeological culture"
   },
   {
    "name": "Samish",
    "years": "1492..1492",
-   "title": null,
-   "match": "rate limited",
-   "desc": ""
+   "title": "Samish people",
+   "match": "search",
+   "desc": "Ethnic group"
   },
   {
    "name": "Gitanyow Lax’yip",
@@ -111,15 +111,15 @@
   {
    "name": "Kapanawa",
    "years": "1492..1492",
-   "title": "Uncontacted peoples",
-   "match": "weak",
-   "desc": "Peoples living without sustained contact to the world community"
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
   },
   {
    "name": "Deg Xit'an Ngan' (Deg Xit'an)",
    "years": "1492..1492",
    "title": null,
-   "match": "rate limited",
+   "match": "none",
    "desc": ""
   },
   {
@@ -139,16 +139,16 @@
   {
    "name": "Mithaka",
    "years": "1600..1800",
-   "title": "Mitaka people",
-   "match": "weak",
-   "desc": "Aboriginal Australian people"
+   "title": null,
+   "match": "rate limited",
+   "desc": ""
   },
   {
    "name": "Genoa",
    "years": "1530..1715",
-   "title": null,
-   "match": "rate limited",
-   "desc": ""
+   "title": "Republic of Genoa",
+   "match": "search",
+   "desc": "Italian maritime republic (1099–1797)"
   },
   {
    "name": "Brunka",
@@ -168,7 +168,7 @@
    "name": "Walbis Bay",
    "years": "1938..1938",
    "title": null,
-   "match": "none",
+   "match": "rate limited",
    "desc": ""
   },
   {
@@ -181,9 +181,9 @@
   {
    "name": "French Cameroons",
    "years": "1920..1938",
-   "title": null,
-   "match": "rate limited",
-   "desc": ""
+   "title": "French Cameroon",
+   "match": "exact",
+   "desc": "1916–1960 French mandate in Central Africa"
   },
   {
    "name": "French West Africa",
@@ -203,15 +203,15 @@
    "name": "Hunters-gatherers",
    "years": "-3000..-2000",
    "title": "Pitted Ware culture",
-   "match": "search",
+   "match": "weak",
    "desc": "Archaeological culture"
   },
   {
    "name": "Britany",
    "years": "800..1530",
-   "title": "Britany Anderson",
+   "title": "Britany van Lange",
    "match": "weak",
-   "desc": "Jamaican hurdler (born 2001)"
+   "desc": "Guyanese swimmer"
   },
   {
    "name": "S’atsoyaha (Yuchi)",
@@ -258,9 +258,9 @@
   {
    "name": "Caxcane",
    "years": "1530..1600",
-   "title": null,
-   "match": "rate limited",
-   "desc": ""
+   "title": "Caxcan",
+   "match": "weak",
+   "desc": "Ethnic group of western and north-central Mexico"
   },
   {
    "name": "Turks and Caicos Islands",

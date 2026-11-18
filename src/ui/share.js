@@ -32,5 +32,6 @@ export default async function share(app) {
   }
   let acc = 0;
   app.frameHooks.push(dt => { if ((acc += dt) < 1) return; acc = 0; const c = camStr(); if (c !== lastCam && !globe.flying && !globe.dragging) { lastCam = c; touch(); } });
+  addEventListener('hashchange', () => { if (location.hash && location.hash !== build()) { app.tours?.exit(true); app.select(null, { silent: true }); app.selectEvent(null); restore()?.after(); } });
   app.share = { touch, restore, url, copy, build };
 }

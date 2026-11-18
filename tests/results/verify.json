@@ -1,15 +1,15 @@
 {
  "base": "http://localhost:5183",
- "date": "2026-11-18T00:04:33.389Z",
+ "date": "2026-11-18T01:48:43.228Z",
  "skins": {
   "egypt": {
    "year": -100,
-   "realm": "Kushan Empire",
-   "skin": "medieval_europe",
-   "name": "Kushan Empire",
-   "fonts": 9,
-   "motto": "Anno Dominiin the year of the Lord",
-   "ok": false,
+   "realm": "Ptolemaic Kingdom",
+   "skin": "egypt",
+   "name": "Ptolemaic Kingdom",
+   "fonts": 14,
+   "motto": "𓋹𓍑𓋴ankh, wedja, seneb: life, prosperi",
+   "ok": true,
    "contrast": {
     "ink": 12.54,
     "ink2": 8.03,
@@ -22,7 +22,7 @@
    "realm": "Hittites",
    "skin": "mesopotamia",
    "name": "Hittites",
-   "fonts": 20,
+   "fonts": 18,
    "motto": "𒀭𒈗dingir lugal: divine king",
    "ok": true,
    "contrast": {
@@ -37,7 +37,7 @@
    "realm": "Vedic Aryans",
    "skin": "indus",
    "name": "Vedic Aryans",
-   "fonts": 26,
+   "fonts": 24,
    "motto": "ऋग्वेदRigveda",
    "ok": true,
    "contrast": {
@@ -48,11 +48,11 @@
    "contrastOk": true
   },
   "china": {
-   "year": 1800,
-   "realm": "Qing Empire",
+   "year": 1530,
+   "realm": "Ming Chinese Empire",
    "skin": "china",
-   "name": "Qing Empire",
-   "fonts": 31,
+   "name": "Ming Chinese Empire",
+   "fonts": 29,
    "motto": "天命Tianming, the Mandate of Heaven",
    "ok": true,
    "contrast": {
@@ -67,7 +67,7 @@
    "realm": "Achaemenid Empire",
    "skin": "persia",
    "name": "Achaemenid Empire",
-   "fonts": 33,
+   "fonts": 37,
    "motto": "𐎧𐏁𐎠𐎹𐎰𐎡𐎹xšāyaθiya: king",
    "ok": true,
    "contrast": {
@@ -82,7 +82,7 @@
    "realm": "Seleucid Kingdom",
    "skin": "greece",
    "name": "Seleucid Kingdom",
-   "fonts": 35,
+   "fonts": 39,
    "motto": "ΕΛΛΑΣHellas",
    "ok": true,
    "contrast": {
@@ -97,7 +97,7 @@
    "realm": "Roman Empire",
    "skin": "rome",
    "name": "Roman Empire",
-   "fonts": 35,
+   "fonts": 39,
    "motto": "SENATVS POPVLVSQVE ROMANVSthe Senate and",
    "ok": true,
    "contrast": {
@@ -112,7 +112,7 @@
    "realm": "Mauryan Empire",
    "skin": "india_classical",
    "name": "Mauryan Empire",
-   "fonts": 37,
+   "fonts": 41,
    "motto": "सत्यमेव जयतेtruth alone triumphs (Mundak",
    "ok": true,
    "contrast": {
@@ -127,7 +127,7 @@
    "realm": "Eastern Roman Empire",
    "skin": "byzantine",
    "name": "Eastern Roman Empire",
-   "fonts": 40,
+   "fonts": 44,
    "motto": "ΒΑΣΙΛΕΙΑ ΤΩΝ ΡΩΜΑΙΩΝEmpire of the Romans",
    "ok": true,
    "contrast": {
@@ -142,7 +142,7 @@
    "realm": "Abbasid Caliphate",
    "skin": "islamic",
    "name": "Abbasid Caliphate",
-   "fonts": 44,
+   "fonts": 48,
    "motto": "بيت الحكمةBayt al-Hikma, the House of Wi",
    "ok": true,
    "contrast": {
@@ -157,7 +157,7 @@
    "realm": "Denmark-Norway",
    "skin": "norse",
    "name": "Denmark-Norway",
-   "fonts": 48,
+   "fonts": 52,
    "motto": "ᚠᚢᚦᚨᚱᚲthe futhark",
    "ok": true,
    "contrast": {
@@ -172,7 +172,7 @@
    "realm": "Carolingian Empire",
    "skin": "medieval_europe",
    "name": "Carolingian Empire",
-   "fonts": 48,
+   "fonts": 52,
    "motto": "Anno Dominiin the year of the Lord",
    "ok": true,
    "contrast": {
@@ -187,7 +187,7 @@
    "realm": "Great Khanate",
    "skin": "mongol",
    "name": "Great Khanate",
-   "fonts": 54,
+   "fonts": 58,
    "motto": "ᠶᠡᠬᠡ ᠮᠣᠩᠭᠣᠯ ᠤᠯᠤᠰYeke Mongγol Ulus, the G",
    "ok": true,
    "contrast": {
@@ -202,7 +202,7 @@
    "realm": "Mali",
    "skin": "africa",
    "name": "Mali",
-   "fonts": 57,
+   "fonts": 61,
    "motto": "ኢትዮጵያItyop'iya",
    "ok": true,
    "contrast": {
@@ -217,7 +217,7 @@
    "realm": "Maya city-states",
    "skin": "mesoamerica",
    "name": "Maya city-states",
-   "fonts": 58,
+   "fonts": 62,
    "motto": "Huēyi Tlahtōlōyānthe great speaker's rea",
    "ok": true,
    "contrast": {
@@ -232,7 +232,7 @@
    "realm": "Inca Empire",
    "skin": "andes",
    "name": "Inca Empire",
-   "fonts": 60,
+   "fonts": 64,
    "motto": "Tawantinsuyuthe four parts together",
    "ok": true,
    "contrast": {
@@ -247,7 +247,7 @@
    "realm": "Tokugawa shogunate",
    "skin": "japan",
    "name": "Tokugawa shogunate",
-   "fonts": 69,
+   "fonts": 73,
    "motto": "天下泰平peace under heaven",
    "ok": true,
    "contrast": {
@@ -262,7 +262,7 @@
    "realm": "Ottoman Empire",
    "skin": "ottoman",
    "name": "Ottoman Empire",
-   "fonts": 69,
+   "fonts": 73,
    "motto": "دولت عليه عثمانیهthe Sublime Ottoman Sta",
    "ok": true,
    "contrast": {
@@ -277,7 +277,7 @@
    "realm": "Mughal Empire",
    "skin": "mughal",
    "name": "Mughal Empire",
-   "fonts": 71,
+   "fonts": 75,
    "motto": "سلطنتِ مغلیہthe Mughal Sultanate",
    "ok": true,
    "contrast": {
@@ -292,7 +292,7 @@
    "realm": "Viceroyalty of Peru",
    "skin": "exploration",
    "name": "Viceroyalty of Peru",
-   "fonts": 71,
+   "fonts": 75,
    "motto": "Plus Ultrafurther beyond",
    "ok": true,
    "contrast": {
@@ -307,7 +307,7 @@
    "realm": "Russian Empire",
    "skin": "revolution",
    "name": "Russian Empire",
-   "fonts": 78,
+   "fonts": 82,
    "motto": "Liberté, égalité, fraternitéliberty, equ",
    "ok": true,
    "contrast": {
@@ -322,7 +322,7 @@
    "realm": "USSR",
    "skin": "worldwars",
    "name": "USSR",
-   "fonts": 80,
+   "fonts": 84,
    "motto": "",
    "ok": true,
    "contrast": {
@@ -337,7 +337,7 @@
    "realm": "Tanzania, United Republic of",
    "skin": "modern",
    "name": "Tanzania, United Republic of",
-   "fonts": 83,
+   "fonts": 87,
    "motto": "",
    "ok": true,
    "contrast": {
@@ -352,7 +352,7 @@
    "realm": "Aboriginal tribes",
    "skin": "prehistory",
    "name": "Aboriginal tribes",
-   "fonts": 84,
+   "fonts": 88,
    "motto": "",
    "ok": true,
    "contrast": {
@@ -367,619 +367,26 @@
   },
   "errors": [
    "Failed to load resource: the server responded with a status of 404 ()",
+   "Failed to load resource: the server responded with a status of 404 ()",
    "Failed to load resource: the server responded with a status of 404 ()"
   ]
  },
  "clicks": {
   "years": {
-   "100": "16/20",
-   "800": "12/20",
-   "1279": "16/20",
-   "1492": "9/20",
-   "1650": "14/20",
-   "1815": "8/20",
-   "1914": "14/20",
-   "2010": "15/20",
-   "-3000": "16/20",
-   "-323": "16/20"
+   "100": "20/20",
+   "800": "20/20",
+   "1279": "20/20",
+   "1492": "20/20",
+   "1650": "20/20",
+   "1815": "20/20",
+   "1914": "20/20",
+   "2010": "20/20",
+   "-3000": "20/20",
+   "-323": "20/20"
   },
   "total": 200,
-  "correct": 136,
-  "wrong": [
-   {
-    "y": -3000,
-    "lat": 18.08,
-    "lon": 31.802,
-    "expected": [
-     "Kerma"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": -3000,
-    "lat": -32.17,
-    "lon": 28.678,
-    "expected": [
-     "Khoisan"
-    ],
-    "got": "Indian Ocean"
-   },
-   {
-    "y": -3000,
-    "lat": 35.37,
-    "lon": 24.916,
-    "expected": [
-     "Minoan"
-    ],
-    "got": "Mediterranean Sea"
-   },
-   {
-    "y": -3000,
-    "lat": 35.339,
-    "lon": 24.68,
-    "expected": [
-     "Minoan"
-    ],
-    "got": "Mediterranean Sea"
-   },
-   {
-    "y": -323,
-    "lat": 40.754,
-    "lon": 42.598,
-    "expected": [
-     "Colchis"
-    ],
-    "got": "Armenia"
-   },
-   {
-    "y": -323,
-    "lat": -41.42,
-    "lon": 148.277,
-    "expected": [
-     "Tasmanian hunter-gatherers"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": -323,
-    "lat": 51.293,
-    "lon": 23.251,
-    "expected": [
-     "Eastern Masurian culture"
-    ],
-    "got": "Bell-shaped burials culture"
-   },
-   {
-    "y": -323,
-    "lat": 42.34,
-    "lon": 12.22,
-    "expected": [
-     "Rome"
-    ],
-    "got": "Desert hunter-gatherers"
-   },
-   {
-    "y": 100,
-    "lat": 33.791,
-    "lon": -89.054,
-    "expected": [
-     "Miller"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 100,
-    "lat": 51.833,
-    "lon": 23.055,
-    "expected": [
-     "Eastern Masurian culture"
-    ],
-    "got": "Bell-shaped burials culture"
-   },
-   {
-    "y": 100,
-    "lat": 48.466,
-    "lon": -53.639,
-    "expected": [
-     "Paleo-Inuit"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 100,
-    "lat": 45.04,
-    "lon": 72.258,
-    "expected": [
-     "Yueban"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 800,
-    "lat": 60.503,
-    "lon": 22.728,
-    "expected": [
-     "Finns"
-    ],
-    "got": "North Pacific Ocean"
-   },
-   {
-    "y": 800,
-    "lat": 40.14,
-    "lon": 126.347,
-    "expected": [
-     "Parhae"
-    ],
-    "got": "Silia"
-   },
-   {
-    "y": 800,
-    "lat": 56.219,
-    "lon": -5.363,
-    "expected": [
-     "Scots"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 800,
-    "lat": 55.176,
-    "lon": -4.76,
-    "expected": [
-     "Celtic kingdoms"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 800,
-    "lat": 42.971,
-    "lon": -2.666,
-    "expected": [
-     "Asturias"
-    ],
-    "got": "Emirate of Córdoba"
-   },
-   {
-    "y": 800,
-    "lat": 44.233,
-    "lon": 10.167,
-    "expected": [
-     "Carolingian Empire"
-    ],
-    "got": "Mediterranean Sea"
-   },
-   {
-    "y": 800,
-    "lat": 48.164,
-    "lon": -3.263,
-    "expected": [
-     "Britany"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 800,
-    "lat": 45.519,
-    "lon": -94.214,
-    "expected": [
-     "Eastern North American hunter-gatherers"
-    ],
-    "got": "Plain bison hunters"
-   },
-   {
-    "y": 1279,
-    "lat": 7.109,
-    "lon": 79.868,
-    "expected": [
-     "Sinhalese kingdom"
-    ],
-    "got": "Bay of Bengal"
-   },
-   {
-    "y": 1279,
-    "lat": 13.558,
-    "lon": 100.356,
-    "expected": [
-     "Luva"
-    ],
-    "got": "Indian Ocean"
-   },
-   {
-    "y": 1279,
-    "lat": -54.795,
-    "lon": -68.471,
-    "expected": [
-     "Patagonian shellfish and marine mammal hunters"
-    ],
-    "got": "South Atlantic Ocean"
-   },
-   {
-    "y": 1279,
-    "lat": 28.384,
-    "lon": -13.927,
-    "expected": [
-     "Guanches"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 1492,
-    "lat": 35.494,
-    "lon": -77.084,
-    "expected": [
-     "Lumbee",
-     "Skaruhreh/Tuscarora (North Carolina)",
-     "Pamlico (Pomouik)"
-    ],
-    "got": "Neusiok"
-   },
-   {
-    "y": 1492,
-    "lat": 32.415,
-    "lon": -116.962,
-    "expected": [
-     "Kumeyaay"
-    ],
-    "got": "North Pacific Ocean"
-   },
-   {
-    "y": 1492,
-    "lat": 36.911,
-    "lon": -94.828,
-    "expected": [
-     "Kiikaapoi (Kickapoo)",
-     "Kaskaskia",
-     "𐓏𐒰𐓓𐒰𐓓𐒷  𐒼𐓂𐓊𐒻  𐓆𐒻𐒿𐒷  𐓀𐒰^𐓓𐒰^(Osage)",
-     "Peoria (Oklahoma)",
-     "O-ga-xpa Ma-zhoⁿ (O-ga-xpa)",
-     "Očhéthi Šakówiŋ"
-    ],
-    "got": "Cherokee (Oklahoma)"
-   },
-   {
-    "y": 1492,
-    "lat": 57.116,
-    "lon": 27.691,
-    "expected": [
-     "Pskov"
-    ],
-    "got": "Poland-Lithuania"
-   },
-   {
-    "y": 1492,
-    "lat": 2.711,
-    "lon": -75.238,
-    "expected": [
-     "Tama Dujo",
-     "Nasa"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 1492,
-    "lat": 38.755,
-    "lon": -77.182,
-    "expected": [
-     "Doeg",
-     "Piscataway"
-    ],
-    "got": "Cuttatawomen"
-   },
-   {
-    "y": 1492,
-    "lat": 37.631,
-    "lon": -75.623,
-    "expected": [
-     "Occohannock"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 1492,
-    "lat": 48.965,
-    "lon": -120.267,
-    "expected": [
-     "Nłeʔkepmx Tmíxʷ (Nlaka'pamux)",
-     "Syilx tmixʷ (Okanagan)"
-    ],
-    "got": "Methow"
-   },
-   {
-    "y": 1492,
-    "lat": 36.644,
-    "lon": -76.689,
-    "expected": [
-     "Lumbee",
-     "Nansemond"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 1492,
-    "lat": 48.816,
-    "lon": -124.233,
-    "expected": [
-     "ditidaqiic̓aq disib̓aʔk (Ditidaht)",
-     "Ts’uubaa-asatx",
-     "Quw'utsun",
-     "Á,LEṈENEȻ ȽTE (W̱SÁNEĆ)",
-     "Hul'qumi'num Treaty Group",
-     "Ditidaht"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 1492,
-    "lat": 39.046,
-    "lon": -122.63,
-    "expected": [
-     "Southeastern Pomo"
-    ],
-    "got": "Wappo"
-   },
-   {
-    "y": 1650,
-    "lat": 35.354,
-    "lon": -85.595,
-    "expected": [
-     "Yuchi"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 1650,
-    "lat": -36.372,
-    "lon": 144.773,
-    "expected": [
-     "Ngurraiillam"
-    ],
-    "got": "Taungurung"
-   },
-   {
-    "y": 1650,
-    "lat": -12.029,
-    "lon": 142.015,
-    "expected": [
-     "Teppathiggi"
-    ],
-    "got": "Awngthim"
-   },
-   {
-    "y": 1650,
-    "lat": -13.468,
-    "lon": 130.296,
-    "expected": [
-     "Kuwema"
-    ],
-    "got": "Marramaninjsji"
-   },
-   {
-    "y": 1650,
-    "lat": -21.141,
-    "lon": 116.692,
-    "expected": [
-     "Martuthunira"
-    ],
-    "got": "Kurrama"
-   },
-   {
-    "y": 1650,
-    "lat": 45.639,
-    "lon": -119.808,
-    "expected": [
-     "Umatilla"
-    ],
-    "got": "Tenimo"
-   },
-   {
-    "y": 1815,
-    "lat": -24.487,
-    "lon": -58.641,
-    "expected": [
-     "Paraguay"
-    ],
-    "got": "United Provinces of the Río de la Plata"
-   },
-   {
-    "y": 1815,
-    "lat": 47.933,
-    "lon": 9.31,
-    "expected": [
-     "Württemberg"
-    ],
-    "got": "Switzerland"
-   },
-   {
-    "y": 1815,
-    "lat": -8.563,
-    "lon": 29.111,
-    "expected": [
-     "Burundi"
-    ],
-    "got": "Unclaimed land"
-   },
-   {
-    "y": 1815,
-    "lat": -12.696,
-    "lon": 132.399,
-    "expected": [
-     "Konbudj"
-    ],
-    "got": "Jawoyn"
-   },
-   {
-    "y": 1815,
-    "lat": -14.343,
-    "lon": 126.754,
-    "expected": [
-     "Gamberre",
-     "Miwa"
-    ],
-    "got": "Ngarinyin"
-   },
-   {
-    "y": 1815,
-    "lat": -17.902,
-    "lon": 133.999,
-    "expected": [
-     "Jingili"
-    ],
-    "got": "Warumungu"
-   },
-   {
-    "y": 1815,
-    "lat": -15.568,
-    "lon": 130.724,
-    "expected": [
-     "Nungali"
-    ],
-    "got": "Ngarinman"
-   },
-   {
-    "y": 1815,
-    "lat": 18.215,
-    "lon": -63.02,
-    "expected": [
-     "Anguilla"
-    ],
-    "got": "Caribbean Sea"
-   },
-   {
-    "y": 1815,
-    "lat": 12.292,
-    "lon": -16.136,
-    "expected": [
-     "Portuguese Guinea"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 1815,
-    "lat": -27.225,
-    "lon": 129.597,
-    "expected": [
-     "Pitjantjatjara"
-    ],
-    "got": "Nakako"
-   },
-   {
-    "y": 1815,
-    "lat": 5.377,
-    "lon": -0.532,
-    "expected": [
-     "Fante"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 1815,
-    "lat": 14.723,
-    "lon": -61.039,
-    "expected": [
-     "Martinique"
-    ],
-    "got": "Caribbean Sea"
-   },
-   {
-    "y": 1914,
-    "lat": 10.003,
-    "lon": -85.571,
-    "expected": [
-     "Costa Rica"
-    ],
-    "got": "Caribbean Sea"
-   },
-   {
-    "y": 1914,
-    "lat": 40.621,
-    "lon": 45.829,
-    "expected": [
-     "Azerbaijan"
-    ],
-    "got": "Armenia"
-   },
-   {
-    "y": 1914,
-    "lat": -42.77,
-    "lon": 173.323,
-    "expected": [
-     "New Zealand"
-    ],
-    "got": "South Pacific Ocean"
-   },
-   {
-    "y": 1914,
-    "lat": 13.513,
-    "lon": -15.874,
-    "expected": [
-     "Gambia, The"
-    ],
-    "got": "French West Africa"
-   },
-   {
-    "y": 1914,
-    "lat": 32.04,
-    "lon": 10.484,
-    "expected": [
-     "Tunisia"
-    ],
-    "got": "Libya"
-   },
-   {
-    "y": 1914,
-    "lat": 13.27,
-    "lon": -61.193,
-    "expected": [
-     "Saint Vincent and the Grenadines"
-    ],
-    "got": "Caribbean Sea"
-   },
-   {
-    "y": 2010,
-    "lat": 13.203,
-    "lon": -59.597,
-    "expected": [
-     "Barbados"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 2010,
-    "lat": 13.745,
-    "lon": -87.858,
-    "expected": [
-     "El Salvador"
-    ],
-    "got": "Caribbean Sea"
-   },
-   {
-    "y": 2010,
-    "lat": 7.961,
-    "lon": -12.725,
-    "expected": [
-     "Sierra Leone"
-    ],
-    "got": "North Atlantic Ocean"
-   },
-   {
-    "y": 2010,
-    "lat": 13.55,
-    "lon": -14.837,
-    "expected": [
-     "Gambia, The"
-    ],
-    "got": "Senegal"
-   },
-   {
-    "y": 2010,
-    "lat": 30.864,
-    "lon": 42.659,
-    "expected": [
-     "Iraq"
-    ],
-    "got": "Saudi Arabia"
-   }
-  ],
+  "correct": 200,
+  "wrong": [],
   "ocean": [
    "South Atlantic Ocean",
    "Open water. No realm claims it on this map."
@@ -989,12 +396,6 @@
    "No state or people is recorded here on the map of 3000 BC."
   ],
   "errors": [
-   "Failed to load resource: the server responded with a status of 404 ()",
-   "Failed to load resource: the server responded with a status of 404 ()",
-   "Failed to load resource: the server responded with a status of 404 ()",
-   "Failed to load resource: the server responded with a status of 404 ()",
-   "Failed to load resource: the server responded with a status of 404 ()",
-   "Failed to load resource: the server responded with a status of 404 ()",
    "Failed to load resource: the server responded with a status of 404 ()",
    "Failed to load resource: the server responded with a status of 404 ()",
    "Failed to load resource: the server responded with a status of 404 ()",
@@ -1138,150 +539,16 @@
   "rome_skin": "rome",
   "rome": {
    "steps": 12,
-   "bad": 3,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 6,
-     "year": 70,
-     "want": 70,
-     "realm": "Roman Empire",
-     "sel": null,
-     "title": true,
-     "skin": "rome",
-     "wantSkin": "rome",
-     "map": -100,
-     "hidden": false
-    },
-    {
-     "step": 8,
-     "year": 330,
-     "want": 330,
-     "realm": "Rome (Constantinus)",
-     "sel": null,
-     "title": true,
-     "skin": "rome",
-     "wantSkin": "rome",
-     "map": 200,
-     "hidden": false
-    },
-    {
-     "step": 11,
-     "year": 1453,
-     "want": 1453,
-     "realm": "Byzantine Empire",
-     "sel": null,
-     "title": true,
-     "skin": "rome",
-     "wantSkin": "rome",
-     "map": 600,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "alexander_skin": "greece",
   "alexander": {
    "steps": 11,
-   "bad": 8,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 1,
-     "year": -334,
-     "want": -334,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 2,
-     "year": -333,
-     "want": -333,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 3,
-     "year": -332,
-     "want": -332,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 4,
-     "year": -331,
-     "want": -331,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 5,
-     "year": -331,
-     "want": -331,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 6,
-     "year": -330,
-     "want": -330,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 7,
-     "year": -329,
-     "want": -329,
-     "realm": "Achaemenid Empire",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    },
-    {
-     "step": 10,
-     "year": -323,
-     "want": -323,
-     "realm": "Empire of Alexander",
-     "sel": null,
-     "title": true,
-     "skin": "greece",
-     "wantSkin": "greece",
-     "map": 800,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "golden-age_skin": "islamic",
   "golden-age": {
@@ -1293,621 +560,53 @@
   "silk-road_skin": "china",
   "silk-road": {
    "steps": 10,
-   "bad": 1,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 2,
-     "year": 97,
-     "want": 97,
-     "realm": "Parthian Empire",
-     "sel": null,
-     "title": true,
-     "skin": "china",
-     "wantSkin": "china",
-     "map": -100,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "first-states_skin": "mesopotamia",
   "first-states": {
    "steps": 12,
-   "bad": 9,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 0,
-     "year": -3000,
-     "want": -3000,
-     "realm": "Egypt",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 2,
-     "year": -2600,
-     "want": -2600,
-     "realm": "Egypt",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 4,
-     "year": -2050,
-     "want": -2050,
-     "realm": "Ur",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 6,
-     "year": -1457,
-     "want": -1457,
-     "realm": "Egypt",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 7,
-     "year": -1274,
-     "want": -1274,
-     "realm": "Hittites",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 8,
-     "year": -1259,
-     "want": -1259,
-     "realm": "Egypt",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 9,
-     "year": -671,
-     "want": -671,
-     "realm": "Assyria",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 10,
-     "year": -612,
-     "want": -612,
-     "realm": "Babylonia",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    },
-    {
-     "step": 11,
-     "year": -539,
-     "want": -539,
-     "realm": "Babylonia",
-     "sel": null,
-     "title": true,
-     "skin": "mesopotamia",
-     "wantSkin": "mesopotamia",
-     "map": 1300,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "exploration_skin": "exploration",
   "exploration": {
    "steps": 12,
-   "bad": 10,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 1,
-     "year": 1415,
-     "want": 1415,
-     "realm": "Portugal",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 2,
-     "year": 1434,
-     "want": 1434,
-     "realm": "Portugal",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 3,
-     "year": 1488,
-     "want": 1488,
-     "realm": "Portugal",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 4,
-     "year": 1492,
-     "want": 1492,
-     "realm": "Castille",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 6,
-     "year": 1498,
-     "want": 1498,
-     "realm": "Portugal",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 7,
-     "year": 1500,
-     "want": 1500,
-     "realm": "Portugal",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 8,
-     "year": 1513,
-     "want": 1513,
-     "realm": "Castille",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 9,
-     "year": 1520,
-     "want": 1520,
-     "realm": "Castille",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 10,
-     "year": 1521,
-     "want": 1521,
-     "realm": "Philippines",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 11,
-     "year": 1522,
-     "want": 1522,
-     "realm": "Castille",
-     "sel": null,
-     "title": true,
-     "skin": "exploration",
-     "wantSkin": "exploration",
-     "map": 1200,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "end-of-empires_skin": "worldwars",
   "end-of-empires": {
    "steps": 12,
-   "bad": 11,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 0,
-     "year": 1912,
-     "want": 1912,
-     "realm": "Manchu Empire",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 1,
-     "year": 1917,
-     "want": 1917,
-     "realm": "Russian Empire",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 2,
-     "year": 1918,
-     "want": 1918,
-     "realm": "Austro-Hungarian Empire",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 3,
-     "year": 1922,
-     "want": 1922,
-     "realm": "Ottoman Sultanate",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 4,
-     "year": 1947,
-     "want": 1947,
-     "realm": "India",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 5,
-     "year": 1954,
-     "want": 1954,
-     "realm": "Tonkin",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 6,
-     "year": 1957,
-     "want": 1957,
-     "realm": "Gold Coast",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 8,
-     "year": 1962,
-     "want": 1962,
-     "realm": "Algeria",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 9,
-     "year": 1975,
-     "want": 1975,
-     "realm": "Angola",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 10,
-     "year": 1991,
-     "want": 1991,
-     "realm": "USSR",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 11,
-     "year": 1997,
-     "want": 1997,
-     "realm": "Hong Kong",
-     "sel": null,
-     "title": true,
-     "skin": "worldwars",
-     "wantSkin": "worldwars",
-     "map": 1200,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "mughals_skin": "mughal",
   "mughals": {
    "steps": 10,
-   "bad": 10,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 0,
-     "year": 1526,
-     "want": 1526,
-     "realm": "Sultanate of Delhi",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 1,
-     "year": 1540,
-     "want": 1540,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 2,
-     "year": 1556,
-     "want": 1556,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 3,
-     "year": 1569,
-     "want": 1569,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 4,
-     "year": 1632,
-     "want": 1632,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 5,
-     "year": 1658,
-     "want": 1658,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 6,
-     "year": 1690,
-     "want": 1690,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 7,
-     "year": 1739,
-     "want": 1739,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 8,
-     "year": 1757,
-     "want": 1757,
-     "realm": "Mughal Empire",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 9,
-     "year": 1857,
-     "want": 1857,
-     "realm": "British East India Company",
-     "sel": null,
-     "title": true,
-     "skin": "mughal",
-     "wantSkin": "mughal",
-     "map": 1200,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "mansa-musa_skin": "africa",
   "mansa-musa": {
    "steps": 9,
-   "bad": 6,
+   "bad": 0,
    "ended": true,
-   "problems": [
-    {
-     "step": 1,
-     "year": 1312,
-     "want": 1312,
-     "realm": "Mali",
-     "sel": null,
-     "title": true,
-     "skin": "africa",
-     "wantSkin": "africa",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 2,
-     "year": 1324,
-     "want": 1324,
-     "realm": "Mamluke Sultanate",
-     "sel": null,
-     "title": true,
-     "skin": "africa",
-     "wantSkin": "africa",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 4,
-     "year": 1325,
-     "want": 1325,
-     "realm": "Mali",
-     "sel": null,
-     "title": true,
-     "skin": "africa",
-     "wantSkin": "africa",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 5,
-     "year": 1327,
-     "want": 1327,
-     "realm": "Mali",
-     "sel": null,
-     "title": true,
-     "skin": "africa",
-     "wantSkin": "africa",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 6,
-     "year": 1352,
-     "want": 1352,
-     "realm": "Mali",
-     "sel": null,
-     "title": true,
-     "skin": "africa",
-     "wantSkin": "africa",
-     "map": 1200,
-     "hidden": false
-    },
-    {
-     "step": 7,
-     "year": 1375,
-     "want": 1375,
-     "realm": "Aragón",
-     "sel": null,
-     "title": true,
-     "skin": "africa",
-     "wantSkin": "africa",
-     "map": 1200,
-     "hidden": false
-    }
-   ]
+   "problems": []
   },
   "autoplay": {
    "tour": "alexander",
-   "finished": false,
-   "seconds": 400
+   "finished": true,
+   "seconds": 235
   },
   "errors": [
+   "Failed to load resource: the server responded with a status of 404 ()",
+   "Failed to load resource: the server responded with a status of 404 ()",
    "Failed to load resource: the server responded with a status of 404 ()",
    "Failed to load resource: the server responded with a status of 404 ()"
   ]
@@ -1945,17 +644,17 @@
  },
  "scrub": {
   "5": {
-   "seconds": 1011,
-   "frames": 53392,
-   "avgFps": 52.8,
-   "worstFrameMs": 1059,
-   "slowFrames": 1943,
-   "longestSlowStreakMs": 1121,
-   "skinChanges": 24,
-   "musicChanges": 20,
+   "seconds": 1007,
+   "frames": 59910,
+   "avgFps": 59.5,
+   "worstFrameMs": 487,
+   "slowFrames": 211,
+   "longestSlowStreakMs": 567,
+   "skinChanges": 17,
+   "musicChanges": 18,
    "musicOk": true,
    "endYear": 2026,
-   "heapMB": 97,
+   "heapMB": 91,
    "gpu": {
     "geometries": 14,
     "textures": 5
@@ -1964,19 +663,19 @@
    "errors": []
   },
   "100": {
-   "seconds": 55,
-   "frames": 1673,
-   "avgFps": 30.2,
-   "worstFrameMs": 1400,
-   "slowFrames": 423,
-   "longestSlowStreakMs": 1454,
-   "skinChanges": 11,
+   "seconds": 53,
+   "frames": 2731,
+   "avgFps": 52,
+   "worstFrameMs": 479,
+   "slowFrames": 126,
+   "longestSlowStreakMs": 563,
+   "skinChanges": 12,
    "musicChanges": 4,
    "musicOk": true,
    "endYear": 2026,
-   "heapMB": 156,
+   "heapMB": 98,
    "gpu": {
-    "geometries": 10,
+    "geometries": 14,
     "textures": 5
    },
    "quality": "low",
@@ -1987,8 +686,8 @@
   "minutes": 10,
   "samples": [
    {
-    "fps": 46.4,
-    "heapMB": 47,
+    "fps": 60,
+    "heapMB": 48,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -1997,58 +696,8 @@
     }
    },
    {
-    "fps": 28,
-    "heapMB": 61,
-    "geometries": 14,
-    "textures": 5,
-    "cached": {
-     "cached": 9,
-     "built": 5
-    }
-   },
-   {
-    "fps": 44.5,
-    "heapMB": 75,
-    "geometries": 14,
-    "textures": 5,
-    "cached": {
-     "cached": 9,
-     "built": 5
-    }
-   },
-   {
-    "fps": 32.9,
-    "heapMB": 95,
-    "geometries": 14,
-    "textures": 5,
-    "cached": {
-     "cached": 9,
-     "built": 5
-    }
-   },
-   {
-    "fps": 52,
-    "heapMB": 109,
-    "geometries": 14,
-    "textures": 5,
-    "cached": {
-     "cached": 10,
-     "built": 5
-    }
-   },
-   {
-    "fps": 36.8,
-    "heapMB": 86,
-    "geometries": 14,
-    "textures": 5,
-    "cached": {
-     "cached": 9,
-     "built": 5
-    }
-   },
-   {
-    "fps": 54,
-    "heapMB": 105,
+    "fps": 60,
+    "heapMB": 57,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2058,6 +707,26 @@
    },
    {
     "fps": 60,
+    "heapMB": 59,
+    "geometries": 14,
+    "textures": 5,
+    "cached": {
+     "cached": 9,
+     "built": 5
+    }
+   },
+   {
+    "fps": 60,
+    "heapMB": 75,
+    "geometries": 14,
+    "textures": 5,
+    "cached": {
+     "cached": 9,
+     "built": 5
+    }
+   },
+   {
+    "fps": 58,
     "heapMB": 85,
     "geometries": 14,
     "textures": 5,
@@ -2068,7 +737,7 @@
    },
    {
     "fps": 60,
-    "heapMB": 70,
+    "heapMB": 77,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2078,7 +747,7 @@
    },
    {
     "fps": 60,
-    "heapMB": 92,
+    "heapMB": 58,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2088,16 +757,46 @@
    },
    {
     "fps": 60,
-    "heapMB": 74,
-    "geometries": 16,
+    "heapMB": 61,
+    "geometries": 14,
     "textures": 5,
     "cached": {
      "cached": 9,
-     "built": 6
+     "built": 5
     }
    },
    {
     "fps": 60,
+    "heapMB": 80,
+    "geometries": 14,
+    "textures": 5,
+    "cached": {
+     "cached": 9,
+     "built": 5
+    }
+   },
+   {
+    "fps": 56,
+    "heapMB": 86,
+    "geometries": 14,
+    "textures": 5,
+    "cached": {
+     "cached": 9,
+     "built": 5
+    }
+   },
+   {
+    "fps": 60,
+    "heapMB": 79,
+    "geometries": 14,
+    "textures": 5,
+    "cached": {
+     "cached": 9,
+     "built": 5
+    }
+   },
+   {
+    "fps": 56,
     "heapMB": 60,
     "geometries": 14,
     "textures": 5,
@@ -2108,7 +807,7 @@
    },
    {
     "fps": 60,
-    "heapMB": 56,
+    "heapMB": 68,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2118,7 +817,7 @@
    },
    {
     "fps": 60,
-    "heapMB": 64,
+    "heapMB": 76,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2127,8 +826,8 @@
     }
    },
    {
-    "fps": 54,
-    "heapMB": 80,
+    "fps": 60,
+    "heapMB": 113,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2137,8 +836,18 @@
     }
    },
    {
-    "fps": 48,
-    "heapMB": 74,
+    "fps": 60,
+    "heapMB": 78,
+    "geometries": 14,
+    "textures": 5,
+    "cached": {
+     "cached": 9,
+     "built": 5
+    }
+   },
+   {
+    "fps": 60,
+    "heapMB": 66,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2158,17 +867,7 @@
    },
    {
     "fps": 60,
-    "heapMB": 57,
-    "geometries": 14,
-    "textures": 5,
-    "cached": {
-     "cached": 9,
-     "built": 5
-    }
-   },
-   {
-    "fps": 56.1,
-    "heapMB": 65,
+    "heapMB": 75,
     "geometries": 14,
     "textures": 5,
     "cached": {
@@ -2182,16 +881,16 @@
     "geometries": 14,
     "textures": 5,
     "cached": {
-     "cached": 9,
+     "cached": 10,
      "built": 5
     }
    }
   ],
-  "avgFps": 53,
-  "longestSlowStreakMs": 1344,
-  "heapFirstThird": 79,
-  "heapLastThird": 73,
-  "geometriesMax": 16,
+  "avgFps": 59.1,
+  "longestSlowStreakMs": 501,
+  "heapFirstThird": 67,
+  "heapLastThird": 82,
+  "geometriesMax": 14,
   "texturesMax": 5,
   "errors": []
  }

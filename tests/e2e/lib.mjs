@@ -5,7 +5,7 @@ export async function open(path = '/app.html', { width = 1920, height = 1080, fr
   const browser = await chromium.launch({ channel: 'chrome', headless: false, args: ['--autoplay-policy=no-user-gesture-required', '--window-position=0,0', `--window-size=${width},${height + 90}`, '--enable-gpu-rasterization', '--ignore-gpu-blocklist'] });
   const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1 });
   const page = await ctx.newPage(); const errors = [];
-  page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+  page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); if (process.env.WLOG && m.text().startsWith('W ')) console.log(m.text()); });
   page.on('pageerror', e => errors.push('pageerror: ' + e.message));
   if (!fresh) await page.addInitScript(() => { try { localStorage.setItem('chronos.seenIntro', 'true'); localStorage.setItem('chronos.soundAsked', 'true'); } catch {} });
   await page.goto(BASE + path);
